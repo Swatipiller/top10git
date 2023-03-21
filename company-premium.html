@@ -371,6 +371,13 @@
                   </div>
                   <div class="my-3 text-center updatebtn">
                     <button
+                      class="btn btn-outline-danger col-2 transition-btn fw-semibold"
+                      id="updatecancelbtn"
+                      type="button"
+                    >
+                      Cancel
+                    </button>
+                    <button
                       class="btn btn-primary col-2 transition-btn fw-semibold"
                     >
                       Save
@@ -1214,6 +1221,9 @@
       $(document).ready(function () {
         $("#billUpdatebtn").click(function () {
           $(".updatebakdetailform").removeClass("d-none");
+        });
+        $("#updatecancelbtn").click(function () {
+          $(".updatebakdetailform").addClass("d-none");
         });
       });
     </script>

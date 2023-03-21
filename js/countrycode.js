@@ -7,5 +7,12 @@ var iti = window.intlTelInput(input, {
   nationalMode: true,
   utilsScript: "../intl-tel-input/js/utils.js",
 });
+var input = document.querySelector("#phone1");
+var iti = window.intlTelInput(input, {
+  formatOnDisplay: true,
+  initialCountry: "nl",
+  nationalMode: true,
+  utilsScript: "../intl-tel-input/js/utils.js",
+});
 
 // var number = iti.getNumber();
