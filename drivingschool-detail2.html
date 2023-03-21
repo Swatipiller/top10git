@@ -6,6 +6,7 @@
     <title>Top 10 Diensten</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./intl-tel-input/css/intlTelInput.min.css" />
 
     <script
       type="module"
@@ -2022,12 +2023,20 @@
                       <form class="licensetype-form-modal">
                         <div class="row">
                           <div class="mb-3">
-                            <input
+                            <!-- <input
                               type="tel"
                               class="form-control custom-box-shadow"
                               id="exampleInputTel1"
                               aria-describedby="telHelp"
                               placeholder="Enter Phone number"
+                            /> -->
+                            <label for="phone" class="form-label"
+                              >Mobile Number</label
+                            >
+                            <input
+                              type="tel"
+                              id="phone"
+                              class="form-control custom-box-shadow"
                             />
                           </div>
                           <div id="telHelp" class="form-text impt-text">
@@ -2084,12 +2093,20 @@
                       <form class="licensetype-form-modal">
                         <div class="row">
                           <div class="mb-3">
-                            <input
+                            <!-- <input
                               type="tel"
                               class="form-control custom-box-shadow"
                               id="exampleInputTel1"
                               aria-describedby="telHelp"
                               placeholder="Enter Phone number"
+                            /> -->
+                            <label for="phone" class="form-label"
+                              >Mobile Number</label
+                            >
+                            <input
+                              type="tel"
+                              id="phone"
+                              class="form-control custom-box-shadow"
                             />
                           </div>
                         </div>
@@ -2274,6 +2291,9 @@
     <script src="./js/loader.js"></script>
     <script src="./js/pageanimation.js"></script>
     <script src="./js/getquote.js"></script>
+    <script src="./intl-tel-input/js/intlTelInput.min.js"></script>
+    <script src="./intl-tel-input/js/utils.js"></script>
+    <script src="./js/countrycode.js"></script>
     <script>
       Fancybox.bind("[data-fancybox]", {
         // Your custom options
