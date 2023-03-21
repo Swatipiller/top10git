@@ -451,6 +451,8 @@
                 <button
                   type="button"
                   class="btn btn-primary fw-semibold col-md-8 d-block my-4 transition-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#getQuoteModal"
                 >
                   Get Quote
                 </button>
@@ -1444,6 +1446,820 @@
         </div>
       </div>
     </footer>
+    <!-- Modal -->
+    <div
+      class="modal"
+      id="getQuoteModal"
+      tabindex="-1"
+      aria-labelledby="getQuoteModalLabel"
+      aria-hidden="true"
+    >
+      <!-- modal-fullscreen -->
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <!-- <div class="modal-header licensetype-modal-header">
+          
+          <button
+            type="button"
+            class="btn-close btn-close-new"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            Close
+          </button>
+        </div> -->
+          <div class="licensetype-modal-header">
+            <button
+              type="button"
+              class="btn-close btn-close-new"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              Close
+            </button>
+          </div>
+          <div class="modal-body p-0 overflow-hidden">
+            <div class="row">
+              <div class="col-md-7">
+                <!-- start of step 1 -->
+                <div id="getQuoteStep1" class="getQuoteModalStep">
+                  <div class="modal-screen modal-screen-one">
+                    <p class="licensetype-section-modal-heading">
+                      Answer below questions to get correct quote from driving
+                      school !
+                    </p>
+                    <div
+                      class="licensetype-section licensetype-section-modal mt-5"
+                    >
+                      <h2 class="h5 text-primary">
+                        1. Select the driving license type:
+                      </h2>
+                      <form class="licensetype-form-modal">
+                        <div class="row">
+                          <div class="form-check col-md-6 mb-3">
+                            <input
+                              class="form-check-input mt-0"
+                              type="radio"
+                              name="drivinglicensetype1"
+                              id="drivinglicenseb1"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="drivinglicenseb1"
+                            >
+                              Driving License (B)
+                            </label>
+                          </div>
+                          <div class="form-check col-md-6 mb-3">
+                            <input
+                              class="form-check-input mt-0"
+                              type="radio"
+                              name="drivinglicensetype1"
+                              id="MotorcycleLicense1"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="MotorcycleLicense1"
+                            >
+                              Scooter, moped or Light moped (AM)
+                            </label>
+                          </div>
+                          <div class="form-check col-md-6 mb-3">
+                            <input
+                              class="form-check-input mt-0"
+                              type="radio"
+                              name="drivinglicensetype1"
+                              id="Truckdrivinglicense1"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="Truckdrivinglicense1"
+                            >
+                              Motorcycle License (A, A1, A2 )
+                            </label>
+                          </div>
+                          <div class="form-check col-md-6 mb-3">
+                            <input
+                              class="form-check-input mt-0"
+                              type="radio"
+                              name="drivinglicensetype1"
+                              id="Busdrivinglicense1"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="Busdrivinglicense1"
+                            >
+                              Trailer driving license ( BE, B+)
+                            </label>
+                          </div>
+                          <div class="form-check col-md-6 mb-3">
+                            <input
+                              class="form-check-input mt-0"
+                              type="radio"
+                              name="drivinglicensetype1"
+                              id="Scooter1"
+                            />
+                            <label class="form-check-label" for="Scooter1">
+                              Truck driving license ( C, CE, C1, C1E)
+                            </label>
+                          </div>
+                          <div class="form-check col-md-6 mb-3">
+                            <input
+                              class="form-check-input mt-0"
+                              type="radio"
+                              name="drivinglicensetype1"
+                              id="Trailerdrivinglicense1"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="Trailerdrivinglicense1"
+                            >
+                              Tractor driving license ( T )
+                            </label>
+                          </div>
+                          <div class="form-check col-md-6 mb-3">
+                            <input
+                              class="form-check-input mt-0"
+                              type="radio"
+                              name="drivinglicensetype1"
+                              id="Tractordrivinglicense1"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="Tractordrivinglicense1"
+                            >
+                              Bus driving license (D, DE, D1, D1E )
+                            </label>
+                          </div>
+                        </div>
+                        <div class="drivinglicense-btn transition-main-btn">
+                          <button
+                            onclick="animateScreen('#getQuoteStep2', '#getQuoteStep1', 2)"
+                            type="button"
+                            class="btn btn-primary transition-btn"
+                          >
+                            Next
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- end of step 1 -->
+                <!-- start of step 2 -->
+                <div id="getQuoteStep2" class="getQuoteModalStep hidden">
+                  <div class="modal-screen modal-screen-two">
+                    <p class="licensetype-section-modal-heading">
+                      Answer below questions to get correct quote from driving
+                      school !
+                    </p>
+                    <div
+                      class="licensetype-section licensetype-section-modal mt-5"
+                    >
+                      <h2 class="h5 text-primary">
+                        2. Type of car you are looking for to take the driving
+                        lesson?
+                      </h2>
+                      <form class="licensetype-form-modal">
+                        <div class="row">
+                          <div class="form-check col-md-6 mb-3">
+                            <input
+                              class="form-check-input mt-0"
+                              type="radio"
+                              name="drivinglicensetype2"
+                              id="manualtransmission"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="manualtransmission"
+                            >
+                              Manual transmission
+                            </label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-check col-md-6 mb-3">
+                            <input
+                              class="form-check-input mt-0"
+                              type="radio"
+                              name="drivinglicensetype2"
+                              id="automatic-1"
+                            />
+                            <label class="form-check-label" for="automatic-1">
+                              Automatic
+                            </label>
+                          </div>
+                        </div>
+                        <div class="drivinglicense-btn transition-main-btn">
+                          <button
+                            type="button"
+                            class="btn btn-primary transition-btn"
+                            onclick="animateScreen('#getQuoteStep3', '#getQuoteStep2', 3)"
+                          >
+                            Next
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-primary my-4 transition-btn"
+                            onclick="animateScreen('#getQuoteStep1', '#getQuoteStep2', 1)"
+                          >
+                            Previous
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- end of step 2 -->
+                <!-- start of step 3 -->
+                <div id="getQuoteStep3" class="getQuoteModalStep hidden">
+                  <div class="modal-screen modal-screen-three">
+                    <p class="licensetype-section-modal-heading">
+                      Answer below questions to get correct quote from driving
+                      school !
+                    </p>
+                    <div
+                      class="licensetype-section licensetype-section-modal mt-5"
+                    >
+                      <h2 class="h5 text-primary">
+                        3. When do you ready to join the driving lesson?
+                      </h2>
+                      <form class="licensetype-form-modal">
+                        <div class="row">
+                          <div class="form-check col-md-6 mb-3">
+                            <input
+                              class="form-check-input mt-0"
+                              type="radio"
+                              name="drivinglicensetype3"
+                              id="wuickPossible"
+                            />
+                            <label class="form-check-label" for="wuickPossible">
+                              As soon as possible
+                            </label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-check col-md-6 mb-3">
+                            <input
+                              class="form-check-input mt-0"
+                              type="radio"
+                              name="drivinglicensetype3"
+                              id="withTwoMonth"
+                            />
+                            <label class="form-check-label" for="withTwoMonth">
+                              Within 2 months
+                            </label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-check col-md-6 mb-3">
+                            <input
+                              class="form-check-input mt-0"
+                              type="radio"
+                              name="drivinglicensetype3"
+                              id="toBeDetermined"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="toBeDetermined"
+                            >
+                              To be determined
+                            </label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-check col-md-6 mb-3">
+                            <input
+                              class="form-check-input mt-0"
+                              type="radio"
+                              name="drivinglicensetype3"
+                              id="doesnotmatter"
+                            />
+                            <label class="form-check-label" for="doesnotmatter">
+                              Does not matter
+                            </label>
+                          </div>
+                        </div>
+                        <div class="drivinglicense-btn transition-main-btn">
+                          <button
+                            onclick="animateScreen('#getQuoteStep4', '#getQuoteStep3', 4)"
+                            type="button"
+                            class="btn btn-primary transition-btn"
+                          >
+                            Next
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-primary my-4 transition-btn"
+                            onclick="animateScreen('#getQuoteStep2', '#getQuoteStep3', 2)"
+                          >
+                            Previous
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- end of step 3 -->
+
+                <!-- start of step 4 -->
+                <div id="getQuoteStep4" class="getQuoteModalStep hidden">
+                  <div class="modal-screen modal-screen-four">
+                    <p class="licensetype-section-modal-heading">
+                      Answer below questions to get correct quote from driving
+                      school !
+                    </p>
+                    <div
+                      class="licensetype-section licensetype-section-modal mt-5"
+                    >
+                      <h2 class="h5 text-primary">
+                        4. Do you want to compare prices?
+                      </h2>
+                      <span class="text-primary sm-font"
+                        >(Select 3 more driving school which easy for you to
+                        compare and save)</span
+                      >
+                      <form class="licensetype-form-modal">
+                        <div class="row">
+                          <div class="form-check col-md-6 mb-3">
+                            <input
+                              class="form-check-input mt-0"
+                              type="radio"
+                              name="drivinglicensetype4"
+                              id="recommededID"
+                            />
+                            <label class="form-check-label" for="recommededID">
+                              Yes (recommeded)
+                            </label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-check col-md-6 mb-3">
+                            <input
+                              class="form-check-input mt-0"
+                              type="radio"
+                              name="drivinglicensetype4"
+                              id="noId"
+                            />
+                            <label class="form-check-label" for="noId">
+                              No
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="drivinglicense-btn transition-main-btn">
+                          <button
+                            onclick="animateScreen('#getQuoteStep5', '#getQuoteStep4', 5)"
+                            type="button"
+                            class="btn btn-primary transition-btn"
+                          >
+                            Next
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-primary my-4 transition-btn"
+                            onclick="animateScreen('#getQuoteStep3', '#getQuoteStep4', 3)"
+                          >
+                            Previous
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- end of step 4 -->
+
+                <!-- start of step 5 -->
+                <div id="getQuoteStep5" class="getQuoteModalStep hidden">
+                  <div class="modal-screen modal-screen-five">
+                    <p class="licensetype-section-modal-heading">
+                      Answer below questions to get correct quote from driving
+                      school !
+                    </p>
+                    <div
+                      class="licensetype-section licensetype-section-modal mt-5"
+                    >
+                      <h2 class="h5 text-primary">
+                        5. Do you want to say anything?
+                        <span class="text-primary sm-font ms-1">
+                          (Optional)</span
+                        >
+                      </h2>
+
+                      <form class="licensetype-form-modal">
+                        <div class="row">
+                          <div class="form-floating">
+                            <textarea
+                              class="form-control cs-textarea"
+                              placeholder="Leave a comment here"
+                              id="floatingTextarea"
+                            ></textarea>
+                            <label
+                              class="cs-textarea-label"
+                              for="floatingTextarea"
+                              >If you have any comments you can write them
+                              here.</label
+                            >
+                          </div>
+                        </div>
+
+                        <div class="drivinglicense-btn transition-main-btn">
+                          <button
+                            onclick="animateScreen('#getQuoteStep6', '#getQuoteStep5', 6)"
+                            type="button"
+                            class="btn btn-primary transition-btn"
+                          >
+                            Next
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-primary my-4 transition-btn"
+                            onclick="animateScreen('#getQuoteStep4', '#getQuoteStep5', 4)"
+                          >
+                            Previous
+                          </button>
+
+                          <!-- <button type="button" class="btn btn-primary">
+                            Next
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-primary my-4"
+                          >
+                            Previous
+                          </button> -->
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- end of step 5 -->
+
+                <!-- start of step 6 -->
+                <div id="getQuoteStep6" class="getQuoteModalStep hidden">
+                  <div class="modal-screen modal-screen-6">
+                    <p class="licensetype-section-modal-heading">
+                      Answer below questions to get correct quote from driving
+                      school !
+                    </p>
+                    <div
+                      class="licensetype-section licensetype-section-modal mt-5"
+                    >
+                      <h2 class="h5 text-primary">
+                        6. At which Email address you would like to receive the
+                        information?
+                      </h2>
+
+                      <form class="licensetype-form-modal">
+                        <div class="row">
+                          <div class="mb-3">
+                            <input
+                              type="email"
+                              class="form-control custom-box-shadow"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                              placeholder="Enter Email address"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="drivinglicense-btn transition-main-btn">
+                          <button
+                            type="button"
+                            class="btn btn-primary transition-btn"
+                            onclick="animateScreen('#getQuoteStep7', '#getQuoteStep6', 7)"
+                          >
+                            Next
+                          </button>
+                          <button
+                            type="button"
+                            onclick="animateScreen('#getQuoteStep5', '#getQuoteStep6', 5)"
+                            class="btn btn-outline-primary my-4 transition-btn"
+                          >
+                            Previous
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- end of step 6 -->
+
+                <!-- start of step 7 -->
+                <div id="getQuoteStep7" class="getQuoteModalStep hidden">
+                  <div class="modal-screen modal-screen-7">
+                    <p class="licensetype-section-modal-heading">
+                      Answer below questions to get correct quote from driving
+                      school !
+                    </p>
+                    <div
+                      class="licensetype-section licensetype-section-modal mt-5"
+                    >
+                      <h2 class="h5 text-primary">
+                        7. Mention your name here:
+                      </h2>
+
+                      <form class="licensetype-form-modal">
+                        <div class="row">
+                          <div class="mb-3">
+                            <input
+                              type="text"
+                              class="form-control custom-box-shadow"
+                              id="exampleInputText1"
+                              aria-describedby="emailHelp"
+                              placeholder="Enter name here"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="drivinglicense-btn transition-main-btn">
+                          <button
+                            onclick="animateScreen('#getQuoteStep8', '#getQuoteStep7', 8)"
+                            type="button"
+                            class="btn btn-primary transition-btn"
+                          >
+                            Next
+                          </button>
+                          <button
+                            type="button"
+                            onclick="animateScreen('#getQuoteStep6', '#getQuoteStep7', 6)"
+                            class="btn btn-outline-primary my-4 transition-btn"
+                          >
+                            Previous
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- end of step 7 -->
+
+                <!-- start of step 8 -->
+                <div id="getQuoteStep8" class="getQuoteModalStep hidden">
+                  <div class="modal-screen modal-screen-8">
+                    <p class="licensetype-section-modal-heading">
+                      Answer below questions to get correct quote from driving
+                      school !
+                    </p>
+                    <div
+                      class="licensetype-section licensetype-section-modal mt-5"
+                    >
+                      <h2 class="h5 text-primary">
+                        8. What is your phone number?
+                      </h2>
+                      <span class="text-primary sm-font ms-0"
+                        >(To contact if driving school has any more
+                        questions)</span
+                      >
+
+                      <form class="licensetype-form-modal">
+                        <div class="row">
+                          <div class="mb-3">
+                            <input
+                              type="tel"
+                              class="form-control custom-box-shadow"
+                              id="exampleInputTel1"
+                              aria-describedby="telHelp"
+                              placeholder="Enter Phone number"
+                            />
+                          </div>
+                          <div id="telHelp" class="form-text impt-text">
+                            <ion-icon
+                              class="fs-4 cs-margin-icon"
+                              name="lock-closed-outline"
+                            ></ion-icon
+                            >Your data is 100% safe. See our
+                            <span class="text-primary">privacy policy.</span>
+                          </div>
+                        </div>
+
+                        <div class="drivinglicense-btn transition-main-btn">
+                          <button
+                            onclick="animateScreen('#getQuoteStep9', '#getQuoteStep8', 9)"
+                            type="button"
+                            class="btn btn-primary transition-btn"
+                          >
+                            Next
+                          </button>
+                          <button
+                            type="button"
+                            onclick="animateScreen('#getQuoteStep7', '#getQuoteStep8', 7)"
+                            class="btn btn-outline-primary my-4 transition-btn"
+                          >
+                            Previous
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- end of step 8 -->
+
+                <!-- start of step 9 -->
+                <div id="getQuoteStep9" class="getQuoteModalStep">
+                  <div class="modal-screen modal-screen-9">
+                    <p class="licensetype-section-modal-heading">
+                      Answer below questions to get correct quote from driving
+                      school !
+                    </p>
+                    <div
+                      class="licensetype-section licensetype-section-modal mt-5"
+                    >
+                      <h2 class="h5 text-primary">
+                        8. What is your phone number?
+                      </h2>
+                      <span class="text-primary sm-font ms-0"
+                        >(To contact if driving school has any more
+                        questions)</span
+                      >
+
+                      <form class="licensetype-form-modal">
+                        <div class="row">
+                          <div class="mb-3">
+                            <input
+                              type="tel"
+                              class="form-control custom-box-shadow"
+                              id="exampleInputTel1"
+                              aria-describedby="telHelp"
+                              placeholder="Enter Phone number"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          id="otpHelp"
+                          class="form-text impt-text mb-4 mt-4 fw-semibold text-dark"
+                        >
+                          Please enter verification code sent to your mobile
+                          number-
+                        </div>
+                        <div class="input-otpbox" id="otpForm">
+                          <div class="position-relative">
+                            <div
+                              id="otp"
+                              class="inputs text-center d-flex flex-row mt-2"
+                            >
+                              <input
+                                class="me-4 text-center custom-box-shadow form-control rounded"
+                                type="text"
+                                id="otpfirst"
+                                maxlength="1"
+                              />
+                              <input
+                                class="me-4 text-center custom-box-shadow form-control rounded"
+                                type="text"
+                                id="otpsecond"
+                                maxlength="1"
+                              />
+                              <input
+                                class="me-4 text-center custom-box-shadow form-control rounded"
+                                type="text"
+                                id="otpthird"
+                                maxlength="1"
+                              />
+                              <input
+                                class="me-4 text-center custom-box-shadow form-control rounded"
+                                type="text"
+                                id="otpfourth"
+                                maxlength="1"
+                              />
+                              <input
+                                class="me-4 text-center custom-box-shadow form-control rounded"
+                                type="text"
+                                id="otpfifth"
+                                maxlength="1"
+                              />
+                              <input
+                                class="me-4 text-center custom-box-shadow form-control rounded"
+                                type="text"
+                                id="otpsixth"
+                                maxlength="1"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="drivinglicense-btn transition-main-btn my-5"
+                        >
+                          <button
+                            id="verifybtn"
+                            type="button"
+                            class="btn btn-primary transition-btn"
+                          >
+                            Verify
+                          </button>
+                        </div>
+
+                        <div class="verifysucessbox d-none">
+                          <div class="card custom-box-shadow text-center">
+                            <div class="card-body">
+                              <p class="textpara text-success fw-semibold">
+                                Verification done successfully
+                              </p>
+                              <p class="textpara mb-0">
+                                Your request is in process. Please check your
+                                email for details.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- end of step 9 -->
+              </div>
+              <div class="col-md-5">
+                <div class="modal-screen-part-two">
+                  <div class="progressbar-section">
+                    <div
+                      class="progress"
+                      id="getQuoteProgress"
+                      role="progressbar"
+                      aria-label="get quote progress"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar"
+                        id="getQuoteProgressBar"
+                        style="width: 25%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p class="secondscreen-heading">
+                        Selected Driving School :
+                      </p>
+                      <p class="secondscreen-sub-heading">
+                        ANWP Driving School
+                      </p>
+                      <p class="rating-para">
+                        5.0<ion-icon
+                          class="text-warning md hydrated"
+                          name="star-outline"
+                          role="img"
+                          aria-label="star outline"
+                        ></ion-icon>
+                        <ion-icon
+                          class="text-warning md hydrated"
+                          name="star-outline"
+                          role="img"
+                          aria-label="star outline"
+                        ></ion-icon>
+                        <ion-icon
+                          class="text-warning md hydrated"
+                          name="star-outline"
+                          role="img"
+                          aria-label="star outline"
+                        ></ion-icon>
+                        <ion-icon
+                          class="text-warning md hydrated"
+                          name="star-outline"
+                          role="img"
+                          aria-label="star outline"
+                        ></ion-icon>
+                        <ion-icon
+                          class="text-warning md hydrated"
+                          name="star-outline"
+                          role="img"
+                          aria-label="star outline"
+                        ></ion-icon>
+                        (80)
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="second-screen-modal-img">
+                        <img src="./images/why-chooseImg1.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="viewApplicationBtn text-center d-none">
+                    <a
+                      class="btn btn-primary col-md-8 fw-semibold veiwBtn btn-lg"
+                      href="/customerdashboard.html"
+                      role="button"
+                      >View My Application</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal -->
     <div id="loading">
       <img src="./images/top10Logo.png" alt="" />
       <div class="loader">Loading...</div>
@@ -1456,6 +2272,8 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="./js/loader.js"></script>
+    <script src="./js/pageanimation.js"></script>
+    <script src="./js/getquote.js"></script>
     <script>
       Fancybox.bind("[data-fancybox]", {
         // Your custom options
