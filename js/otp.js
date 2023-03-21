@@ -19,6 +19,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   OTPInput();
+
+  let time = $(".time");
+  let value = 15;
+  const intervalToken = setInterval(() => {
+    time.html(`00.${value}`);
+    value = value - 1;
+    if (value < 0) {
+      clearInterval(intervalToken);
+    }
+  }, 1000);
 });
 
 function pasteOTP(event) {
