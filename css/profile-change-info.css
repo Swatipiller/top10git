@@ -1,0 +1,17 @@
+.emp-label {
+  text-align: end;
+}
+.textarea-height {
+  height: 200px;
+}
+.form-save-btn {
+  text-align: center;
+}
+
+.expertise-delete-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: 1;
+  transform: translate(50%, -50%);
+}

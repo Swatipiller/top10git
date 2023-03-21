@@ -1,0 +1,12 @@
+.sendRequestHeading .heading {
+  display: block;
+  text-align: center;
+  margin-top: -1rem;
+}
+.sendRequestImg img {
+  width: 280px;
+  height: 190px;
+  object-fit: cover;
+  margin-left: 15px;
+  margin-right: 15px;
+}

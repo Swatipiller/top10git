@@ -1,0 +1,154 @@
+.tab-btn-1,
+.btn.tab-btn-1:hover {
+  background: #fff;
+}
+/* .tab-btn-2,
+.btn.tab-btn-2:hover {
+  background: var(--bs-primary);
+  color: #fff;
+} */
+.compbanner-subheading {
+  color: #e1e1e1;
+  position: relative;
+  right: 14px;
+}
+.companybannersm-form {
+  width: 72%;
+  margin-top: 2rem;
+}
+.achievmentImgSec {
+  /* width: 50%; */
+  margin: 0 auto;
+}
+.achievmentImgSec img {
+  width: 100%;
+}
+.cs-width {
+  /* width: 38%; */
+  margin: 0 auto;
+}
+.text-1,
+.text-2,
+.text-3 {
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.3rem;
+  width: 60%;
+  margin: 0 auto;
+  color: #000;
+}
+.compy-usesDiscription img {
+  width: 100%;
+}
+.compy-usescards {
+  padding: 40px;
+  width: 85%;
+  background: #e4eafd;
+  object-fit: cover;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 9px;
+}
+.compy-usescards img {
+  width: 90%;
+  margin: 0 auto;
+}
+.c-costFontHeading {
+  font-size: 30px;
+  line-height: 2.5rem;
+}
+.c-cost-sm-font {
+  line-height: 1.6rem;
+}
+.c-cost-img-section {
+  width: 50%;
+  margin: 0 auto;
+}
+.c-cost-img {
+  width: 100%;
+  margin-top: -6rem;
+}
+
+.c-img {
+  width: 100%;
+  height: 350px;
+  border-radius: 9px;
+  object-fit: cover;
+}
+.reference-img-grp-section {
+  /* width: 70%; */
+  margin: 0 auto;
+}
+.c-overlay-wrapper {
+  position: relative;
+}
+
+.c-overlay-content {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  top: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  padding: 15px;
+  bottom: 0;
+  border-radius: 9px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.4rem;
+}
+
+.c-overlay-content:hover {
+  opacity: 1;
+}
+.c-adv-para {
+  font-size: 32px;
+  text-align: center;
+}
+
+.c-adv-img {
+  background: #e4eafd;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding: 25px;
+  margin-right: 2rem;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.16);
+  /* margin-top: -1rem; */
+}
+
+.c-adv-img img {
+  height: 50px;
+  width: 50px;
+}
+
+.c-adv-text {
+  line-height: 1.5rem;
+}
+
+.c-createFreeCompDiv {
+  width: 50%;
+  background: var(--bs-warning);
+  margin: 0 auto;
+  padding: 45px;
+  text-align: center;
+  border-radius: 9px;
+}
+.c-createFreeCompHeading {
+  font-size: 25px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 1rem;
+}
+.c-createFreeCompBtn {
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 16px;
+}
+.c-createFreeCompBtn:hover {
+  background: transparent;
+  color: #000;
+}

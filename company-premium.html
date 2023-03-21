@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Top 10 Diensten</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/customerdashboard.css" rel="stylesheet" />
+    <link href="./css/companydashboard.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/bootstrap-icons.css" />
+    <link href="./css/company-profile.css" rel="stylesheet" />
+    <link href="./css/company-premium.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body class="">
+    <header>
+      <nav
+        class="navbar navbar-expand-lg nav-bg-shadow customerNavbar dashboardNavbar fixed-top bg-white"
+      >
+        <div
+          class="container-fluid d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 transition-main-btn"
+        >
+          <a class="navbar-brand col-md-3" href="./index.html">
+            <img src="./images/top10Logo.png" alt="" class="logoimg" />
+          </a>
+          <button
+            class="navbar-toggler transition-btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end c-usericonname"
+            id="navbarSupportedContent"
+          >
+            <div class="dropdown c-dropdown">
+              <a
+                class="navbtn transition-main-btn d-flex align-items-center btn dropdown-toggle c-navbar"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="text-dark fw-medium">info@drivingschool.nl</span>
+                <img
+                  src="./images/profilepic.png"
+                  alt="info@drivingschool.nl"
+                  class="c-useraccount-img ms-2 text-primary"
+                />
+              </a>
+              <ul class="dropdown-menu mx-0 shadow w-220px">
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-accountsetting.html"
+                  >
+                    <i class="bi bi-person-gear fs-5 text-primary"></i>Account
+                    Settings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-notificationsetting.html"
+                  >
+                    <i class="bi bi-bell fs-5 text-primary"></i>Notification
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-automaticanswer.html"
+                  >
+                    <i class="bi bi-arrow-90deg-left fs-5 text-primary"></i
+                    >Automatic Answer
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-whatsapp-setting.html"
+                  >
+                    <i class="bi bi-whatsapp fs-5 text-primary"></i>WhatsApp
+                    Settings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center text-primary"
+                    href="/index.html"
+                    ><i class="bi bi-box-arrow-right fs-5 text-primary"></i
+                    >Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="sidebar-wrapper col-md-2 ps-0">
+          <div class="cd-leftside" id="sidebar">
+            <div class="">
+              <div class="custom-box-shadow">
+                <ul class="c-list-group">
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./companydashboard.html" class="c-sidebar-link"
+                      ><img
+                        src="./icons/dashboard_FILL0_wght400_GRAD0_opsz48 (2).png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Dashboard</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./company-requests.html" class="c-sidebar-link"
+                      ><img
+                        src="./images/send_to_mobile_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Requests</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./company-profile.html" class="c-sidebar-link"
+                      ><img
+                        src="./icons/person_FILL0_wght400_GRAD0_opsz48 (1).png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Profile</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./company-review.html" class="c-sidebar-link"
+                      ><img
+                        src="./images/reviews_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Reviews</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="#" class="c-sidebar-link active"
+                      ><img
+                        src="./images/workspace_premium_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Premium</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="#" class="c-sidebar-link"
+                      ><img
+                        src="./images/contact_support_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Help</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="c-moretextpara">
+                <p class="text-success fw-semibold mb-3 lh-base">
+                  Curious about what your profile looks like?
+                </p>
+                <!-- <p class="text-dark lh-sm text-black">
+                  Invite other company and both get 3 free requests!
+                </p> -->
+                <a
+                  href="/drivingschool-detail.html"
+                  class="c-sendpage btn btn-primary col-8 transition-btn fw-semibold"
+                >
+                  View Profile
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main class="col-md-10 offset-2 margin-top py-3 dashboard-main">
+          <div
+            class="customer-profile-topbar d-flex justify-content-between align-items-center"
+          >
+            <h1 class="h4 text-dark fw-semibold">Premium Setting</h1>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <nav class="nav company-profile-nav my-4">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item">
+                    <a
+                      href="#"
+                      class="company-subsection-heading nav-link text-primary fw-semibold"
+                      >Overview</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#service" class="nav-link fw-semibold">Services</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#field" class="nav-link fw-semibold">Field</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#weeklimitbreak" class="nav-link fw-semibold"
+                      >Week limit & break</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#billinginfo" class="nav-link fw-semibold"
+                      >Billing & payment option</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <section id="service" class="mb-5">
+                <p class="h5 text-warning fw-semibold my-3">Services</p>
+                <div
+                  class="premium-service-topbar d-flex justify-content-between"
+                >
+                  <p class="text-dark h6 fw-semibold mb-0">
+                    Services for which you receive request (2)
+                  </p>
+                  <a
+                    href="#"
+                    class="btn p-0 small text-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#servicemodal"
+                    >Change</a
+                  >
+                  <!-- <a href="#" class="btn p-0 small text-primary">Change</a> -->
+                </div>
+                <div class="company-premium-wrapper">
+                  <ul class="company-premium-list">
+                    <li class="company-premium-item my-3 text-muted">
+                      Driving License(B)
+                    </li>
+                    <li class="company-premium-item my-3 text-muted">
+                      Manual Transmission
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section id="field" class="mb-5">
+                <p class="h5 text-warning fw-semibold my-3">Field</p>
+                <div
+                  class="premium-service-topbar d-flex justify-content-between"
+                >
+                  <p class="text-dark h6 fw-semibold mb-0">Selected places</p>
+                  <a
+                    class="btn p-0 small text-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#changefield-modal"
+                    >Change</a
+                  >
+                  <!-- <a class="btn p-0 small text-primary">Change</a> -->
+                </div>
+                <div class="company-premium-wrapper">
+                  <ul class="company-premium-list">
+                    <li class="company-premium-item my-3 text-muted">
+                      Amsterdam
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section id="weeklimitbreak" class="mb-5">
+                <p class="h5 text-warning fw-semibold my-3">
+                  Week limit & break
+                </p>
+                <div
+                  class="premium-service-topbar d-flex justify-content-between"
+                >
+                  <p class="text-dark h6 fw-semibold mb-0">
+                    Maximum number of request per week
+                  </p>
+                  <a
+                    href="#"
+                    class="btn p-0 small text-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#weeklimitbreak-modal"
+                    >Change</a
+                  >
+                  <!-- <a href="#" class="btn p-0 small text-primary">Change</a> -->
+                </div>
+                <div class="company-premium-wrapper">
+                  <ul class="company-premium-list">
+                    <li class="company-premium-item my-3 text-muted">
+                      By email - maximum 1
+                    </li>
+                  </ul>
+                  <p class="text-dark h6 fw-semibold my-3">Requests received</p>
+                  <p class="text-muted ms-3">Active (no pause set)</p>
+                  <p class="text-dark h6 fw-semibold my-3">Premium</p>
+                  <p class="text-muted ms-3">Active</p>
+                </div>
+              </section>
+              <section id="billinginfo" class="mb-3">
+                <p class="h5 text-warning fw-semibold my-3">
+                  Billing and payment information
+                </p>
+                <div class="billing-info my-3">
+                  <p class="text-dark h6 fw-semibold mb-0">
+                    Payment method:<span class="fw-normal ms-2 text-muted"
+                      >Automatic Collection</span
+                    >
+                  </p>
+                </div>
+                <div class="drivingschool my-3">
+                  <p class="text-dark h6 fw-semibold mb-0">
+                    Driving School:<span class="fw-normal ms-2 text-muted"
+                      >ANWP Driving School</span
+                    >
+                  </p>
+                </div>
+                <div
+                  class="premium-card my-3 align-items-center d-flex justify-content-between"
+                >
+                  <p class="text-dark h6 fw-semibold mb-0">
+                    Card No.(last 4):<span class="fw-normal ms-2 text-muted"
+                      >2323</span
+                    >
+                  </p>
+                  <button class="btn p-0 text-primary small" id="billUpdatebtn">
+                    Update bank details
+                  </button>
+                </div>
+                <div class="updatebakdetailform d-none">
+                  <div class="mb-1">
+                    <label
+                      for="accountholder"
+                      class="form-label"
+                      visually-hidden
+                    ></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="accountholder"
+                      placeholder="Name of account holder"
+                    />
+                  </div>
+                  <div class="mb-1">
+                    <label
+                      for="ibannumber"
+                      class="form-label"
+                      visually-hidden
+                    ></label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="ibannumber"
+                      placeholder="IBAN Number"
+                    />
+                  </div>
+                  <div class="my-3 text-center updatebtn">
+                    <button
+                      class="btn btn-primary col-2 transition-btn fw-semibold"
+                    >
+                      Save
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="bill-address align-items-center d-flex justify-content-between"
+                >
+                  <p class="text-dark h6 fw-semibold mb-0">Billing address</p>
+
+                  <button
+                    class="text-primary small btn p-0 border-0"
+                    id="billChangebtn"
+                  >
+                    Change
+                  </button>
+                  <!-- <button class="text-primary small btn p-0 border-0">
+                    Change
+                  </button> -->
+                </div>
+
+                <div class="premium-bill-form my-2">
+                  <div class="premium-bill-info">
+                    <p
+                      class="align-items-center d-flex fw-normal h6 mb-0 my-3 text-muted"
+                    >
+                      <img
+                        class="bill-icon-size me-2"
+                        src="./icons/apartment_FILL0_wght400_GRAD0_opsz48 (1).png"
+                        alt=""
+                      />
+                      ANWP Driving School
+                    </p>
+                    <p
+                      class="align-items-center d-flex fw-normal h6 mb-0 my-3 text-muted"
+                    >
+                      <img
+                        class="bill-icon-size me-2"
+                        src="./icons/location_on_FILL0_wght400_GRAD0_opsz48 (1).png"
+                        alt=""
+                      />
+                      Kaupangstraat 110 District near Duurstede
+                    </p>
+                    <p
+                      class="align-items-center d-flex fw-normal h6 mb-0 my-3 text-muted"
+                    >
+                      <img
+                        class="bill-icon-size me-2"
+                        src="./images/mail_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                      />
+                      Kaupangstraat 110 District near Duurstede
+                    </p>
+                  </div>
+                  <form id="premiumbillForm" class="d-none">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="mb-2">
+                          <label for="companyname" class="form-label my-3"
+                            >Company name</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control custom-box-shadow"
+                            id="companyname"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-5">
+                        <div class="mb-2">
+                          <label for="street" class="form-label my-2"
+                            >Street</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control custom-box-shadow"
+                            id="street"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="mb-2">
+                          <label for="house" class="form-label my-2"
+                            >House No.</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control custom-box-shadow"
+                            id="house"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="mb-2">
+                          <label for="add" class="form-label my-2">Add.</label>
+                          <input
+                            type="text"
+                            class="form-control custom-box-shadow"
+                            id="add"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="mb-2">
+                          <label for="Postalcode" class="form-label my-2"
+                            >Postal code</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control custom-box-shadow"
+                            id="Postalcode"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="mb-2">
+                          <label for="Place" class="form-label my-2"
+                            >Place</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control custom-box-shadow"
+                            id="Place"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="mb-2">
+                          <label for="firstname" class="form-label my-2"
+                            >First name</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control custom-box-shadow"
+                            id="firstname"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="mb-2">
+                          <label for="lastname" class="form-label my-2"
+                            >Last name</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control custom-box-shadow"
+                            id="lastname"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="mb-2">
+                          <label for="email" class="form-label my-2"
+                            >Email</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control custom-box-shadow"
+                            id="email"
+                          />
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center text-center">
+                        <div class="col-md-2 mt-4">
+                          <button
+                            class="btn btn-outline-danger info-billing-btn mt-2 w-100 transition-btn fw-semibold"
+                            id="billCancelbtn"
+                            type="button"
+                          >
+                            Cancel
+                          </button>
+                        </div>
+                        <div class="col-md-2 mt-4 ms-4">
+                          <button
+                            class="btn btn-primary info-billing-btn mt-2 w-100 transition-btn fw-semibold"
+                          >
+                            Save
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </section>
+              <section id="invoice">
+                <p class="text-dark h6 fw-semibold">Invoices</p>
+                <div class="invoice-table">
+                  <table class="table custom-box-shadow custom-border-radius">
+                    <thead class="bg-primary text-light">
+                      <tr>
+                        <th>Month</th>
+                        <th>Invoice date</th>
+                        <th>Specification</th>
+                        <th>Status</th>
+                        <th>Download</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-muted">December 2022</td>
+                        <td class="text-muted">22/12/2022</td>
+                        <td class="text-primary">
+                          <a
+                            href="#"
+                            class="email-request-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#emailrequset"
+                            >4 email requests</a
+                          >
+                        </td>
+                        <td class="text-success">Paid</td>
+                        <td class="text-warning">PDF</td>
+                      </tr>
+                      <tr>
+                        <td class="text-muted">December 2022</td>
+                        <td class="text-muted">22/12/2022</td>
+                        <td class="text-primary">4 email requests</td>
+                        <td>
+                          <span
+                            class="p-0 btn btn-outline-primary px-2 rounded-2"
+                            >Pay</span
+                          >
+                        </td>
+                        <td class="text-warning">PDF</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- start week limit and break -->
+
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="weeklimitbreak-modal"
+      tabindex="-1"
+      aria-labelledby="weeklimitbreak-modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-primary border-0" data-bs-theme="dark">
+            <h1 class="modal-title fs-5" id="weeklimitbreak-modalLabel">
+              Week Limit and Break
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="weeklimitandbreak-des">
+              <p class="text-primary fst-italic fw-semibold">
+                Below you can set :
+              </p>
+              <ul class="weeklimitandbreak-group">
+                <li
+                  class="weeklimitandbreak-item text-primary fst-italic fw-semibold lh-base"
+                >
+                  Set the maximum number of requests you want to receive per
+                  week . Do you temporarily not want to receive requests? Then
+                  you can set a pause at the bottom of the page . You can also
+                  choose to show your website URL on your profile and set a
+                  maximum number of clicks to your website.
+                </li>
+                <li
+                  class="weeklimitandbreak-item text-primary fst-italic fw-semibold lh-base"
+                >
+                  Which contact options you want to offer. Do you only want to
+                  receive applications by e-mail or do you also want to receive
+                  applications by phone (recommended)
+                </li>
+              </ul>
+            </div>
+            <div class="weeklimitandbreak-range-wrapper">
+              <p class="text-dark fw-semibold">
+                Request by email
+                <span class="text-muted"
+                  >(Price per telephone request 15.)</span
+                >
+              </p>
+              <div class="weeklimitandbreak-range1">
+                <div class="d-flex">
+                  <input
+                    type="range"
+                    class="form-range w-50"
+                    value="0"
+                    min="0"
+                    max="5"
+                    id="customRange1"
+                  />
+                  <label
+                    for="customRange1"
+                    class="form-label form-label fw-semibold m-0 ms-4 text-primary"
+                    >Max. 1 per week</label
+                  >
+                </div>
+                <div class="weeklimitandbreak-checkbox">
+                  <div class="form-check mt-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="rangecheck"
+                    />
+                    <label
+                      class="form-check-label text-dark mt-1 ms-2"
+                      for="rangecheck"
+                    >
+                      Also receive telephone inquiries
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <p class="text-dark fw-semibold mt-4">
+                Number of clicks to your website
+                <span class="text-muted">(Price per click 2.50)</span>
+              </p>
+              <div class="weeklimitandbreak-range2">
+                <div class="d-flex">
+                  <input
+                    type="range"
+                    class="form-range w-50"
+                    value="0"
+                    min="0"
+                    max="5"
+                    id="customRange2"
+                  />
+                  <label
+                    for="customRange2"
+                    class="form-label form-label fw-semibold m-0 ms-4 text-primary"
+                    >Max. 0 per week</label
+                  >
+                </div>
+                <div class="weeklimitandbreak-checkbox">
+                  <p class="text-dark fw-semibold mt-4">
+                    I temporarily do not want any leads
+                    <span class="text-muted">(Active-no pause set)</span>
+                  </p>
+                  <div class="form-check mt-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="rangecheck1"
+                    />
+                    <label
+                      class="form-check-label text-dark mt-1 ms-2"
+                      for="rangecheck1"
+                    >
+                      Set pause
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end week limit and break -->
+
+    <!-- start-change-field-modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="changefield-modal"
+      tabindex="-1"
+      aria-labelledby="changefield-modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-primary border-0" data-bs-theme="dark">
+            <h1 class="modal-title fs-5">Change Field</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="fst-italic fw-normal fw-semibold h6 text-primary">
+              Below you can set for which places you want to receive requests.
+            </p>
+            <p class="text-dark h6 fw-semibold mt-4">
+              Driving School<span class="h6 text-muted"
+                >: 2 places- 2 services</span
+              >
+            </p>
+            <div class="row">
+              <div class="col-5">
+                <div class="driing-list-check">
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="Friesland"
+                      checked
+                    />
+                    <label class="form-check-label" for="Friesland">
+                      Friesland
+                    </label>
+                  </div>
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="Groningen"
+                    />
+                    <label class="form-check-label" for="Groningen">
+                      Groningen
+                    </label>
+                  </div>
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="Drenthe"
+                    />
+                    <label class="form-check-label" for="Drenthe">
+                      Drenthe
+                    </label>
+                  </div>
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="NorthHolland"
+                    />
+                    <label class="form-check-label" for="NorthHolland">
+                      North Holland
+                    </label>
+                  </div>
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="Flevoland"
+                    />
+                    <label class="form-check-label" for="Flevoland">
+                      Flevoland
+                    </label>
+                  </div>
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="Gelderland"
+                    />
+                    <label class="form-check-label" for="Gelderland">
+                      Gelderland
+                    </label>
+                  </div>
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="SouthHolland"
+                    />
+                    <label class="form-check-label" for="SouthHolland">
+                      South Holland
+                    </label>
+                  </div>
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="Limburg"
+                    />
+                    <label class="form-check-label" for="Limburg">
+                      Limburg
+                    </label>
+                  </div>
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="Zealand"
+                    />
+                    <label class="form-check-label" for="Zealand">
+                      Zealand
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-7">
+                <div class="company-premium-map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1517882.449819482!2d5.295653508519524!3d51.33074444255925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c3db87e4bb%3A0xb3a175ceffbd0a9f!2sNetherlands!5e0!3m2!1sen!2sin!4v1678879325303!5m2!1sen!2sin"
+                    width="450"
+                    height="270"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <div class="company-premium-btn-section text-center">
+                  <button
+                    type="button"
+                    class="btn btn-primary col-3 mt-3 transition-btn fw-semibold"
+                  >
+                    Save
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end-change-field-modal -->
+
+    <!-- start service-modal -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="servicemodal"
+      tabindex="-1"
+      aria-labelledby="servicemodalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="bg-primary border-0 modal-header" data-bs-theme="dark">
+            <h1 class="modal-title fs-5" id="servicemodalLabel">
+              Change Services
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="fst-italic fw-normal fw-semibold h6 text-primary">
+              Below you can set for which services you want to receive requests.
+            </p>
+            <p class="text-dark h6 fw-semibold mt-4">
+              Driving School<span class="h6 text-muted"
+                >: 2 services selected</span
+              >
+            </p>
+
+            <div class="driving-license-list">
+              <p class="text-warning h6 fw-semibold mt-3 mb-3">
+                Driving License
+                <span class="small text-primary"
+                  >(Price per request is 15.
+                  <span class="text-muted"> (excl. VAT)</span>)</span
+                >
+              </p>
+              <div class="form-check my-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="driving-license"
+                  id="Driving"
+                />
+                <label class="form-check-label" for="Driving">
+                  Driving License (B)
+                </label>
+              </div>
+              <div class="form-check my-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="driving-license"
+                  id="scooter"
+                />
+                <label class="form-check-label" for="scooter">
+                  Scooter, moped or Light moped (AM)
+                </label>
+              </div>
+              <div class="form-check my-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="driving-license"
+                  id="Motorcycle"
+                />
+                <label class="form-check-label" for="Motorcycle">
+                  Motorcycle License (A, A1, A2 )
+                </label>
+              </div>
+              <div class="form-check my-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="driving-license"
+                  id="Trailer"
+                />
+                <label class="form-check-label" for="Trailer">
+                  Trailer driving license ( BE, B+)
+                </label>
+              </div>
+              <div class="form-check my-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="driving-license"
+                  id="Truck"
+                />
+                <label class="form-check-label" for="Truck">
+                  Truck driving license ( C, CE, C1, C1E)
+                </label>
+              </div>
+              <div class="form-check my-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="driving-license"
+                  id="Bus"
+                />
+                <label class="form-check-label" for="Bus">
+                  Bus driving license (D, DE, D1, D1E )
+                </label>
+              </div>
+              <div class="form-check my-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="driving-license"
+                  id="Tractor"
+                />
+                <label class="form-check-label" for="Tractor">
+                  Tractor driving license ( T )
+                </label>
+              </div>
+            </div>
+            <div class="cartype-list">
+              <p class="text-warning h6 fw-semibold mt-3 mb-3">Type of car</p>
+              <div class="form-check my-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="cartype"
+                  id="Manual"
+                />
+                <label class="form-check-label" for="Manual">
+                  Manual Transmission
+                </label>
+              </div>
+              <div class="form-check my-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="cartype"
+                  id="Automatic"
+                />
+                <label class="form-check-label" for="Automatic">
+                  Automatic
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- ens service-modal -->
+
+    <!-- modal-email-request -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="emailrequset"
+      tabindex="-1"
+      aria-labelledby="emailrequsetLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="bg-primary border-0 modal-header" data-bs-theme="dark">
+            <h1 class="modal-title fs-5" id="emailrequsetLabel">
+              Email requests
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <table class="table table-borderless text-center">
+              <thead>
+                <tr>
+                  <th><span class="small text-muted fw-normal">When</span></th>
+                  <th>
+                    <span class="small text-muted fw-normal">Employ</span>
+                  </th>
+                  <th><span class="small text-muted fw-normal">Place</span></th>
+                  <th>
+                    <span class="small text-muted fw-normal">Amount</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="text-dark fw-semibold"> 22/12/2022</span>
+                  </td>
+                  <td>
+                    <span class="text-dark fw-semibold">
+                      Driving school License(B)</span
+                    >
+                  </td>
+                  <td><span class="text-dark fw-semibold"> Tiel</span></td>
+                  <td>
+                    <span class="text-dark fw-semibold"> $15.00</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="text-dark fw-semibold"> 22/12/2022</span>
+                  </td>
+                  <td>
+                    <span class="text-dark fw-semibold">
+                      Driving school License(B)</span
+                    >
+                  </td>
+                  <td><span class="text-dark fw-semibold"> Tiel</span></td>
+                  <td>
+                    <span class="text-dark fw-semibold"> $15.00</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="text-dark fw-semibold"> 22/12/2022</span>
+                  </td>
+                  <td>
+                    <span class="text-dark fw-semibold">
+                      Driving school License(B)</span
+                    >
+                  </td>
+                  <td><span class="text-dark fw-semibold"> Tiel</span></td>
+                  <td>
+                    <span class="text-dark fw-semibold"> $15.00</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="text-dark fw-semibold"> 22/12/2022</span>
+                  </td>
+                  <td>
+                    <span class="text-dark fw-semibold">
+                      Driving school License(B)</span
+                    >
+                  </td>
+                  <td><span class="text-dark fw-semibold"> Tiel</span></td>
+                  <td>
+                    <span class="text-dark fw-semibold"> $15.00</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- end-modal-email-request -->
+
+    <!-- <div id="loading">
+      <img src="./images/top10Logo.png" alt="" />
+      <div class="loader">Loading...</div>
+    </div> -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/loader.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#billChangebtn").click(function () {
+          $(".premium-bill-info").addClass("d-none");
+          $("#premiumbillForm").removeClass("d-none");
+        });
+        $("#billCancelbtn").click(function () {
+          $("#premiumbillForm").addClass("d-none");
+          $(".premium-bill-info").removeClass("d-none");
+        });
+      });
+      $(document).ready(function () {
+        $("#billUpdatebtn").click(function () {
+          $(".updatebakdetailform").removeClass("d-none");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Top 10 Diensten</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/bootstrap-icons.css" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/customerdashboard.css" rel="stylesheet" />
+    <link href="./css/companydashboard.css" rel="stylesheet" />
+    <link href="./css/companyrequests.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!-- <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script> -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body class="companyrequest">
+    <header>
+      <nav
+        class="navbar navbar-expand-lg nav-bg-shadow customerNavbar dashboardNavbar fixed-top bg-white"
+      >
+        <div
+          class="container-fluid d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 transition-main-btn"
+        >
+          <a class="navbar-brand col-md-3" href="./index.html">
+            <img src="./images/top10Logo.png" alt="" class="logoimg" />
+          </a>
+          <button
+            class="navbar-toggler transition-btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end c-usericonname"
+            id="navbarSupportedContent"
+          >
+            <div class="dropdown c-dropdown">
+              <a
+                class="navbtn transition-main-btn d-flex align-items-center btn dropdown-toggle c-navbar"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="text-dark fw-medium">info@drivingschool.nl</span>
+                <img
+                  src="./images/profilepic.png"
+                  alt="info@drivingschool.nl"
+                  class="c-useraccount-img ms-2 text-primary"
+                />
+              </a>
+              <ul class="dropdown-menu mx-0 shadow w-220px">
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-accountsetting.html"
+                  >
+                    <i class="bi bi-person-gear fs-5 text-primary"></i>Account
+                    Settings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-notificationsetting.html"
+                  >
+                    <i class="bi bi-bell fs-5 text-primary"></i>Notification
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-automaticanswer.html"
+                  >
+                    <i class="bi bi-arrow-90deg-left fs-5 text-primary"></i
+                    >Automatic Answer
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-whatsapp-setting.html"
+                  >
+                    <i class="bi bi-whatsapp fs-5 text-primary"></i>WhatsApp
+                    Settings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center text-primary"
+                    href="/index.html"
+                    ><i class="bi bi-box-arrow-right fs-5 text-primary"></i
+                    >Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="sidebar-wrapper col-md-2 ps-0">
+          <div class="cd-leftside" id="sidebar">
+            <div class="">
+              <div class="custom-box-shadow">
+                <ul class="c-list-group">
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./companydashboard.html" class="c-sidebar-link"
+                      ><img
+                        src="./icons/dashboard_FILL0_wght400_GRAD0_opsz48 (2).png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Dashboard</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a
+                      href="./company-requests.html"
+                      class="c-sidebar-link active"
+                      ><img
+                        src="./images/send_to_mobile_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Requests</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="/company-profile.html" class="c-sidebar-link"
+                      ><img
+                        src="./icons/person_FILL0_wght400_GRAD0_opsz48 (1).png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Profile</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./company-review.html" class="c-sidebar-link"
+                      ><img
+                        src="./images/reviews_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Reviews</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./company-premium.html" class="c-sidebar-link"
+                      ><img
+                        src="./images/workspace_premium_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Premium</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="#" class="c-sidebar-link"
+                      ><img
+                        src="./images/contact_support_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Help</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="c-moretextpara">
+                <p class="text-warning fw-semibold mb-3">
+                  Receive free requests
+                </p>
+                <p class="text-dark lh-sm text-black">
+                  Invite other company and both get 3 free requests!
+                </p>
+                <a
+                  href="#"
+                  class="c-sendpage btn btn-primary col-8 transition-btn fw-semibold"
+                >
+                  Invite
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main class="col-md-10 offset-2 margin-top py-3 dashboard-main">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="applicant-request d-flex flex-column h-100">
+                <div class="applicant-request-top">
+                  <h1 class="h5 text-dark fw-semibold mb-4">
+                    Total requests : 1
+                    <span class="text-muted small">(In last 30 days)</span>
+                  </h1>
+                  <div class="row active-request-row justify-content-between">
+                    <div class="col-md-8">
+                      <div class="active-request-item">
+                        <div
+                          class="align-items-center d-flex r-applicationchoose"
+                        >
+                          <span
+                            class="applicantname fw-semibold fs-5 text-primary me-4"
+                            >John</span
+                          >
+                          <div class="dropdown position-static">
+                            <button
+                              class="btn addnewtag-dropdown-toggle px-0 border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              data-bs-auto-close="false"
+                              aria-expanded="false"
+                              data-bs-boundary="viewport"
+                              style="pointer-events: none"
+                            >
+                              &nbsp;
+                            </button>
+                            <form
+                              class="dropdown-menu p-0 addnewtag-dropdown"
+                              id="addnewtag-dropdown"
+                            >
+                              <div class="card border-0">
+                                <div
+                                  class="card-header fw-semibold py-3 d-flex align-items-center justify-content-between"
+                                >
+                                  Add your own label
+
+                                  <button
+                                    class="btn btn-close ms-4"
+                                    onclick="closeDropdown('.addnewtag-dropdown-toggle')"
+                                    type="button"
+                                  ></button>
+                                </div>
+                                <div
+                                  class="card-body p-2 addTag-card-body fw-semibold small"
+                                >
+                                  <div class="">
+                                    <label for="labelname" class="form-label"
+                                      >Label name</label
+                                    >
+                                    <input
+                                      type="email"
+                                      class="form-control"
+                                      id="labelname"
+                                    />
+                                  </div>
+                                </div>
+                                <div
+                                  class="card-footer bg-white p-0 pb-1 border-0"
+                                >
+                                  <div class="d-grid justify-content-center">
+                                    <button
+                                      type="submit"
+                                      class="btn card-link text-primary text-decoration-none fw-medium btn-lg"
+                                    >
+                                      Save
+                                    </button>
+                                    <button
+                                      type="button"
+                                      class="btn card-link text-danger text-decoration-none fw-medium m-0 btn-sm"
+                                      onclick="closeDropdown('.addnewtag-dropdown-toggle'); openDropdown('.addtag-dropdown-toggle')"
+                                    >
+                                      Cancel
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="dropdown position-static">
+                            <button
+                              class="btn btn-outline-secondary px-4 addtag-dropdown-toggle"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                              data-bs-boundary="viewport"
+                              data-bs-auto-close="false"
+                            >
+                              + Add Tag
+                            </button>
+
+                            <form
+                              class="dropdown-menu p-0 addtag-dropdown"
+                              id="addtag-dropdown"
+                            >
+                              <div class="card border-0">
+                                <div
+                                  class="card-header fw-semibold py-3 d-flex align-items-center justify-content-between"
+                                >
+                                  Choose a label
+
+                                  <button
+                                    class="btn btn-close ms-4"
+                                    onclick="closeDropdown('.addtag-dropdown-toggle')"
+                                    type="button"
+                                  ></button>
+                                </div>
+                                <div
+                                  class="card-body p-2 addTag-card-body fw-semibold small"
+                                >
+                                  <div
+                                    class="addtag-row row g-0 lh-sm justify-content-between align-items-center mb-1"
+                                  >
+                                    <div class="form-check col-10">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="addtagradios"
+                                        id="notag"
+                                        checked
+                                      />
+                                      <label
+                                        class="form-check-label me-4 text-primary"
+                                        for="notag"
+                                      >
+                                        No Tag
+                                      </label>
+                                    </div>
+                                    <div class="col-2">
+                                      <button
+                                        class="btn p-0 fs-5 text-secondary"
+                                      >
+                                        <ion-icon
+                                          name="trash-outline"
+                                        ></ion-icon>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="addtag-row row g-0 lh-sm justify-content-between align-items-center mb-1"
+                                  >
+                                    <div class="form-check col-10">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="addtagradios"
+                                        id="addtagwaitingforanswer"
+                                      />
+                                      <label
+                                        class="form-check-label me-4 text-danger"
+                                        for="addtagwaitingforanswer"
+                                      >
+                                        Waiting for answer
+                                      </label>
+                                    </div>
+                                    <div class="col-2">
+                                      <button
+                                        class="btn p-0 fs-5 text-secondary"
+                                      >
+                                        <ion-icon
+                                          name="trash-outline"
+                                        ></ion-icon>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="addtag-row row g-0 lh-sm justify-content-between align-items-center mb-1"
+                                  >
+                                    <div class="form-check col-10">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="addtagradios"
+                                        id="addtagstillcalling"
+                                      />
+                                      <label
+                                        class="form-check-label me-4 text-warning"
+                                        for="addtagstillcalling"
+                                      >
+                                        Still calling
+                                      </label>
+                                    </div>
+                                    <div class="col-2">
+                                      <button
+                                        class="btn p-0 fs-5 text-secondary"
+                                      >
+                                        <ion-icon
+                                          name="trash-outline"
+                                        ></ion-icon>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="addtag-row row g-0 lh-sm justify-content-between align-items-center mb-1"
+                                  >
+                                    <div class="form-check col-10">
+                                      <input
+                                        class="form-check-input"
+                                        type="radio"
+                                        name="addtagradios"
+                                        id="addtagstillappointmentmade"
+                                      />
+                                      <label
+                                        class="form-check-label me-4 text-success"
+                                        for="addtagstillappointmentmade"
+                                      >
+                                        Appointment made
+                                      </label>
+                                    </div>
+                                    <div class="col-2">
+                                      <button
+                                        class="btn p-0 fs-5 text-secondary"
+                                      >
+                                        <ion-icon
+                                          name="trash-outline"
+                                        ></ion-icon>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="addtag-row row g-0 lh-sm justify-content-between align-items-center mb-1 dropdown"
+                                  >
+                                    <button
+                                      type="button"
+                                      class="btn p-0 text-start text-primary small fw-semibold btn-sm border-0"
+                                      id="addownlabel-toggle"
+                                      onclick="closeDropdown('.addtag-dropdown-toggle'); openDropdown('.addnewtag-dropdown-toggle')"
+                                    >
+                                      <ion-icon name="add-outline"></ion-icon>
+                                      Add your own label
+                                    </button>
+                                  </div>
+                                </div>
+                                <div
+                                  class="card-footer bg-white p-0 pb-1 border-0"
+                                >
+                                  <div class="d-grid justify-content-center">
+                                    <button
+                                      type="submit"
+                                      class="btn card-link text-primary text-decoration-none fw-medium"
+                                    >
+                                      Save
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <p class="request-for text-dark mt-3 fw-semibold">
+                          Driving School - Driver's License B
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-end">
+                      <div class="dropdown dropstart">
+                        <button
+                          type="button"
+                          class="btn filter-icon p-1 text-primary fw-semibold"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          data-bs-auto-close="outside"
+                        >
+                          Filter
+                          <img
+                            src="./icons/filter-icon.png"
+                            class="ms-1"
+                            alt=""
+                          />
+                        </button>
+                        <form
+                          class="dropdown-menu p-0 filter-dropdown"
+                          id="filter-dropdown"
+                        >
+                          <div class="card border-0">
+                            <div
+                              data-bs-theme="dark"
+                              class="card-header bg-primary text-white fw-semibold py-3 d-flex align-items-center justify-content-between"
+                            >
+                              Filter your request
+
+                              <button
+                                class="btn btn-close filterDropdownCloseBtn"
+                                onclick="closeDropdown('.filter-icon')"
+                                type="button"
+                              ></button>
+                            </div>
+                            <div class="card-body p-2 filter-card-body">
+                              <div
+                                class="accordion accordion-flush"
+                                id="filterDropdownAccordion"
+                              >
+                                <!-- accordion one  -->
+                                <div
+                                  class="accordion-item rounded custom-box-shadow border-bottom-0 mb-2"
+                                >
+                                  <h2
+                                    class="accordion-header"
+                                    id="accordion-item-phonecalls"
+                                  >
+                                    <button
+                                      class="accordion-button bg-white rounded"
+                                      type="button"
+                                      data-bs-toggle="collapse"
+                                      data-bs-target="#accordionphonecalls-collapse"
+                                      aria-expanded="true"
+                                      aria-controls="accordionphonecalls-collapse"
+                                    >
+                                      <h6
+                                        class="dropdown-header text-black p-0"
+                                      >
+                                        Phone calls
+                                      </h6>
+                                    </button>
+                                  </h2>
+                                  <div
+                                    id="accordionphonecalls-collapse"
+                                    class="accordion-collapse collapse show"
+                                    aria-labelledby="accordion-item-phonecalls"
+                                  >
+                                    <div class="accordion-body pt-0">
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="missedcall"
+                                          checked
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="missedcall"
+                                        >
+                                          Missed calls
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="answeredcall"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="answeredcall"
+                                        >
+                                          Answered calls
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- accordion two  -->
+                                <div
+                                  class="accordion-item rounded custom-box-shadow border-bottom-0 mb-2"
+                                >
+                                  <h2
+                                    class="accordion-header"
+                                    id="accordion-item-requestedmail"
+                                  >
+                                    <button
+                                      class="accordion-button bg-white rounded collapsed"
+                                      type="button"
+                                      data-bs-toggle="collapse"
+                                      data-bs-target="#accordion-requestedmail-collapse"
+                                      aria-expanded="false"
+                                      aria-controls="accordion-requestedmail-collapse"
+                                    >
+                                      <h6
+                                        class="dropdown-header text-black p-0"
+                                      >
+                                        Requested mail
+                                      </h6>
+                                    </button>
+                                  </h2>
+                                  <div
+                                    id="accordion-requestedmail-collapse"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="accordion-item-requestedmail"
+                                  >
+                                    <div class="accordion-body pt-0">
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="unread"
+                                          checked
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="unread"
+                                        >
+                                          Unread (0)
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="waitingforanswer"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="waitingforanswer"
+                                        >
+                                          Waiting for your answer (0)
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="waitingforcustomer"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="waitingforcustomer"
+                                        >
+                                          Waiting for customer response (0)
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="companychosen"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="companychosen"
+                                        >
+                                          Your company chosen (0)
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="closed"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="closed"
+                                        >
+                                          Request closed (0)
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- accordion three  -->
+                                <div
+                                  class="accordion-item rounded custom-box-shadow border-bottom-0 mb-2"
+                                >
+                                  <h2
+                                    class="accordion-header"
+                                    id="accordion-item-clickstowebsite"
+                                  >
+                                    <button
+                                      class="accordion-button bg-white rounded collapsed"
+                                      type="button"
+                                      data-bs-toggle="collapse"
+                                      data-bs-target="#accordion-clickstowebsite-collapse"
+                                      aria-expanded="false"
+                                      aria-controls="accordion-clickstowebsite-collapse"
+                                    >
+                                      <h6
+                                        class="dropdown-header text-black p-0"
+                                      >
+                                        Clicks to website
+                                      </h6>
+                                    </button>
+                                  </h2>
+                                  <div
+                                    id="accordion-clickstowebsite-collapse"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="accordion-item-clickstowebsite"
+                                  >
+                                    <div class="accordion-body pt-0">
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="clickstowebsite"
+                                          checked
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="clickstowebsite"
+                                        >
+                                          Clicks to website (0)
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- accordion four  -->
+                                <div
+                                  class="accordion-item rounded custom-box-shadow border-bottom-0 mb-2"
+                                >
+                                  <h2
+                                    class="accordion-header"
+                                    id="accordion-item-tags"
+                                  >
+                                    <button
+                                      class="accordion-button bg-white rounded collapsed"
+                                      type="button"
+                                      data-bs-toggle="collapse"
+                                      data-bs-target="#accordion-tags-collapse"
+                                      aria-expanded="false"
+                                      aria-controls="accordion-tags-collapse"
+                                    >
+                                      <h6
+                                        class="dropdown-header text-black p-0"
+                                      >
+                                        Tags
+                                      </h6>
+                                    </button>
+                                  </h2>
+                                  <div
+                                    id="accordion-tags-collapse"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="accordion-item-tags"
+                                  >
+                                    <div class="accordion-body pt-0">
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="tagwaitingforanswer"
+                                          checked
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="tagwaitingforanswer"
+                                        >
+                                          Waiting for answer
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="tag-stillcalling"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="tag-stillcalling"
+                                        >
+                                          Still calling
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="tag-appointmentmade"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="tag-appointmentmade"
+                                        >
+                                          Appointment made
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- accordion five  -->
+                                <div
+                                  class="accordion-item rounded custom-box-shadow border-bottom-0"
+                                >
+                                  <h2
+                                    class="accordion-header"
+                                    id="accordion-item-tags"
+                                  >
+                                    <button
+                                      class="accordion-button bg-white rounded collapsed"
+                                      type="button"
+                                      data-bs-toggle="collapse"
+                                      data-bs-target="#accordion-applicationdate-collapse"
+                                      aria-expanded="false"
+                                      aria-controls="accordion-applicationdate-collapse"
+                                    >
+                                      <h6
+                                        class="dropdown-header text-black p-0"
+                                      >
+                                        Application date
+                                      </h6>
+                                    </button>
+                                  </h2>
+                                  <div
+                                    id="accordion-applicationdate-collapse"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="accordion-item-applicationdate"
+                                  >
+                                    <div class="accordion-body pt-0">
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="today"
+                                          checked
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="today"
+                                        >
+                                          Today (0)
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="last7days"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="last7days"
+                                        >
+                                          Last 7 days (0)
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="last30days"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="last30days"
+                                        >
+                                          Last 30 days (0)
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="last90days"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="last90days"
+                                        >
+                                          Last 90 days (0)
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id="finalyear"
+                                        />
+                                        <label
+                                          class="form-check-label"
+                                          for="finalyear"
+                                        >
+                                          Final year (10)
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer bg-white p-0 pb-1 border-0">
+                              <div
+                                class="mt-3 d-grid gap-1 justify-content-center"
+                              >
+                                <button
+                                  type="submit"
+                                  class="btn btn-primary fw-medium px-5"
+                                >
+                                  Filter
+                                </button>
+                                <button
+                                  type="reset"
+                                  class="btn card-link text-danger text-decoration-none fw-medium"
+                                >
+                                  Reset
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <p class="small text-muted mt-2 lh-base">
+                    Here comes the list of all active applications you received.
+                    There are currently no active applications.
+                  </p> -->
+                </div>
+                <div class="applicant-request-main">
+                  <div
+                    class="request-group card border-0 bg-body-secondary text-black"
+                  >
+                    <div class="card-body">
+                      <h4 class="h6 mb-3">All requests</h4>
+                      <div class="request-item mb-3">
+                        <p class="request-name mb-2">Chyara</p>
+                        <p class="request-type mb-2">
+                          DRIVING SCHOOL (DRIVER'S LICENSE (B))
+                        </p>
+                        <p class="mb-0">1-03-23</p>
+                      </div>
+                      <div class="request-item">
+                        <p class="request-name mb-2">Chyara</p>
+                        <p class="request-type mb-2">
+                          DRIVING SCHOOL (DRIVER'S LICENSE (B))
+                        </p>
+                        <p class="mb-0">1-03-23</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <p class="text-dark fw-semibold">Details</p>
+              <div class="notificationdiv">
+                <div
+                  class="card notificationmaincard custom-box-shadow border-0"
+                >
+                  <div class="card-body">
+                    <div class="card notificationchildcard custom-box-shadow">
+                      <div class="card-body">
+                        <p
+                          class="notificationchildcardpara text-primary fw-semibold"
+                        >
+                          Request from John
+                        </p>
+                        <p class="notificationchildcardsubpara">
+                          Yesterday 08:43
+                        </p>
+                        <div class="notificationcardtable">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <th class="border-0" scope="row">
+                                  Type of application-
+                                </th>
+                                <td class="border-0">Price request</td>
+                                <!-- <td class="border-0"></td>
+                                      <td class="border-0"></td> -->
+                              </tr>
+                              <tr>
+                                <th class="border-0" scope="row">
+                                  Application for-
+                                </th>
+                                <td class="border-0">Driving School</td>
+                              </tr>
+                              <tr>
+                                <th class="border-0" scope="row">Name-</th>
+                                <td class="border-0">John</td>
+                              </tr>
+                              <tr>
+                                <th class="border-0" scope="row">Place-</th>
+                                <td class="border-0">Amsterdam</td>
+                              </tr>
+                              <tr>
+                                <th class="border-0" scope="row">
+                                  Desired response time-
+                                </th>
+                                <td class="border-0">Within one working day</td>
+                              </tr>
+                              <tr>
+                                <th class="border-0" scope="row">
+                                  Requested On-
+                                </th>
+                                <td class="border-0">February 9,2023</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="notifyday text-center text-primary small">
+                      Yesterday 08:43
+                    </p>
+                    <p class="text-muted text-center mt-4">
+                      Request no longer active, customer has already made a
+                      choice.
+                    </p>
+                    <p class="notifyday text-center text-primary small">
+                      Today
+                    </p>
+                    <div
+                      class="request-reply-card company-reply card custom-box-shadow ms-5 border-0"
+                    >
+                      <div class="card-body">
+                        <p>Dear John</p>
+                        <p>
+                          Thank you for your interest in Driving School Next
+                          Level. We have received your request and will contact
+                          you as soon as possible.
+                        </p>
+                        <p class="mb-1">Sincerely,</p>
+                        <p>Driving School Next Level</p>
+                      </div>
+                    </div>
+                    <p class="notifyday text-end text-primary small">
+                      Yesterday 08:43
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-applicant-wrapper mt-4">
+            <p class="text-dark fw-semibold">Contact the Applicant</p>
+            <p class="text-muted small">
+              Set your automatic reply
+              <a href="#" class="text-primary">here!</a>
+            </p>
+            <form>
+              <div class="">
+                <textarea
+                  class="form-control contactmessage"
+                  placeholder="Type message here..."
+                  id="contactmessage"
+                ></textarea>
+                <label class="visually-hidden" for="contactmessage"
+                  >Comments</label
+                >
+              </div>
+              <div class="mt-3">
+                <div
+                  class="btn-company-request-wrapper d-flex justify-content-between"
+                >
+                  <!-- <button class="btn btn-outline-secondary">
+                    <i class="bi bi-paperclip attachment-icon"></i>
+                    Add attachment
+                  </button> -->
+                  <div class="">
+                    <!-- <label for="formFile" class="form-label"
+                      ><i class="bi bi-paperclip attachment-icon"></i> Add
+                      attachment</label
+                    > -->
+                    <input class="form-control" type="file" id="formFile" />
+                  </div>
+                  <div class="btn-company-request">
+                    <button
+                      class="btn btn-block btn-primary transition-btn fw-semibold"
+                    >
+                      <i class="bi bi-envelope message-icon me-1"></i>
+                      Send Message
+                    </button>
+
+                    <a
+                      href="#"
+                      class="btn btn-block btn-outline-primary transition-btn fw-semibold ms-2"
+                      ><i class="bi bi-telephone phone-icon me-1"></i>Call
+                      Customer</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- <div id="loading">
+      <img src="./images/top10Logo.png" alt="" />
+      <div class="loader">Loading...</div>
+    </div> -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/loader.js"></script>
+    <script>
+      function closeDropdown(el) {
+        $(el).dropdown("hide");
+      }
+
+      function openDropdown(el) {
+        $(el).dropdown("show");
+      }
+
+      $(document).ready(function () {});
+    </script>
+  </body>
+</html>

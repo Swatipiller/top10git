@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Top 10 Diensten</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link href="./css/verify.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <main class="verify-wrapper">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-md-6 verify-left-part">
+            <div class="verify-left">
+              <a href="/index.html">
+                <img src="./images/top10Logo.png" alt="Top 10" />
+              </a>
+              <p class="text-primary mt-3 mb-0">
+                Compare and Contact the local companies directly
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h1 class="h3">Verification Code</h1>
+            <form>
+              <div class="mb-3">
+                <form class="licensetype-form-modal">
+                  <div
+                    id="otpHelp"
+                    class="form-text impt-text mb-4 mt-4 fw-semibold text-dark"
+                  >
+                    Enter the verification code sent to your mobile number
+                    8989898989
+                  </div>
+                  <div class="input-otpbox" id="otpForm">
+                    <div class="position-relative">
+                      <div
+                        id="otp"
+                        class="inputs text-center d-flex flex-row mt-2"
+                      >
+                        <input
+                          class="me-4 text-center custom-box-shadow form-control rounded"
+                          type="text"
+                          id="otpfirst"
+                          maxlength="1"
+                        />
+                        <input
+                          class="me-4 text-center custom-box-shadow form-control rounded"
+                          type="text"
+                          id="otpsecond"
+                          maxlength="1"
+                        />
+                        <input
+                          class="me-4 text-center custom-box-shadow form-control rounded"
+                          type="text"
+                          id="otpthird"
+                          maxlength="1"
+                        />
+                        <input
+                          class="me-4 text-center custom-box-shadow form-control rounded"
+                          type="text"
+                          id="otpfourth"
+                          maxlength="1"
+                        />
+                        <input
+                          class="me-4 text-center custom-box-shadow form-control rounded"
+                          type="text"
+                          id="otpfifth"
+                          maxlength="1"
+                        />
+                        <input
+                          class="text-center custom-box-shadow form-control rounded"
+                          type="text"
+                          id="otpsixth"
+                          maxlength="1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="resendCodeDiv mt-2">
+                    <span class="time">00.15</span>
+                    <a href="#" class="resendcode">Resend code</a>
+                  </div>
+                  <!-- <div class="drivinglicense-btn transition-main-btn my-5">
+                    <button
+                      id="verifybtn"
+                      type="button"
+                      class="btn btn-primary transition-btn"
+                    >
+                      Verify
+                    </button>
+                  </div> -->
+                </form>
+              </div>
+              <a
+                href="/customerdashboard.html"
+                class="btn btn-primary w-25 fw-semibold transition-btn mt-4"
+              >
+                Verify
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <div id="loading">
+      <img src="./images/top10Logo.png" alt="" />
+      <div class="loader">Loading...</div>
+    </div> -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/otp.js"></script>
+    <!-- <script src="./js/loader.js"></script> -->
+  </body>
+</html>

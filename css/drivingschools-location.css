@@ -1,0 +1,20 @@
+.normal-heading-text {
+  font-weight: 500;
+  margin-top: 12px;
+  margin-bottom: 1.5rem;
+  font-size: 25px;
+}
+.tipcard {
+  background: #c6eefb;
+  color: #000;
+}
+.tipbutton {
+  background: #fff;
+  border: 2px solid var(--bs-primary);
+}
+.tip-h5 {
+  color: #303a92;
+}
+.tip-text {
+  color: #000;
+}

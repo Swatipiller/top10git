@@ -1,0 +1,29 @@
+.verify-wrapper {
+  height: 75vh;
+  overflow: hidden;
+}
+
+.verify-left {
+  width: 50%;
+  text-align: center;
+}
+
+.verify-left img {
+  width: 75%;
+}
+.resendCodeDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.verify-left-part {
+  position: relative;
+}
+.verify-left-part::after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  background: rgb(228, 228, 228);
+  bottom: 5%;
+  width: 1px;
+}

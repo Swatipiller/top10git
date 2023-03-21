@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Top 10 Diensten</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/bootstrap-icons.css" />
+    <link href="./css/customerdashboard.css" rel="stylesheet" />
+    <link href="./css/companydashboard.css" rel="stylesheet" />
+    <link href="./css/company-review.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg nav-bg-shadow customerNavbar dashboardNavbar fixed-top bg-white"
+      >
+        <div
+          class="container-fluid d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 transition-main-btn"
+        >
+          <a class="navbar-brand col-md-3" href="./index.html">
+            <img src="./images/top10Logo.png" alt="" class="logoimg" />
+          </a>
+          <button
+            class="navbar-toggler transition-btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end c-usericonname"
+            id="navbarSupportedContent"
+          >
+            <div class="dropdown c-dropdown">
+              <a
+                class="navbtn transition-main-btn d-flex align-items-center btn dropdown-toggle c-navbar"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="text-dark fw-medium">info@drivingschool.nl</span>
+                <img
+                  src="./images/profilepic.png"
+                  alt="info@drivingschool.nl"
+                  class="c-useraccount-img ms-2 text-primary"
+                />
+              </a>
+              <ul class="dropdown-menu mx-0 shadow w-220px">
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-accountsetting.html"
+                  >
+                    <i class="bi bi-person-gear fs-5 text-primary"></i>Account
+                    Settings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-notificationsetting.html"
+                  >
+                    <i class="bi bi-bell fs-5 text-primary"></i>Notification
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-automaticanswer.html"
+                  >
+                    <i class="bi bi-arrow-90deg-left fs-5 text-primary"></i
+                    >Automatic Answer
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-whatsapp-setting.html"
+                  >
+                    <i class="bi bi-whatsapp fs-5 text-primary"></i>WhatsApp
+                    Settings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center text-primary"
+                    href="/index.html"
+                    ><i class="bi bi-box-arrow-right fs-5 text-primary"></i
+                    >Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="sidebar-wrapper col-md-2 ps-0">
+          <div class="cd-leftside" id="sidebar">
+            <div class="">
+              <div class="custom-box-shadow">
+                <ul class="c-list-group">
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./companydashboard.html" class="c-sidebar-link"
+                      ><img
+                        src="./icons/dashboard_FILL0_wght400_GRAD0_opsz48 (2).png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Dashboard</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./company-requests.html" class="c-sidebar-link"
+                      ><img
+                        src="./images/send_to_mobile_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Requests</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./company-profile.html" class="c-sidebar-link"
+                      ><img
+                        src="./icons/person_FILL0_wght400_GRAD0_opsz48 (1).png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Profile</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a
+                      href="./company-review.html"
+                      class="c-sidebar-link active"
+                      ><img
+                        src="./images/reviews_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Reviews</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./company-premium.html" class="c-sidebar-link"
+                      ><img
+                        src="./images/workspace_premium_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Premium</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="#" class="c-sidebar-link"
+                      ><img
+                        src="./images/contact_support_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Help</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="c-moretextpara">
+                <p class="text-success fw-semibold mb-3 lh-base">
+                  Curious about what your profile looks like?
+                </p>
+                <!-- <p class="text-dark lh-sm text-black">
+                  Invite other company and both get 3 free requests!
+                </p> -->
+                <a
+                  href="/drivingschool-detail.html"
+                  class="c-sendpage btn btn-primary col-8 transition-btn fw-semibold"
+                >
+                  View Profile
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main class="col-md-10 offset-2 margin-top py-3 dashboard-main">
+          <div
+            class="customer-review-topbar d-flex justify-content-between align-items-center"
+          >
+            <h1 class="h4 text-dark fw-semibold">
+              Collect reviews from your customers
+            </h1>
+          </div>
+          <p class="small text-dark">
+            (Get reviews to improve your reputation and score. Share a public
+            review link or share invitation via email to your customers.)
+          </p>
+          <a href="#" class="small text-primary d-none"> More information-> </a>
+          <div class="row">
+            <div class="col-12">
+              <nav class="nav company-review-nav my-4">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item">
+                    <a
+                      href="#collectreview"
+                      class="company-review-nav-active nav-link text-primary fw-semibold"
+                      >Collect Review</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      href="#receievedreview"
+                      class="nav-link text-dark fw-semibold comapny-review-hover"
+                      >Received Reviews</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      href="#score"
+                      class="nav-link text-dark fw-semibold comapny-review-hover"
+                      >Score</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      href="#promotion"
+                      class="nav-link text-dark fw-semibold comapny-review-hover"
+                      >Promotion</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a
+                      href="#topprostatus"
+                      class="nav-link text-dark fw-semibold comapny-review-hover"
+                      >Top pro status</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <section id="collectreview" class="mb-5">
+                <div class="col-12 collect-review-maindiv">
+                  <p class="text-warning fw-bold h5">Share Review Link</p>
+
+                  <div
+                    class="review-link-div bg-info custom-border-radius px-3 p-2 d-flex justify-content-between align-items-center"
+                  >
+                    <span
+                      class="review-link text-primary h6 mb-0 fw-semibold"
+                      id="reviewlink"
+                      >https://top10diensten.nl/fdg/</span
+                    >
+                    <button
+                      class="btn p-0 small text-primary fw-semibold"
+                      onclick="copyText('reviewlink')"
+                    >
+                      <ion-icon name="copy-outline" class="me-1"></ion-icon>Copy
+                      Link
+                    </button>
+                  </div>
+
+                  <!-- toast for copy -->
+                  <div
+                    class="toast-container position-fixed bottom-0 end-0 p-3"
+                  >
+                    <div
+                      id="copyToast"
+                      data-bs-delay="1200"
+                      class="toast align-items-center text-bg-success text-light border-0"
+                      role="alert"
+                      aria-live="assertive"
+                      aria-atomic="true"
+                    >
+                      <div class="d-flex">
+                        <div class="toast-body fs-6 fw-semibold">
+                          Copied to clipboard.
+                        </div>
+                        <button
+                          type="button"
+                          class="btn-close btn-close-white me-2 m-auto"
+                          data-bs-dismiss="toast"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end toast for copy -->
+
+                  <p class="small text-muted text-center my-2 fw-semibold">
+                    Or
+                  </p>
+                  <div class="review-invitation-wrapper">
+                    <p class="text-dark h6 fw-bold my-2">
+                      Send an email to your customers
+                    </p>
+                    <form class="review-invitation-form">
+                      <div class="review-invitation-group">
+                        <div class="row review-invitation-item">
+                          <div class="col-6">
+                            <div class="mb-3">
+                              <label
+                                for="username"
+                                class="form-label visually-hidden"
+                                >Name</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control border-0 custom-box-shadow"
+                                id="username"
+                                placeholder="Name"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="mb-3">
+                              <label
+                                for="useremail"
+                                class="form-label visually-hidden"
+                                >Email</label
+                              >
+                              <input
+                                type="email"
+                                class="form-control border-0 custom-box-shadow"
+                                id="useremail"
+                                placeholder="Email"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="invitation-button-grp d-flex justify-content-between"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-outline-primary d-inline-flex align-items-center add-customer-btn"
+                        >
+                          <ion-icon name="add-outline" class="fs-4"></ion-icon
+                          >Add customer
+                        </button>
+                        <a class="btn btn-primary" href="#" role="button"
+                          >Send Invitation</a
+                        >
+                      </div>
+                    </form>
+                  </div>
+                  <div class="customer-status-wrapper my-4">
+                    <p class="text-dark h6 fw-bold my-2">
+                      Status of an invitation
+                    </p>
+                    <div class="customer-status-table">
+                      <table class="table custom-box-shadow">
+                        <thead class="bg-primary text-white">
+                          <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Date</th>
+                            <th>Review</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Carles</td>
+                            <td>carles@gmail.com</td>
+                            <td>22/02/2023</td>
+                            <td>-</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section id="receievedreview" class="mb-5">
+                <p class="h5 text-warning fw-bold my-3">Received Reviews</p>
+                <p class="h6 text-dark fw-semibold">
+                  Excellent 4.9
+                  <span class="samll text-primary ms-4">80 Reviews</span>
+                </p>
+                <div class="receievedreview-wrapper">
+                  <p class="fst-italic h6 my-3 text-muted">
+                    Reviews from other sources
+                  </p>
+                  <div class="reviewsourcediv">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="reviewcarddetail custom-border-radius">
+                          <p class="fw-semibold text-primary org-name">
+                            Google
+                          </p>
+                          <p class="text-warning fw-semibold rating-num">5.0</p>
+                          <p class="reviewername fw-semibold">2 Reviews</p>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="reviewcarddetail custom-border-radius">
+                          <p class="fw-semibold text-primary org-name">
+                            Facebook
+                          </p>
+                          <p class="text-warning fw-semibold rating-num">5.0</p>
+                          <p class="reviewername fw-semibold">2 Reviews</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section id="score" class="mb-5">
+                <p class="h5 text-warning fw-bold my-3">
+                  Place the score on your Website
+                </p>
+                <p class="small text-dark my-3 lh-base">
+                  You can easily add the score to your own website, so that
+                  visitors gain extra confidence in your company. Compose the
+                  widget according to your wishes and place it on your website,
+                  or choose to send a request to your web builder
+                </p>
+                <button
+                  class="btn p-0 add-review-para align-items-center d-flex my-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#addreviewmodal"
+                >
+                  <ion-icon
+                    name="add-outline"
+                    class="text-primary fs-3"
+                  ></ion-icon>
+                  <p class="text-dark fw-semibold h6 ms-2 mb-0">Add a review</p>
+                </button>
+                <p class="small text-muted fst-italic fw-semibold">
+                  No review selected
+                </p>
+
+                <form>
+                  <div class="review-preference-group">
+                    <div class="review-preference-item d-flex flex-wrap mb-3">
+                      <div class="review-preference-option me-3">
+                        <input
+                          type="radio"
+                          class="btn-check"
+                          name="noofreviews"
+                          id="shownoofreviews"
+                          autocomplete="off"
+                          checked
+                        />
+                        <label
+                          class="btn btn-outline-primary"
+                          for="shownoofreviews"
+                          >Show no of reviews</label
+                        >
+                      </div>
+                      <div class="review-preference-option">
+                        <input
+                          type="radio"
+                          class="btn-check"
+                          name="noofreviews"
+                          id="hidenoofreviews"
+                          autocomplete="off"
+                        />
+                        <label
+                          class="btn btn-outline-primary"
+                          for="hidenoofreviews"
+                          >Hide no of reviews</label
+                        >
+                      </div>
+                    </div>
+
+                    <div class="review-preference-item d-flex flex-wrap mb-3">
+                      <p class="w-100 small text-muted fw-semibold">Format</p>
+                      <div class="review-preference-option me-3">
+                        <input
+                          type="radio"
+                          class="btn-check"
+                          name="reviewformat"
+                          id="formatsmall"
+                          autocomplete="off"
+                          checked
+                        />
+                        <label class="btn btn-outline-primary" for="formatsmall"
+                          >Small</label
+                        >
+                      </div>
+                      <div class="review-preference-option me-3">
+                        <input
+                          type="radio"
+                          class="btn-check"
+                          name="reviewformat"
+                          id="formatbig"
+                          autocomplete="off"
+                        />
+                        <label class="btn btn-outline-primary" for="formatbig"
+                          >Big</label
+                        >
+                      </div>
+                      <div class="review-preference-option me-3">
+                        <input
+                          type="radio"
+                          class="btn-check"
+                          name="reviewformat"
+                          id="formatlying"
+                          autocomplete="off"
+                        />
+                        <label class="btn btn-outline-primary" for="formatlying"
+                          >Lying down</label
+                        >
+                      </div>
+                      <div class="review-preference-option me-3">
+                        <input
+                          type="radio"
+                          class="btn-check"
+                          name="reviewformat"
+                          id="formatstanding"
+                          autocomplete="off"
+                        />
+                        <label
+                          class="btn btn-outline-primary"
+                          for="formatstanding"
+                          >Standing
+                        </label>
+                      </div>
+                    </div>
+                    <div class="review-preference-item d-flex flex-wrap mb-3">
+                      <p class="w-100 small text-muted fw-semibold">Edge</p>
+                      <div class="review-preference-option me-3">
+                        <input
+                          type="radio"
+                          class="btn-check"
+                          name="edge"
+                          id="edge1"
+                          autocomplete="off"
+                          checked
+                        />
+                        <label class="btn btn-outline-primary" for="edge1"
+                          >No</label
+                        >
+                      </div>
+                      <div class="review-preference-option me-3">
+                        <input
+                          type="radio"
+                          class="btn-check"
+                          name="edge"
+                          id="edge2"
+                          autocomplete="off"
+                        />
+                        <label class="btn btn-outline-primary" for="edge2"
+                          >Outlined</label
+                        >
+                      </div>
+                      <div class="review-preference-option me-3">
+                        <input
+                          type="radio"
+                          class="btn-check"
+                          name="edge"
+                          id="edge3"
+                          autocomplete="off"
+                        />
+                        <label class="btn btn-outline-primary" for="edge3"
+                          >Shadow</label
+                        >
+                      </div>
+                    </div>
+                    <div class="review-preference-item d-flex flex-wrap mb-3">
+                      <p class="w-100 small text-muted fw-semibold">Color</p>
+                      <div class="review-preference-option me-3">
+                        <input
+                          type="radio"
+                          class="btn-check"
+                          name="color"
+                          id="lighttheme"
+                          autocomplete="off"
+                          checked
+                        />
+                        <label class="btn btn-outline-primary" for="lighttheme"
+                          >Light theme</label
+                        >
+                      </div>
+                      <div class="review-preference-option me-3">
+                        <input
+                          type="radio"
+                          class="btn-check"
+                          name="color"
+                          id="darktheme"
+                          autocomplete="off"
+                        />
+                        <label class="btn btn-outline-primary" for="darktheme"
+                          >Dark theme</label
+                        >
+                      </div>
+                      <div class="review-preference-option me-3">
+                        <input
+                          type="radio"
+                          class="btn-check"
+                          name="color"
+                          id="backgroundtheme"
+                          autocomplete="off"
+                        />
+                        <label
+                          class="btn btn-outline-primary"
+                          for="backgroundtheme"
+                          >With background</label
+                        >
+                      </div>
+                      <div class="review-preference-option me-3">
+                        <input
+                          type="radio"
+                          class="btn-check"
+                          name="color"
+                          id="colortransparent"
+                          autocomplete="off"
+                        />
+                        <label
+                          class="btn btn-outline-primary"
+                          for="colortransparent"
+                          >Transparent
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-dark fw-semibold h6 my-4">
+                    Choose how you want to place it
+                  </p>
+                  <div class="form-check my-2">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="choosereviewmethod"
+                      value="mail"
+                      id="choose1"
+                    />
+                    <label class="form-check-label mt-1" for="choose1">
+                      Mail a request to your builder
+                    </label>
+                  </div>
+
+                  <div class="form-check my-2">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      value="copy"
+                      name="choosereviewmethod"
+                      id="choose2"
+                    />
+                    <label class="form-check-label mt-1" for="choose2">
+                      Copy the code and place it in the HTML of your website
+                    </label>
+                  </div>
+
+                  <div class="email-builder col-xxl-8 d-none">
+                    <div class="my-4">
+                      <label
+                        for="emiladdress"
+                        class="form-label fw-semibold my-3"
+                        >Email address of the builder</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control custom-box-shadow"
+                        id="emiladdress"
+                      />
+                    </div>
+                    <div class="my-4">
+                      <label
+                        for="emiladdress"
+                        class="form-label fw-semibold my-3"
+                        >The subject of the email</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control custom-box-shadow"
+                        id="emiladdress"
+                        value="Request from ANWP Driving school to place the Top10 Diensten Score Widget"
+                      />
+                    </div>
+                    <div class="my-4">
+                      <label
+                        for="emiladdress"
+                        class="form-label fw-semibold my-3"
+                        >The message to your web builder</label
+                      >
+                      <div class="">
+                        <textarea
+                          class="form-control custom-box-shadow"
+                          id="email-builderid"
+                        >
+  Dear web builder, 
+  Top10 Diensten gives us the opportunity to place a widget on our website with our score.
+  
+  To do this, the code below must be placed on our homepage. The widget will then be displayed where it is placed in the code.
+  
+  Thank you in advance!
+  Yours sincerely,
+  ANWP Driving School
+                          
+                        </textarea>
+                      </div>
+                    </div>
+                    <div
+                      class="align-items-center d-flex justify-content-between"
+                    >
+                      <p class="small fw-semibold text-dark"
+                        >The code will be sent with this email.</p
+                      >
+                      <button class="btn btn-primary fw-semibold transition-btn"
+                        ><i class="bi bi-envelope me-2"></i>Send Email</button
+                      >
+                    </div>
+                  </div>
+                  <div class="copycodewebsitemain my-4 d-none">
+                    <div class="card border-0">
+                      <div
+                        class="card-body bg-info lh-base rounded-2 custom-box-shadow"
+                      >
+                        <code
+                          class="fs-5 text-primary"
+                          data-lang="html"
+                          id="copywebsitecode"
+                          >&lt;script async
+                          src=&quot;https://static.top10diensten.nl/widget/widget_v2.js&quot;&gt;&lt;/script&gt;
+                          &lt;div class=&quot;top10diensten-widget&quot;
+                          data-id=&quot;86554&quot;
+                          data-language-code=&quot;nl&quot;
+                          data-country-code=&quot;NL&quot;
+                          data-badge=&quot;hidden&quot;
+                          data-quote=&quot;default&quot;
+                          data-reviews=&quot;default&quot;
+                          data-size=&quot;small&quot; data-type=
+                          &quot;landscape&quot; data-border=&quot;shadow&quot;
+                          data-theme=&quot;light&quot;
+                          data-background=&quot;default&quot;&gt;&lt;/div&gt;
+                        </code>
+                      </div>
+                    </div>
+                    <div class="copycodewebsite-btn my-3">
+                      <button
+                        class="btn btn-primary fw-semibold transition-btn"
+                        onclick="copyText('copywebsitecode')"
+                        ><ion-icon name="copy-outline" class="me-1"></ion-icon
+                        >Copy this code</button
+                      >
+                    </div>
+                  </div>
+                </form>
+
+                <p class="h5 text-warning fw-bold my-4">
+                  Place and share the score on your website or other channels
+                </p>
+                <p class="text-primary mb-4 lh-sm">
+                  Does your company have a great score on Top10diensten? Then
+                  share it on social media or through other channels. This way
+                  you can let your followers know that they have come to the
+                  right place.
+                </p>
+                <p class="h6 text-dark fw-semibold">Share score</p>
+
+                <div class="review-social-wrapper w-50">
+                  <ul class="d-grid gap-3 grid--2-cols review-social-list ps-0">
+                    <li class="review-social-item">
+                      <a
+                        href="https://mail.google.com"
+                        class="review-social-link align-items-center d-flex"
+                        ><ion-icon name="mail-outline" class="fs-5"></ion-icon>
+                        <span class="ms-2 text-dark">Email</span>
+                      </a>
+                    </li>
+                    <li class="review-social-item">
+                      <a
+                        href="https://web.whatsapp.com/"
+                        class="review-social-link align-items-center d-flex"
+                        ><ion-icon name="logo-whatsapp" class="fs-5"></ion-icon>
+                        <span class="ms-2 text-dark">Whatsapp</span>
+                      </a>
+                    </li>
+                    <li class="review-social-item">
+                      <a
+                        href="https://www.facebook.com/"
+                        class="review-social-link align-items-center d-flex"
+                        ><ion-icon name="logo-facebook" class="fs-5"></ion-icon>
+                        <span class="ms-2 text-dark">Facebook</span>
+                      </a>
+                    </li>
+                    <li class="review-social-item">
+                      <a
+                        href="https://twitter.com/"
+                        class="review-social-link align-items-center d-flex"
+                        ><ion-icon name="logo-twitter" class="fs-5"></ion-icon>
+                        <span class="ms-2 text-dark">Twitter</span>
+                      </a>
+                    </li>
+                    <li class="review-social-item">
+                      <a
+                        href="https://www.linkedin.com/"
+                        class="review-social-link align-items-center d-flex"
+                        ><ion-icon name="logo-linkedin" class="fs-5"></ion-icon>
+                        <span class="ms-2 text-dark">Linkedin</span>
+                      </a>
+                    </li>
+                    <li class="review-social-item">
+                      <a
+                        href="https://messages.google.com/"
+                        class="review-social-link align-items-center d-flex"
+                        ><ion-icon
+                          name="document-text-outline"
+                          class="fs-5"
+                        ></ion-icon>
+                        <span class="ms-2 text-dark">Text Message</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section id="promotion" class="mb-5">
+                <p class="text-warning h5 fw-bold my-3">
+                  Invite your friends and earn free requests
+                </p>
+                <p class="text-dark h6 fw-semibold">Bring a friend link</p>
+                <p class="small text-muted">
+                  Send this link to your friends. This contains your personal
+                  code. If they sign up via this link and become Premium, you
+                  both get 3 free applications!
+                </p>
+                <div
+                  class="review-link-div bg-info custom-border-radius px-3 p-2 d-flex justify-content-between align-items-center"
+                >
+                  <span
+                    id="invitelink"
+                    class="review-link text-primary h6 mb-0 fw-semibold"
+                    >https://top10diensten.nl/fdg/</span
+                  >
+
+                  <button
+                    class="btn p-0 small text-primary fw-semibold"
+                    onclick="copyText('invitelink')"
+                  >
+                    <ion-icon name="copy-outline" class="me-1"></ion-icon>Copy
+                    Link
+                  </button>
+                </div>
+                <p class="small text-muted text-center my-2 fw-semibold">Or</p>
+                <form class="review-promotion-form">
+                  <div class="review-promotion-group">
+                    <div class="row review-promotion-item">
+                      <div class="col-6">
+                        <div class="mb-3">
+                          <label
+                            for="username"
+                            class="form-label visually-hidden"
+                            >Name</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control border-0 custom-box-shadow"
+                            id="username"
+                            placeholder="Name"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="mb-3">
+                          <label
+                            for="useremail"
+                            class="form-label visually-hidden"
+                            >Email</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control border-0 custom-box-shadow"
+                            id="useremail"
+                            placeholder="Email"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="promotion-button-grp d-flex justify-content-between"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary d-inline-flex align-items-center promotion-add-customer-btn"
+                    >
+                      <ion-icon
+                        name="add-outline"
+                        class="fs-4 md hydrated"
+                        role="img"
+                        aria-label="add outline"
+                      ></ion-icon
+                      >Add more friends
+                    </button>
+                    <a class="btn btn-primary" href="#" role="button"
+                      >Send Invitation</a
+                    >
+                  </div>
+                </form>
+              </section>
+              <section id="topprostatus" class="mb-5">
+                <p class="h5 text-warning fw-bold my-3">
+                  Be in the spotlight as Top Pro
+                </p>
+                <p class="h6 fw-semibold text-dark my-3">The Criteria</p>
+                <div
+                  class="custom-border-radius custom-box-shadow p-3 px-4 topprostatus-card-wrapper"
+                >
+                  <div class="topprostatus-group">
+                    <p class="text-primary h5 fw-semibold my-3">
+                      1.Fast response time
+                    </p>
+                    <p class="text-muted small my-3">
+                      You haven't received enough requests to properly measure
+                      your response time. Click
+                      <a
+                        href="#"
+                        class="text-decoration-underline text-primary fw-semibold"
+                        >here</a
+                      >
+                      to receive more applications.
+                    </p>
+                  </div>
+                  <div class="topprostatus-group">
+                    <p class="text-primary h5 fw-semibold my-3">
+                      2. Collect good reviews
+                    </p>
+                    <p class="text-muted small my-3">
+                      You need at least 20 reviews, 4 of which are recent and
+                      with an average score of at least 8.0. You can collect
+                      reviews
+                      <a
+                        href="#"
+                        class="text-decoration-underline text-primary fw-semibold"
+                        >here</a
+                      >.
+                    </p>
+                  </div>
+                  <div class="topprostatus-group">
+                    <p class="text-primary h5 fw-semibold my-3">
+                      3. A score of 4.5 or higher
+                    </p>
+                    <p class="text-muted small my-3">
+                      our score is high enough, you now have a 4.9
+                    </p>
+                  </div>
+                </div>
+                <p class="my-4 text-dark h6 fw-semibold">
+                  The advantage of Top pro status
+                </p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div
+                      class="topptostatus-adv-section align-items-center d-flex my-4"
+                    >
+                      <div class="topptostatus-icon-section">
+                        <div class="c-adv-img">
+                          <img
+                            src="./icons/military_tech_blue.png"
+                            alt="Top Pro For Your Own Online Marketing"
+                          />
+                        </div>
+                      </div>
+                      <div class="topptostatus-content-section">
+                        <p class="text-primary fw-semibold h5">
+                          Top Pro For Your Own Online Marketing
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="topptostatus-adv-section align-items-center d-flex my-4"
+                    >
+                      <div class="topptostatus-icon-section">
+                        <div class="c-adv-img">
+                          <img
+                            src="./icons/local_police_blue.png"
+                            alt="The Top Pro Badge"
+                          />
+                        </div>
+                      </div>
+                      <div class="topptostatus-content-section">
+                        <p class="text-primary fw-semibold h5">
+                          The Top Pro Badge
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="topptostatus-adv-section align-items-center d-flex my-4"
+                    >
+                      <div class="topptostatus-icon-section">
+                        <div class="c-adv-img">
+                          <img
+                            src="./icons/emoji_objects_blue.png"
+                            alt="Be The First To Know!"
+                          />
+                        </div>
+                      </div>
+                      <div class="topptostatus-content-section">
+                        <p class="text-primary fw-semibold h5">
+                          Be The First To Know!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="topptostatus-adv-section align-items-center d-flex my-4"
+                    >
+                      <div class="topptostatus-icon-section">
+                        <div class="c-adv-img">
+                          <img
+                            src="./icons/verified_blue.png"
+                            alt="More Qualitative Applications"
+                          />
+                        </div>
+                      </div>
+                      <div class="topptostatus-content-section">
+                        <p class="text-primary fw-semibold h5">
+                          More Qualitative Applications
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!-- Add review modal -->
+    <div
+      class="modal fade"
+      id="addreviewmodal"
+      tabindex="-1"
+      aria-labelledby="addreviewmodalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0 modal-header bg-primary text-white">
+            <h3 class="modal-title fs-5" id="addreviewmodalLabel">
+              Select a review
+            </h3>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Select a review you want to use as text for your widget.
+          </div>
+          <div class="modal-footer border-0">
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary">Finished</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div id="loading">
+      <img src="./images/top10Logo.png" alt="" />
+      <div class="loader">Loading...</div>
+    </div> -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/loader.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/util.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".add-customer-btn").click(function () {
+          let newCustomerRow = ` <div class="row review-invitation-item">
+                            <div class="col-6">
+                              <div class="mb-3">
+                                <label
+                                  for="username"
+                                  class="form-label visually-hidden"
+                                  >Name</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control border-0 custom-box-shadow"
+                                  id="username"
+                                  placeholder="Name"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <div class="mb-3">
+                                <label
+                                  for="useremail"
+                                  class="form-label visually-hidden"
+                                  >Email</label
+                                >
+                                <input
+                                  type="email"
+                                  class="form-control border-0 custom-box-shadow"
+                                  id="useremail"
+                                  placeholder="Email"
+                                />
+                              </div>
+                            </div>
+                          </div>`;
+
+          $(".review-invitation-group").append(newCustomerRow);
+        });
+        $(".promotion-add-customer-btn").click(function () {
+          let promotionCustomerRow = `<div class="row review-promotion-item">
+                        <div class="col-6">
+                          <div class="mb-3">
+                            <label
+                              for="username"
+                              class="form-label visually-hidden"
+                              >Name</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control border-0 custom-box-shadow"
+                              id="username"
+                              placeholder="Name"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="mb-3">
+                            <label
+                              for="useremail"
+                              class="form-label visually-hidden"
+                              >Email</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control border-0 custom-box-shadow"
+                              id="useremail"
+                              placeholder="Email"
+                            />
+                          </div>
+                        </div>
+                      </div>`;
+          $(".review-promotion-group").append(promotionCustomerRow);
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("input:radio[name=choosereviewmethod]").change(function () {
+          if (this.value == "mail") {
+            $(".email-builder").removeClass("d-none");
+            $(".copycodewebsitemain").addClass("d-none");
+          } else if (this.value == "copy") {
+            $(".copycodewebsitemain").removeClass("d-none");
+            $(".email-builder").addClass("d-none");
+          }
+        });
+      });
+
+      // $(document).ready(function () {
+      //   $("input:radio[name=choosereviewmethod]").change(function () {
+      //     alert($(this).val());
+      //   });
+      // });
+    </script>
+  </body>
+</html>

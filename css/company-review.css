@@ -1,0 +1,55 @@
+.company-review-nav-active {
+  color: var(--bs-primary);
+  text-decoration: underline;
+  font-size: 18px;
+}
+.comapny-review-hover {
+  color: #222;
+  font-size: 18px;
+}
+.comapny-review-hover:hover {
+  color: var(--bs-primary) !important;
+  text-decoration: underline;
+}
+.customer-status-table .table th,
+.customer-status-table .table td {
+  border: 0;
+}
+.customer-status-table .table {
+  border-radius: 10px;
+}
+/* temp */
+.customer-status-table .table td {
+  padding-top: 1.2rem;
+  padding-bottom: 2.2rem;
+}
+
+.review-preference-group .btn-outline-primary {
+  --bs-btn-active-bg: var(--bs-info);
+  --bs-btn-active-color: var(--bs-primary);
+}
+
+.review-preference-option label.btn {
+  min-width: 165px;
+}
+.c-adv-img {
+  background: #e4eafd;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding: 25px;
+  margin-right: 2rem;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.16);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.review-social-item {
+  list-style: none;
+}
+#email-builderid {
+  height: 255px;
+}
+.copycodewebsite-btn {
+  text-align: right;
+}

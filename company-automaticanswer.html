@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Top 10 Diensten</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <!-- <link href="./css/customerdashboard.css" rel="stylesheet" /> -->
+    <!-- <link href="./css/companydashboard.css" rel="stylesheet" /> -->
+
+    <link href="./css/company-accountsetting.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg nav-bg-shadow customerNavbar dashboardNavbar fixed-top bg-white"
+      >
+        <div
+          class="container-fluid d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 transition-main-btn"
+        >
+          <a class="navbar-brand col-md-3" href="./index.html">
+            <img src="./images/top10Logo.png" alt="" class="logoimg" />
+          </a>
+          <button
+            class="navbar-toggler transition-btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end c-usericonname"
+            id="navbarSupportedContent"
+          >
+            <div class="dropdown c-dropdown">
+              <a
+                class="navbtn transition-main-btn d-flex align-items-center btn dropdown-toggle c-navbar"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="text-dark fw-medium">info@drivingschool.nl</span>
+                <img
+                  src="./images/profilepic.png"
+                  alt="info@drivingschool.nl"
+                  class="c-useraccount-img ms-2 text-primary"
+                />
+              </a>
+              <ul class="dropdown-menu mx-0 shadow w-220px">
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-accountsetting.html"
+                  >
+                    <i class="bi bi-person-gear fs-5 text-primary"></i>Account
+                    Settings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-notificationsetting.html"
+                  >
+                    <i class="bi bi-bell fs-5 text-primary"></i>Notification
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-automaticanswer.html"
+                  >
+                    <i class="bi bi-arrow-90deg-left fs-5 text-primary"></i
+                    >Automatic Answer
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-whatsapp-setting.html"
+                  >
+                    <i class="bi bi-whatsapp fs-5 text-primary"></i>WhatsApp
+                    Settings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center text-primary"
+                    href="/index.html"
+                    ><i class="bi bi-box-arrow-right fs-5 text-primary"></i
+                    >Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="sidebar-wrapper col-md-2 ps-0">
+          <div class="cd-leftside" id="sidebar">
+            <div class="">
+              <div class="">
+                <ul class="c-list-group">
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a
+                      href="/company-accountsetting.html"
+                      class="c-sidebar-link"
+                      ><i class="bi bi-person-gear company-setting-icon"></i
+                      >Account Settings</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a
+                      href="/company-notificationsetting.html"
+                      class="c-sidebar-link"
+                      ><i class="bi bi-bell company-setting-icon"></i
+                      >Notification</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a
+                      href="/company-automaticanswer.html"
+                      class="c-sidebar-link active"
+                      ><i
+                        class="bi bi-arrow-90deg-left company-setting-icon"
+                      ></i
+                      >Automatic Answer</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a
+                      href="/company-whatsapp-setting.html"
+                      class="c-sidebar-link"
+                      ><i class="bi bi-whatsapp company-setting-icon"></i
+                      >WhatsApp Settings</a
+                    >
+                  </li>
+
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="/index.html" class="c-sidebar-link"
+                      ><i class="bi bi-box-arrow-right company-setting-icon"></i
+                      >Logout</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main class="col-md-10 offset-2 margin-top py-3 dashboard-main">
+          <div class="align-items-center d-flex">
+            <p class="h5 text-primary fw-semibold mt-4 my-3">
+              Set an automatic reply
+            </p>
+            <p class="text-success fw-semibold mt-4 my-3 ms-4">
+              <img
+                src="./icons/workspace_premium_FILL0_wght400_GRAD0_opsz481.png"
+                class="premium-icon me-2"
+                alt=""
+              />Premium
+            </p>
+          </div>
+          <div class="company-autoanswersetting-form">
+            <div class="form-check my-3">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="dontans1"
+                id="automaticans"
+                checked
+              />
+              <label class="form-check-label mt-1" for="automaticans">
+                Yes, I want automatic reply sent to new applicants
+              </label>
+            </div>
+            <div class="my-3">
+              <textarea
+                class="form-control w-50"
+                placeholder="Type message here..."
+                id="floatingTextarea"
+              ></textarea>
+              <label class="visually-hidden" for="floatingTextarea"></label>
+            </div>
+            <div class="form-check my-3">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="dontans1"
+                id="dontans"
+              />
+              <label class="form-check-label mt-1" for="dontans">
+                No, I don't want to send automatic reply to new applicants
+              </label>
+            </div>
+            <div class="btn-div my-3">
+              <button class="btn btn-primary transition-btn fw-semibold col-1">
+                Save
+              </button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- <div id="loading">
+      <img src="./images/top10Logo.png" alt="" />
+      <div class="loader">Loading...</div>
+    </div> -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/loader.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/util.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- <script src="./company-review.html"></script> -->
+    <!-- <script>
+      $(function () {
+        $("#sortable").sortable({
+          revert: true,
+        });
+        $("ul, li").disableSelection();
+      });
+
+      Fancybox.bind("[data-fancybox]", {
+        
+      });
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,100 @@
+.breadcrumb-wrapper a {
+  text-decoration: none;
+  color: #7b7979;
+}
+.breadcrumb-wrapper .breadcrumb-item.active {
+  color: var(--bs-primary);
+}
+.font-icon-size {
+  font-size: 18px;
+}
+.driving-list-heading {
+  color: var(--bs-primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.driving-list-para {
+  line-height: 1.4rem;
+  width: 500px;
+  text-align: justify;
+}
+
+.breadcrumb-item {
+  font-weight: 500;
+}
+
+.licensetype-form {
+  border-radius: 4px;
+  border: 1px solid;
+  padding: 1rem 2rem;
+}
+
+.form-check-custom {
+  padding-left: 2.5em;
+  margin: 0.5rem 0;
+}
+
+.form-check-custom .form-check-input {
+  width: 1.5em;
+  height: 1.5em;
+  margin-left: -2.5em;
+  margin-top: 0;
+}
+.btn-lightblue,
+.btn-lightblue:hover {
+  background-color: #c6eefb;
+  color: #fff;
+}
+.btn-lightpink,
+.btn-lightpink:hover {
+  background-color: #ffcbe1;
+  color: #fff;
+}
+.btn-lightgreen,
+.btn-lightgreen:hover {
+  background-color: #94e2b3;
+  color: #fff;
+}
+.driving-img {
+  width: 80%;
+}
+.driving-img-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.driving-school-img {
+  padding-top: 20px;
+}
+.small-heading-text {
+  font-weight: 500;
+  margin-top: 12px;
+  margin-bottom: 1.5rem;
+}
+.driving-img-new {
+  width: 210px;
+  height: 170px;
+  max-width: 100%;
+  object-fit: cover;
+}
+.drivingschool-heading {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+.drivingschool-desc {
+  line-height: 1.4;
+  text-align: justify;
+  color: #7b7979;
+}
+.address,
+.address-name {
+  color: #000;
+}
+.address-name {
+  margin-left: 10px;
+}
+.viewApplicationBtn {
+  margin-top: 8rem;
+}

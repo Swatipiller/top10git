@@ -1,0 +1,70 @@
+/* .c-usericonname a {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+} */
+
+.c-useraccount-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.c-list-group {
+  padding: 1rem 1.5rem;
+}
+
+.c-list-group .c-sidebar-link {
+  text-decoration: none;
+  display: inline-block;
+  color: #7b7979;
+}
+
+.c-list-group .c-sidebar-link.active {
+  font-weight: 500;
+  color: var(--bs-primary);
+}
+
+.c-list-group img {
+  margin-right: 1rem;
+}
+
+.c-sidebar-link {
+  color: #7b7979;
+}
+/* .c-navbar.dropdown-toggle::after {
+  display: none;
+} */
+/* .c-navbar .btn-check:checked.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  border: 0;
+} */
+.c-moretextpara {
+  padding: 0.2rem 0.8rem;
+  text-align: center;
+}
+.c-img-div img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.c-progress-bar .progress {
+  height: 12px;
+}
+
+.table-dark.bg-primary {
+  --bs-table-bg: var(--bs-primary);
+}
+
+.c-card-profile-heading {
+  font-size: 1.1rem;
+}
+
+.stats-card-icon {
+  width: 50px;
+}

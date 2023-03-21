@@ -1,0 +1,28 @@
+.nearbyschoolcard-img {
+  width: 250px !important;
+  height: 200px;
+  object-fit: cover;
+}
+.drivingschool-card-img img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+#nearbyschool {
+  margin-bottom: 130px;
+}
+.nearbyschoolcard .carousel-control-next,
+.nearbyschoolcard .carousel-control-prev {
+  top: auto;
+  bottom: -100px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 1;
+}
+.nearbyschoolcard .carousel-control-prev {
+  left: 45%;
+}
+.nearbyschoolcard .carousel-control-next {
+  right: 45%;
+}

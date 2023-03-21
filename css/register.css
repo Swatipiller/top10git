@@ -1,0 +1,33 @@
+.register-wrapper {
+  height: auto;
+  overflow: hidden;
+}
+
+.register-left {
+  width: 60%;
+  text-align: center;
+}
+.registerBannerImg {
+  width: 100%;
+}
+.logoImg {
+  width: 50%;
+}
+.register-text {
+  font-size: 22px;
+}
+.login-para {
+  font-size: 14px;
+}
+.register-left-part {
+  position: relative;
+}
+.register-left-part::after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  background: rgb(228, 228, 228);
+  bottom: 5%;
+  width: 1px;
+}

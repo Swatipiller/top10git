@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Top 10 Diensten</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/customerdashboard.css" rel="stylesheet" />
+    <link href="./css/companydashboard.css" rel="stylesheet" />
+    <!-- <link href="./css/company-profile.css" rel="stylesheet" /> -->
+    <link href="./css/profile-change-info.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg nav-bg-shadow customerNavbar dashboardNavbar fixed-top bg-white"
+      >
+        <div
+          class="container-fluid d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 transition-main-btn"
+        >
+          <a class="navbar-brand col-md-3" href="./index.html">
+            <img src="./images/top10Logo.png" alt="" class="logoimg" />
+          </a>
+          <button
+            class="navbar-toggler transition-btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end c-usericonname"
+            id="navbarSupportedContent"
+          >
+            <div class="dropdown c-dropdown">
+              <a
+                class="navbtn transition-main-btn d-flex align-items-center btn dropdown-toggle c-navbar"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="text-dark fw-medium">info@drivingschool.nl</span>
+                <img
+                  src="./images/profilepic.png"
+                  alt="info@drivingschool.nl"
+                  class="c-useraccount-img ms-2 text-primary"
+                />
+              </a>
+              <ul class="dropdown-menu mx-0 shadow w-220px">
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-accountsetting.html"
+                  >
+                    <i class="bi bi-person-gear fs-5 text-primary"></i>Account
+                    Settings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-notificationsetting.html"
+                  >
+                    <i class="bi bi-bell fs-5 text-primary"></i>Notification
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-automaticanswer.html"
+                  >
+                    <i class="bi bi-arrow-90deg-left fs-5 text-primary"></i
+                    >Automatic Answer
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-whatsapp-setting.html"
+                  >
+                    <i class="bi bi-whatsapp fs-5 text-primary"></i>WhatsApp
+                    Settings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center text-primary"
+                    href="/index.html"
+                    ><i class="bi bi-box-arrow-right fs-5 text-primary"></i
+                    >Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="sidebar-wrapper col-md-2 ps-0">
+          <div class="cd-leftside" id="sidebar">
+            <div class="">
+              <div class="custom-box-shadow">
+                <ul class="c-list-group">
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./companydashboard.html" class="c-sidebar-link"
+                      ><img
+                        src="./icons/dashboard_FILL0_wght400_GRAD0_opsz48 (2).png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Dashboard</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./company-requests.html" class="c-sidebar-link"
+                      ><img
+                        src="./images/send_to_mobile_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Requests</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="#" class="c-sidebar-link active"
+                      ><img
+                        src="./icons/person_FILL0_wght400_GRAD0_opsz48 (1).png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Profile</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="/company-review.html" class="c-sidebar-link"
+                      ><img
+                        src="./images/reviews_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Reviews</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="/company-premium.html" class="c-sidebar-link"
+                      ><img
+                        src="./images/workspace_premium_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Premium</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="#" class="c-sidebar-link"
+                      ><img
+                        src="./images/contact_support_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Help</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="c-moretextpara">
+                <p class="text-success fw-semibold mb-3 lh-base">
+                  Curious about what your profile looks like?
+                </p>
+                <!-- <p class="text-dark lh-sm text-black">
+                  Invite other company and both get 3 free requests!
+                </p> -->
+                <a
+                  href="#"
+                  class="c-sendpage btn btn-primary col-8 transition-btn fw-semibold"
+                >
+                  View Profile
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main class="col-md-10 offset-2 margin-top py-3 dashboard-main">
+          <div class="profile-changeinfo-header d-flex align-items-center">
+            <a href="./company-profile.html" class="small h6 text-primary"
+              >Back &lt;
+            </a>
+            <p class="h5 fw-bold text-dark ms-2">Change Information</p>
+          </div>
+          <div class="form mt-4 pe-5">
+            <form>
+              <div class="row mb-4">
+                <label
+                  for="inputname "
+                  class="col-sm-2 col-form-label text-dark fw-semibold"
+                  >Name</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-box-shadow"
+                    id="inputname"
+                    value="ANWP Driving school"
+                  />
+                </div>
+              </div>
+              <div class="row mb-4">
+                <label
+                  for="inputemail"
+                  class="col-sm-2 col-form-label text-dark fw-semibold"
+                  >Email</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="email"
+                    class="form-control border-0 custom-box-shadow"
+                    id="inputemail"
+                    value="info@gmail.com"
+                  />
+                </div>
+              </div>
+              <div class="row mb-4">
+                <label
+                  for="inputwebsite"
+                  class="col-sm-2 col-form-label text-dark fw-semibold"
+                  >Website</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-box-shadow"
+                    id="inputwebsite"
+                    value="https://anwpdrivingschool.nl"
+                  />
+                </div>
+              </div>
+              <div class="row mb-4">
+                <label
+                  for="inputoperation"
+                  class="col-sm-2 col-form-label text-dark fw-semibold"
+                  >Operation In Years</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-box-shadow"
+                    id="inputoperation"
+                    value="6 years in operation"
+                  />
+                </div>
+              </div>
+              <div class="row mb-4">
+                <label
+                  for="inputtel"
+                  class="col-sm-2 col-form-label text-dark fw-semibold"
+                  >Phone No.</label
+                >
+                <div class="col-sm-4">
+                  <input
+                    type="tel"
+                    class="form-control border-0 custom-box-shadow"
+                    id="inputtel"
+                    value="8989898989"
+                  />
+                </div>
+                <label
+                  for="inputemp"
+                  class="col-sm-2 col-form-label text-dark fw-semibold emp-label"
+                  >Employees</label
+                >
+                <div class="col-sm-4">
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-box-shadow"
+                    id="inputemp"
+                    value="12 employees"
+                  />
+                </div>
+              </div>
+              <div class="row mb-4">
+                <label
+                  for="inputaboutdrivining"
+                  class="col-sm-2 col-form-label text-dark fw-semibold"
+                  >About Driving School</label
+                >
+                <div class="col-sm-10">
+                  <textarea
+                    class="form-control border-0 custom-box-shadow textarea-height"
+                  >
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</textarea
+                  >
+                </div>
+              </div>
+              <div class="row mb-4">
+                <label
+                  for="expertise"
+                  class="col-sm-2 col-form-label text-dark fw-semibold"
+                  >Your Expertise</label
+                >
+                <div class="col-sm-10">
+                  <div class="d-flex">
+                    <input
+                      type="text"
+                      class="form-control border-0 custom-box-shadow"
+                      id="expertise"
+                      value=""
+                    />
+                    <button
+                      class="btn btn-primary fw-semibold ms-3"
+                      id="addExpertiseBtn"
+                      type="button"
+                    >
+                      Add
+                    </button>
+                  </div>
+                  <div class="added-expertise-row">
+                    <div
+                      class="d-inline-block position-relative expertise-box m-4 ms-0"
+                    >
+                      <input
+                        type="checkbox"
+                        class="btn-check"
+                        id="btn-check-2"
+                        checked
+                        autocomplete="off"
+                        disabled
+                      />
+                      <label
+                        class="btn btn-outline-secondary p-1 py-0"
+                        for="btn-check-2"
+                        >Engine</label
+                      >
+                      <button
+                        type="button"
+                        class="btn p-0 expertise-delete-btn"
+                      >
+                        <i class="bi bi-x-circle-fill text-danger"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="d-inline-block position-relative expertise-box m-4 ms-0"
+                    >
+                      <input
+                        type="checkbox"
+                        class="btn-check"
+                        id="btn-check-2"
+                        checked
+                        autocomplete="off"
+                        disabled
+                      />
+                      <label
+                        class="btn btn-outline-secondary p-1 py-0"
+                        for="btn-check-2"
+                        >Car</label
+                      >
+                      <button
+                        type="button"
+                        class="btn p-0 expertise-delete-btn"
+                      >
+                        <i class="bi bi-x-circle-fill text-danger"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <label
+                  for="reasontochoose"
+                  class="col-sm-2 form-label text-dark fw-semibold"
+                  >Reason To Choose Your Company</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-box-shadow"
+                    id="reasontochoose"
+                  />
+                </div>
+              </div>
+              <div class="row mb-4">
+                <label
+                  for="formFile1"
+                  class="col-sm-2 col-form-label text-dark fw-semibold"
+                  >Documents
+                </label>
+                <div class="col-sm-10">
+                  <input
+                    type="file"
+                    class="form-control border-0 custom-box-shadow"
+                    id="formFile1"
+                  />
+                </div>
+              </div>
+              <div class="row mb-4">
+                <label
+                  for="socialurl"
+                  class="col-sm-2 col-form-label text-dark fw-semibold"
+                  >Social Media</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    class="form-control border-0 custom-box-shadow"
+                    id="socialurl"
+                    placeholder="Add Facebook URL"
+                  />
+                </div>
+              </div>
+              <div class="row mb-4">
+                <label
+                  for="formFile2"
+                  class="col-sm-2 col-form-label text-dark fw-semibold"
+                  >Education And Certificates
+                </label>
+                <div class="col-sm-10">
+                  <input
+                    type="file"
+                    class="form-control border-0 custom-box-shadow"
+                    id="formFile2"
+                  />
+                </div>
+              </div>
+              <div class="form-save-btn">
+                <button
+                  type="submit"
+                  class="btn btn-primary col-2 fw-semibold transition-btn"
+                >
+                  Save
+                </button>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- <div id="loading">
+      <img src="./images/top10Logo.png" alt="" />
+      <div class="loader">Loading...</div>
+    </div> -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/loader.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#addExpertiseBtn").click(function () {
+          const reasonText = $("#expertise").val().trim();
+          if (reasonText.length > 0) {
+            let newExpertiseTemplate = `<div class="d-inline-block position-relative expertise-box m-4 ms-0"><input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off" disabled /> <label class="btn btn-outline-secondary p-1 py-0" for="btn-check-2">${reasonText}</label><button type="button" class="btn p-0 expertise-delete-btn"><i class="bi bi-x-circle-fill text-danger"></i></button></div>`;
+            $(".added-expertise-row").append(newExpertiseTemplate);
+            $(".expertise-delete-btn").click(deleteOldReason);
+            $("#expertise").val("");
+          }
+        });
+
+        $(".expertise-delete-btn").click(deleteOldReason);
+      });
+
+      function deleteOldReason() {
+        $(this).closest(".expertise-box").remove();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.end-line {
+  position: relative;
+}
+
+.endline-span::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 150px;
+  background: #303a92;
+  left: 45%;
+  top: 0;
+  /* bottom: 50%; */
+}

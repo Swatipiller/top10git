@@ -1,0 +1,305 @@
+/* .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+} */
+
+/* .usericonname a {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+} */
+
+.useraccount-img {
+  width: 30px;
+}
+.cs-list-grp {
+  padding: 1rem 1.5rem;
+}
+
+.cs-list-grp a {
+  text-decoration: none;
+}
+.cs-list-grp img {
+  margin-right: 1rem;
+}
+.cs-dashboard-active {
+  font-weight: 500;
+  color: var(--bs-primary);
+}
+.cs-dashboard {
+  color: #7b7979;
+}
+.moretextpara {
+  padding: 1rem 1.5rem;
+  text-align: center;
+  /* height: 330px; */
+}
+.cd-leftside {
+  position: relative;
+  height: 540px;
+  background: #fff;
+  box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2);
+}
+/* .cs-list-grp::before, */
+/* .cs-list-grp::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1%;
+  background-color: #eee;
+  left: 0;
+} */
+.cd-img-section {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.custom-card-para {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+.customtextarea {
+  height: 150px !important;
+  border: 0;
+}
+.cd-main-card-btn-grp {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.notificationmaincard {
+  background: #e4eafd;
+}
+.notificationcardtable th {
+  font-weight: 500;
+}
+.notificationcardtable td {
+  color: #8d8d8d;
+}
+
+.notificationchildcard {
+  width: 95%;
+  margin: 0.5rem auto;
+}
+.notifyday {
+  text-align: end;
+  margin-top: 1rem;
+}
+.notifynewday {
+  margin-top: 1rem;
+}
+.notificationmaincard {
+  background: #e4eafd;
+  height: 440px;
+  overflow-y: auto;
+}
+
+.request-group {
+  height: 390px;
+  overflow-y: auto;
+}
+
+.contactmessage {
+  height: 120px;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+.request-group {
+  scrollbar-width: thin;
+  scrollbar-color: #666666 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+.request-group::-webkit-scrollbar {
+  width: 10px;
+}
+
+.request-group::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.request-group::-webkit-scrollbar-thumb {
+  background-color: #666666;
+  border-radius: 0;
+  border: 2px solid #ffffff;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+.notificationmaincard {
+  scrollbar-width: thin;
+  scrollbar-color: #969696 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+.notificationmaincard::-webkit-scrollbar {
+  width: 8px;
+}
+
+.notificationmaincard::-webkit-scrollbar-track {
+  background: var(--bs-info);
+}
+
+.notificationmaincard::-webkit-scrollbar-thumb {
+  background-color: #969696;
+  border-radius: 0;
+}
+/* ===== end of Scrollbar CSS ===== */
+
+.application-step {
+  padding: 0px 30px;
+  /* margin-bottom: 23px; */
+  padding-bottom: 15px;
+}
+.appline {
+  margin: 1.5rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+.appline-content {
+  position: relative;
+  width: 33.33%;
+}
+
+.appline-content::after {
+  display: block;
+  height: 1px;
+  border: 1px dashed #acacac;
+  position: absolute;
+  left: 0;
+  right: 0;
+  content: "";
+  top: 50%;
+  z-index: -1;
+}
+
+.num-box {
+  width: 30px;
+  height: 30px;
+  background: var(--bs-primary);
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  padding-top: 7px;
+  display: inline-block;
+  /* position: absolute;
+  top: -20px; */
+}
+
+.appline-content.active .num-box {
+  background: var(--bs-info);
+  color: #000;
+}
+
+.text-box {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  font-weight: 500;
+  color: #000;
+  transform: translateX(-50%);
+  display: inline-block;
+}
+
+.modal-status .modal-backdrop.fade {
+  /* opacity: 0 !important; */
+}
+.status-modal-header {
+  background: var(--bs-primary);
+}
+.status-modal-header h1 {
+  color: #fff;
+}
+#changestatusModal.modal {
+  --bs-modal-width: 82%;
+  top: 0rem;
+  left: 7rem;
+}
+.cncl-btn {
+  margin-right: 3rem;
+}
+.sendpage img {
+  width: 50px;
+}
+.sidebar-wrapper {
+  position: fixed;
+  left: 0;
+  top: 91px;
+  /* width: 220px; */
+  z-index: 1;
+  bottom: 0;
+}
+.margin-top {
+  margin-top: 90px;
+}
+
+.request-item-img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* .dashboard-main {
+  height: calc(100vh - 91px);
+  overflow-y: auto;
+} */
+.rating-section .rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.rating-section .rating > input {
+  display: none;
+}
+
+.rating-section .rating > label {
+  position: relative;
+  width: 1em;
+  font-size: 30px;
+  font-weight: 300;
+  color: var(--bs-warning);
+  cursor: pointer;
+}
+
+.rating-section .rating > label::before {
+  content: "\2605";
+  position: absolute;
+  opacity: 0;
+}
+
+.rating-section .rating > label:hover:before,
+.rating-section .rating > label:hover ~ label:before {
+  opacity: 1 !important;
+}
+
+.rating-section .rating > input:checked ~ label:before {
+  opacity: 1;
+}
+
+.rating-section .rating:hover > input:checked ~ label:before {
+  opacity: 0.4;
+}
+
+.rating-section .buttons {
+  top: 36px;
+  position: relative;
+}
+
+.rating-section .rating-submit {
+  border-radius: 15px;
+  color: #fff;
+  height: 49px;
+}
+
+.rating-section .rating-submit:hover {
+  color: #fff;
+}

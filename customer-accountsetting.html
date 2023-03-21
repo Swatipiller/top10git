@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Top 10 Diensten</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/customerdashboard.css" rel="stylesheet" />
+    <!-- <link href="./css/companydashboard.css" rel="stylesheet" /> -->
+
+    <link href="./css/customer-accountsetting.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg nav-bg-shadow customerNavbar dashboardNavbar fixed-top bg-white"
+      >
+        <div
+          class="container-fluid d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 transition-main-btn"
+        >
+          <a class="navbar-brand col-md-3" href="./index.html">
+            <img src="./images/top10Logo.png" alt="" class="logoimg" />
+          </a>
+          <button
+            class="navbar-toggler transition-btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end usericonname"
+            id="navbarSupportedContent"
+          >
+            <a class="navbtn transition-main-btn d-flex align-items-center">
+              <img
+                src="./icons/account_circle.png"
+                alt=""
+                class="useraccount-img me-2"
+              />
+              <span class="text-primary fw-bold"> John</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="sidebar-wrapper col-md-2 ps-0">
+          <div class="cd-leftside" id="sidebar">
+            <div class="">
+              <div class="custom-box-shadow">
+                <ul class="c-list-group">
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./customerdashboard.html" class="c-sidebar-link"
+                      ><img
+                        src="./icons/dashboard_FILL0_wght400_GRAD0_opsz48 (2).png"
+                        alt=""
+                        class="sidebar-icon"
+                      />My Requests (5)</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a
+                      href="./customer-accountsetting.html"
+                      class="c-sidebar-link active"
+                      ><img
+                        src="./icons/manage_accounts_FILL0_wght400_GRAD0_opsz48 (1).png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Account Settings</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./index.html" class="c-sidebar-link"
+                      ><img
+                        src="./icons/logout_FILL0_wght400_GRAD0_opsz48 (2).png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Logout</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="moretextpara">
+                <p class="text-warning fw-semibold">Get more responses</p>
+                <p class="text-dark lh-base">
+                  Send request to more driving schools
+                </p>
+                <a href="./send-request.html" class="sendpage">
+                  <img src="./icons/Group106.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main class="col-md-10 offset-2 margin-top py-3 dashboard-main">
+          <p class="h5 text-dark fw-semibold mt-4 my-3">Contact Details</p>
+          <div class="company-accountsetting-form">
+            <form>
+              <div
+                class="accountsetting-field-wrapper align-items-center d-flex"
+              >
+                <div class="mb-3 col-8">
+                  <label for="username" class="form-label fw-semibold text-dark"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control custom-box-shadow"
+                    id="username"
+                    value="ANCP Driving School"
+                    readonly
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="ms-2 btn btn-outline-primary border-0 edit-field mt-2"
+                >
+                  <i class="bi bi-pencil"></i>
+                </button>
+              </div>
+              <div
+                class="accountsetting-field-wrapper align-items-center d-flex"
+              >
+                <div class="mb-3 col-8">
+                  <label for="phonenum" class="form-label fw-semibold text-dark"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control custom-box-shadow"
+                    value="9999999999"
+                    readonly
+                    id="phonenum"
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="ms-2 btn btn-outline-primary border-0 edit-field mt-2"
+                >
+                  <i class="bi bi-pencil"></i>
+                </button>
+              </div>
+              <div
+                class="accountsetting-field-wrapper align-items-center d-flex"
+              >
+                <div class="mb-3 col-8">
+                  <label
+                    for="useremail"
+                    class="form-label fw-semibold text-dark"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control custom-box-shadow"
+                    value="info@drivingschool.nl"
+                    readonly
+                    id="useremail"
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="ms-2 btn btn-outline-primary border-0 edit-field mt-2"
+                >
+                  <i class="bi bi-pencil"></i>
+                </button>
+              </div>
+              <div class="company-notification-field-1">
+                <p class="text-dark fw-semibold h6 mb-3">
+                  Marketing offers and email
+                </p>
+                <div class="form-check mb-1">
+                  <input
+                    class="form-check-input mt-0"
+                    type="radio"
+                    name="monthlyreport"
+                    id="yesreceive"
+                    checked
+                  />
+                  <label class="form-check-label" for="yesreceive">
+                    Yes, I would like to stay informed
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input mt-0"
+                    type="radio"
+                    name="monthlyreport"
+                    id="Unsubscribe"
+                  />
+                  <label class="form-check-label" for="Unsubscribe">
+                    Unsubscribe
+                  </label>
+                </div>
+              </div>
+              <div class="col-8 mt-4 save-btn-row text-center">
+                <button class="btn btn-primary px-5 fw-semibold transition-btn">
+                  Update
+                </button>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/loader.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/util.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".edit-field").click(function () {
+          const parent = $(this).closest($(".accountsetting-field-wrapper"));
+          const input = parent.find(".form-control");
+          input.removeAttr("readonly");
+          input.focus();
+          $(".company-accountsetting-form").addClass("form-editable");
+        });
+      });
+    </script>
+  </body>
+</html>

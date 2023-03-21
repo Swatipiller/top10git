@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Top 10 Diensten</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/customerdashboard.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body class="modal-status">
+    <header>
+      <nav
+        class="navbar navbar-expand-lg nav-bg-shadow customerNavbar dashboardNavbar fixed-top bg-white"
+      >
+        <div
+          class="container-fluid d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 transition-main-btn"
+        >
+          <a class="navbar-brand col-md-3" href="./index.html">
+            <img src="./images/top10Logo.png" alt="" class="logoimg" />
+          </a>
+          <button
+            class="navbar-toggler transition-btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end usericonname"
+            id="navbarSupportedContent"
+          >
+            <a class="navbtn transition-main-btn d-flex align-items-center">
+              <img
+                src="./icons/account_circle.png"
+                alt=""
+                class="useraccount-img me-2"
+              />
+              <span class="text-primary fw-bold"> John</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="sidebar-wrapper col-md-2 ps-0">
+          <div class="cd-leftside" id="sidebar">
+            <div class="">
+              <div class="custom-box-shadow">
+                <ul class="c-list-group">
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a
+                      href="./customerdashboard.html"
+                      class="c-sidebar-link active"
+                      ><img
+                        src="./icons/dashboard_FILL0_wght400_GRAD0_opsz48 (2).png"
+                        alt=""
+                        class="sidebar-icon"
+                      />My Requests (5)</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a
+                      href="./customer-accountsetting.html"
+                      class="c-sidebar-link"
+                      ><img
+                        src="./icons/manage_accounts_FILL0_wght400_GRAD0_opsz48 (1).png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Account Settings</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./index.html" class="c-sidebar-link"
+                      ><img
+                        src="./icons/logout_FILL0_wght400_GRAD0_opsz48 (2).png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Logout</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="moretextpara">
+                <p class="text-warning fw-semibold">Get more responses</p>
+                <p class="text-dark lh-base">
+                  Send request to more driving schools
+                </p>
+                <a href="./send-request.html" class="sendpage">
+                  <img src="./icons/Group106.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main class="col-md-10 offset-2 margin-top dashboard-main">
+          <div class="cd-topbar-section d-flex justify-content-between">
+            <div class="cd-searchbar">
+              <div class="cd-serchtext d-flex my-4">
+                <p class="fw-semibold text-dark mx-2 my-2">Type of Request</p>
+                <div class="">
+                  <select
+                    class="form-select"
+                    aria-label="Scooter, moped or Light moped (AM) - 9 Feb"
+                  >
+                    <option selected>Driving License (B)</option>
+                    <option value="Accountant">
+                      Truck driving license ( C, CE, C1, C1E)
+                    </option>
+                    <option value="Air Conditionar Services">
+                      Scooter, moped or Light moped (AM)
+                    </option>
+                    <option value="Architect">Architect</option>
+                    <option value="Bathroom Installer">
+                      Tractor driving license ( T )
+                    </option>
+                    <option value="Motorcycle License (A, A1, A2 )">
+                      Motorcycle License (A, A1, A2 )
+                    </option>
+                    <option value="Bus driving license (D, DE, D1, D1E )">
+                      Bus driving license (D, DE, D1, D1E )
+                    </option>
+                    <option value="Trailer driving license ( BE, B+)">
+                      Trailer driving license ( BE, B+)
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="cd-changestatusbtn my-4">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#changestatusModal"
+                ><span
+                  ><img
+                    src="./icons/edit_FILL0_wght400_GRAD0_opsz48 (5).png"
+                    alt=""
+                /></span>
+                <span class="fw-semibold text-primary">Change Status</span>
+              </a>
+            </div>
+          </div>
+          <div class="cd-content-section">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="cd-status-section">
+                  <div class="cd-content-section d-flex">
+                    <div class="cd-content-section-img">
+                      <img
+                        src="./images/why-chooseImg1.png"
+                        alt=""
+                        class="cd-img-section"
+                      />
+                    </div>
+                    <div class="cd-content-section-decs mx-4 my-4">
+                      <p class="drivingschool-heading">ANWP Driving School</p>
+                      <p class="rating-para">
+                        5.0<ion-icon
+                          class="text-warning"
+                          name="star-outline"
+                        ></ion-icon>
+                        <ion-icon
+                          class="text-warning"
+                          name="star-outline"
+                        ></ion-icon>
+                        <ion-icon
+                          class="text-warning"
+                          name="star-outline"
+                        ></ion-icon>
+                        <ion-icon
+                          class="text-warning"
+                          name="star-outline"
+                        ></ion-icon>
+                        <ion-icon
+                          class="text-warning"
+                          name="star-outline"
+                        ></ion-icon>
+                        (80)
+                      </p>
+                      <p class="d-flex">
+                        <span class="text-dark fw-semibold">Status-</span>
+                        <span class="text-primary mx-2">Pending Request</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="applicant-request-main">
+                    <div
+                      class="request-group card border-0 bg-body-secondary text-black"
+                    >
+                      <div class="card-body">
+                        <h4 class="h6 mb-3 fw-bold">All requests</h4>
+                        <div class="request-item align-items-start d-flex mb-3">
+                          <img
+                            src="./images/customrequests-img1.png"
+                            alt=""
+                            class="request-item-img"
+                          />
+                          <div class="ms-3 request-item-content">
+                            <p class="request-name mb-2 fw-semibold">
+                              RJK Driving School
+                            </p>
+                            <p class="request-type mb-2">
+                              DRIVING SCHOOL (DRIVER'S LICENSE (B))
+                            </p>
+                            <p class="mb-0">1-03-23</p>
+                          </div>
+                        </div>
+                        <div class="request-item align-items-start d-flex mb-3">
+                          <img
+                            src="./images/customrequests-img2.png"
+                            alt=""
+                            class="request-item-img"
+                          />
+                          <div class="ms-3 request-item-content">
+                            <p class="request-name mb-2 fw-semibold">
+                              Express Driving School
+                            </p>
+                            <p class="request-type mb-2">
+                              DRIVING SCHOOL (DRIVER'S LICENSE (B))
+                            </p>
+                            <p class="mb-0">1-03-23</p>
+                          </div>
+                        </div>
+                        <div class="request-item align-items-start d-flex mb-3">
+                          <img
+                            src="./images/customrequests-img3.png"
+                            alt=""
+                            class="request-item-img"
+                          />
+                          <div class="ms-3 request-item-content">
+                            <p class="request-name mb-2 fw-semibold">
+                              First Safety Driving School
+                            </p>
+                            <p class="request-type mb-2">
+                              DRIVING SCHOOL (DRIVER'S LICENSE (B))
+                            </p>
+                            <p class="mb-0">1-03-23</p>
+                          </div>
+                        </div>
+                        <div class="request-item align-items-start d-flex mb-3">
+                          <img
+                            src="./images/customrequests-img4.png"
+                            alt=""
+                            class="request-item-img"
+                          />
+                          <div class="ms-3 request-item-content">
+                            <p class="request-name mb-2 fw-semibold">
+                              Dorland Driving School
+                            </p>
+                            <p class="request-type mb-2">
+                              DRIVING SCHOOL (DRIVER'S LICENSE (B))
+                            </p>
+                            <p class="mb-0">1-03-23</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="application-step">
+                  <div class="appline">
+                    <!-- <img src="./images/Path 7.png" alt="" class="appline-img" /> -->
+                    <div class="appline-content">
+                      <span class="num-box">1</span>
+                      <span class="text-box">Application</span>
+                    </div>
+                    <div class="appline-content">
+                      <span class="num-box">2</span>
+                      <span class="text-box">Response</span>
+                    </div>
+                    <div class="appline-content active">
+                      <span class="num-box">3</span>
+                      <span class="text-box">Acceptance</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="notificationdiv">
+                  <div
+                    class="card notificationmaincard custom-box-shadow border-0"
+                  >
+                    <div class="card-body">
+                      <div class="card notificationchildcard custom-box-shadow">
+                        <div class="card-body">
+                          <p
+                            class="notificationchildcardpara text-primary fw-semibold"
+                          >
+                            Request from John
+                          </p>
+                          <p class="notificationchildcardsubpara">
+                            Yesterday 08:43
+                          </p>
+                          <div class="notificationcardtable">
+                            <table class="table">
+                              <tbody>
+                                <tr>
+                                  <th class="border-0" scope="row">
+                                    Type of application-
+                                  </th>
+                                  <td class="border-0">Price request</td>
+                                  <!-- <td class="border-0"></td>
+                                  <td class="border-0"></td> -->
+                                </tr>
+                                <tr>
+                                  <th class="border-0" scope="row">
+                                    Application for-
+                                  </th>
+                                  <td class="border-0">Driving School</td>
+                                </tr>
+                                <tr>
+                                  <th class="border-0" scope="row">Name-</th>
+                                  <td class="border-0">John</td>
+                                </tr>
+                                <tr>
+                                  <th class="border-0" scope="row">Place-</th>
+                                  <td class="border-0">Amsterdam</td>
+                                </tr>
+                                <tr>
+                                  <th class="border-0" scope="row">
+                                    Desired response time-
+                                  </th>
+                                  <td class="border-0">
+                                    Within one working day
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th class="border-0" scope="row">
+                                    Requested On-
+                                  </th>
+                                  <td class="border-0">February 9,2023</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="notifyday">Yesterday 08:43</p>
+                      <div
+                        class="card notificationlastcard custom-box-shadow me-5"
+                      >
+                        <div class="card-body">
+                          <p class="notificationlastcardpara">
+                            ANWP driving school want to contact you by phone.
+                          </p>
+                        </div>
+                      </div>
+                      <p class="notifynewday">Today</p>
+                      <div
+                        class="card notificationlastcard custom-box-shadow me-5"
+                      >
+                        <div class="card-body">
+                          <p class="notificationlastcardpara">
+                            ANWP driving school want to contact you by phone.
+                          </p>
+                        </div>
+                      </div>
+                      <p class="notifynewday">Today</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact-applicant-wrapper my-4">
+              <div class="align-items-center d-flex justify-content-between">
+                <div class="contact-applicant-para">
+                  <p class="text-dark fw-semibold">
+                    Contact ANWP Driving School
+                  </p>
+                  <p class="text-muted small">
+                    Set your automatic reply
+                    <a href="#" class="text-primary">here!</a>
+                  </p>
+                </div>
+                <button
+                  class="btn btn-primary transition-btn fw-semibold mb-5 px-4 transition-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#reviewmodal"
+                >
+                  <i class="bi bi-pencil-square me-2"></i>Review
+                </button>
+              </div>
+              <form>
+                <div class="">
+                  <textarea
+                    class="form-control contactmessage"
+                    placeholder="Type message here..."
+                    id="contactmessage"
+                  ></textarea>
+                  <label class="visually-hidden" for="contactmessage"
+                    >Comments</label
+                  >
+                </div>
+                <div class="mt-3">
+                  <div
+                    class="btn-company-request-wrapper d-flex justify-content-between"
+                  >
+                    <div class="">
+                      <input class="form-control" type="file" id="formFile" />
+                    </div>
+                    <div class="btn-company-request">
+                      <button
+                        class="btn btn-block btn-primary transition-btn fw-semibold"
+                      >
+                        <i class="bi bi-envelope message-icon me-1"></i>
+                        Send Message
+                      </button>
+
+                      <a
+                        href="#"
+                        class="btn btn-block btn-outline-primary transition-btn fw-semibold ms-2"
+                        ><i class="bi bi-telephone phone-icon me-1"></i>Call
+                        Company</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#changestatusModal"
+    >
+      Launch demo modal
+    </button> -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="changestatusModal"
+      tabindex="-1"
+      aria-labelledby="changestatusModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header status-modal-header">
+            <h1 class="modal-title fs-3" id="changestatusModalLabel">
+              Do you want to change the status of your request?
+            </h1>
+            <!-- <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button> -->
+          </div>
+          <div class="modal-body modal-body-status">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="compychoose">
+                  <h3 class="h5 mb-3 text-dark fw-semibold">
+                    Which company did you choose?
+                  </h3>
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input mt-0"
+                      type="radio"
+                      name="compchos"
+                      id="drvschool"
+                      checked
+                    />
+                    <label class="form-check-label" for="drvschool">
+                      ANWP driving school
+                    </label>
+                  </div>
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input mt-0"
+                      type="radio"
+                      name="compchos"
+                      id="foundsch"
+                      checked
+                    />
+                    <label class="form-check-label" for="foundsch">
+                      I found another (outside Top 10 Diensten)
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h3 class="h5 mb-3 text-dark fw-semibold">
+                  I haven't made a choice yet (why?)
+                </h3>
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input mt-0"
+                    type="radio"
+                    name="choice"
+                    id="stillchoosing"
+                    checked
+                  />
+                  <label class="form-check-label" for="stillchoosing">
+                    I am still choosing
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input mt-0"
+                    type="radio"
+                    name="choice"
+                    id="postpone"
+                    checked
+                  />
+                  <label class="form-check-label" for="postpone">
+                    I postponed the plan for now (request to pause application)
+                  </label>
+                </div>
+                <div class="form-check mb-2">
+                  <input
+                    class="form-check-input mt-0"
+                    type="radio"
+                    name="choice"
+                    id="plan"
+                    checked
+                  />
+                  <label class="form-check-label" for="plan">
+                    I changed my plan (request to cancel application)
+                  </label>
+                </div>
+              </div>
+            </div>
+            <p
+              class="align-items-center d-flex justify-content-center status-btn-grp"
+            >
+              <a
+                class="btn btn-outline-primary col-md-2 cncl-btn"
+                href="#"
+                role="button"
+                data-bs-dismiss="modal"
+                >Cancel</a
+              >
+              <a class="btn btn-primary col-md-2" href="#" role="button"
+                >Confirm</a
+              >
+            </p>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div id="loading">
+      <img src="./images/top10Logo.png" alt="" />
+      <div class="loader">Loading...</div>
+    </div>
+
+    <!-- start review modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="reviewmodal"
+      tabindex="-1"
+      aria-labelledby="reviewmodalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-primary" data-bs-theme="dark">
+            <h1 class="modal-title fs-5" id="reviewmodalLabel">
+              Rate and review
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body review-modal-body">
+            <p class="text-dark samll">Ratings (3/5)</p>
+            <div class="rating-section mb-3">
+              <div class="rating">
+                <input type="radio" name="rating" value="5" id="5" /><label
+                  class="me-2"
+                  for="5"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="4" id="4" /><label
+                  class="me-2"
+                  for="4"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="3" id="3" /><label
+                  class="me-2"
+                  for="3"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="2" id="2" /><label
+                  class="me-2"
+                  for="2"
+                  >☆</label
+                >
+                <input type="radio" name="rating" value="1" id="1" /><label
+                  class="me-2"
+                  for="1"
+                  >☆</label
+                >
+              </div>
+            </div>
+            <div class="review-textarea-section mb-3">
+              <p class="text-dark samll">Review</p>
+              <div class="">
+                <textarea
+                  class="form-control"
+                  placeholder="Leave a comment here"
+                  id="reviewtextarea"
+                  style="height: 145px"
+                ></textarea>
+                <label for="reviewtextarea" class="visually-hidden"
+                  >Comments</label
+                >
+              </div>
+            </div>
+            <div class="addphoto">
+              <p class="text-dark samll">Add photos/video</p>
+              <div class="col-7">
+                <input class="form-control" type="file" id="addphoto" />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <button
+              type="button "
+              class="btn btn-outline-secondary transition-btn"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary fw-semibold transition-btn"
+            >
+              Post
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end review modal -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/loader.js"></script>
+  </body>
+</html>

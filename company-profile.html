@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Top 10 Diensten</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/bootstrap-icons.css" />
+    <link href="./css/customerdashboard.css" rel="stylesheet" />
+    <link href="./css/companydashboard.css" rel="stylesheet" />
+    <link href="./css/company-profile.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg nav-bg-shadow customerNavbar dashboardNavbar fixed-top bg-white"
+      >
+        <div
+          class="container-fluid d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 transition-main-btn"
+        >
+          <a class="navbar-brand col-md-3" href="./index.html">
+            <img src="./images/top10Logo.png" alt="" class="logoimg" />
+          </a>
+          <button
+            class="navbar-toggler transition-btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end c-usericonname"
+            id="navbarSupportedContent"
+          >
+            <div class="dropdown c-dropdown">
+              <a
+                class="navbtn transition-main-btn d-flex align-items-center btn dropdown-toggle c-navbar"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="text-dark fw-medium">info@drivingschool.nl</span>
+                <img
+                  src="./images/profilepic.png"
+                  alt="info@drivingschool.nl"
+                  class="c-useraccount-img ms-2 text-primary"
+                />
+              </a>
+              <ul class="dropdown-menu mx-0 shadow w-220px">
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-accountsetting.html"
+                  >
+                    <i class="bi bi-person-gear fs-5 text-primary"></i>Account
+                    Settings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-notificationsetting.html"
+                  >
+                    <i class="bi bi-bell fs-5 text-primary"></i>Notification
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-automaticanswer.html"
+                  >
+                    <i class="bi bi-arrow-90deg-left fs-5 text-primary"></i
+                    >Automatic Answer
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-whatsapp-setting.html"
+                  >
+                    <i class="bi bi-whatsapp fs-5 text-primary"></i>WhatsApp
+                    Settings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center text-primary"
+                    href="/index.html"
+                    ><i class="bi bi-box-arrow-right fs-5 text-primary"></i
+                    >Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="sidebar-wrapper col-md-2 ps-0">
+          <div class="cd-leftside" id="sidebar">
+            <div class="">
+              <div class="custom-box-shadow">
+                <ul class="c-list-group">
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./companydashboard.html" class="c-sidebar-link"
+                      ><img
+                        src="./icons/dashboard_FILL0_wght400_GRAD0_opsz48 (2).png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Dashboard</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./company-requests.html" class="c-sidebar-link"
+                      ><img
+                        src="./images/send_to_mobile_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Requests</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a
+                      href="./company-profile.html"
+                      class="c-sidebar-link active"
+                      ><img
+                        src="./icons/person_FILL0_wght400_GRAD0_opsz48 (1).png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Profile</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./company-review.html" class="c-sidebar-link"
+                      ><img
+                        src="./images/reviews_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Reviews</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./company-premium.html" class="c-sidebar-link"
+                      ><img
+                        src="./images/workspace_premium_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Premium</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="#" class="c-sidebar-link"
+                      ><img
+                        src="./images/contact_support_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Help</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="c-moretextpara">
+                <p class="text-success fw-semibold mb-3 lh-base">
+                  Curious about what your profile looks like?
+                </p>
+                <!-- <p class="text-dark lh-sm text-black">
+                  Invite other company and both get 3 free requests!
+                </p> -->
+                <a
+                  href="/drivingschool-detail.html"
+                  class="c-sendpage btn btn-primary col-8 transition-btn fw-semibold"
+                >
+                  View Profile
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main class="col-md-10 offset-2 margin-top py-3 dashboard-main">
+          <div
+            class="customer-profile-topbar d-flex justify-content-between align-items-center"
+          >
+            <h1 class="h4 text-dark fw-semibold">Manage Company Profile</h1>
+            <a
+              href="./profile-request-setting.html"
+              class="small text-primary fw-semibold"
+              ><img
+                src="./icons/settings_FILL0_wght400_GRAD0_opsz48 (3).png"
+                alt=""
+                class="setting-icon"
+              />Request settings</a
+            >
+          </div>
+          <p class="small text-dark">
+            ( Customers choose your company based on your profile. A clear
+            description about why to choose your company and photos are
+            important.)
+          </p>
+          <p class="small text-primary">
+            (Tip: add certificates , education, work experience and membership
+            which helps you to score better.)
+          </p>
+          <div class="row">
+            <div class="col-9">
+              <nav class="nav company-profile-nav my-4">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item">
+                    <a
+                      href="#photoandvideo"
+                      class="company-subsection-heading nav-link text-primary fw-semibold"
+                      >Photos & videos</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#aboutcompany" class="nav-link fw-semibold"
+                      >About Company</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#craftmanship" class="nav-link fw-semibold"
+                      >Experience & Craftmanship</a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#pricing" class="nav-link fw-semibold">Pricing</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#faq" class="nav-link fw-semibold">FAQ</a>
+                  </li>
+                </ul>
+              </nav>
+              <section id="photoandvideo">
+                <div
+                  class="aboutcompany-header d-flex justify-content-between align-items-center"
+                >
+                  <p class="photoandvideo-heading text-warning h5 fw-bold">
+                    Company Photos & Videos
+                  </p>
+                  <a
+                    href="#"
+                    class="small text-primary fw-semibold"
+                    data-bs-target="#changeordermodal"
+                    data-bs-toggle="modal"
+                    >Change order</a
+                  >
+                </div>
+
+                <div class="row my-4 gx-4">
+                  <div class="col-md-2">
+                    <p class="small text-muted fw-semibold">Profile Picture</p>
+                    <div class="profile-img-box">
+                      <img src="./images/profilepic.png" alt="Profile pic" />
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="row">
+                          <div class="col-12">
+                            <p class="small text-muted fw-semibold">
+                              Company Photos
+                            </p>
+                          </div>
+                          <div class="col-12 d-flex flex-wrap">
+                            <div class="profile-img-box me-4">
+                              <button
+                                class="btn p-0 lh-1 remove-btn text-danger"
+                                aria-label="Remove"
+                              >
+                                <ion-icon
+                                  name="close-circle-outline"
+                                ></ion-icon>
+                              </button>
+                              <img
+                                src="./images/drivingschool-img2.png"
+                                alt="Profile pic"
+                              />
+                            </div>
+                            <div class="profile-img-box me-4">
+                              <button
+                                class="btn p-0 lh-1 remove-btn text-danger"
+                                aria-label="Remove"
+                              >
+                                <ion-icon
+                                  name="close-circle-outline"
+                                ></ion-icon>
+                              </button>
+                              <img
+                                src="./images/drivingschool-img4.png"
+                                alt="Profile pic"
+                              />
+                            </div>
+                            <div class="profile-img-box me-4">
+                              <button
+                                class="btn p-0 lh-1 remove-btn text-danger"
+                                aria-label="Remove"
+                              >
+                                <ion-icon
+                                  name="close-circle-outline"
+                                ></ion-icon>
+                              </button>
+                              <img
+                                src="./images/drivingschool-img5.png"
+                                alt="Profile pic"
+                              />
+                            </div>
+                            <div class="profile-img-box">
+                              <!-- <button
+                                class="btn p-2 lh-1 addmore-btn text-primary h-100 w-100 custom-box-shadow"
+                                aria-label="Remove"
+                              >
+                                <ion-icon
+                                  name="add-outline"
+                                  class="display-5"
+                                ></ion-icon>
+                              </button> -->
+                              <div class="profile-img-box">
+                                <label
+                                  for="addmoreimg"
+                                  class="d-flex justify-content-center align-items-center btn p-2 lh-1 addmore-btn text-primary h-100 w-100 custom-box-shadow"
+                                  ><ion-icon
+                                    name="add-outline"
+                                    class="display-5"
+                                  ></ion-icon
+                                ></label>
+                                <input
+                                  class="visually-hidden"
+                                  type="file"
+                                  id="addmoreimg"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 mt-4">
+                        <div class="row">
+                          <div class="col-12">
+                            <p class="small text-muted fw-semibold">Videos</p>
+                          </div>
+                          <div class="col-12 d-flex flex-wrap">
+                            <!-- <div class="profile-img-box profile-video-box me-4">
+                              <button
+                                class="btn p-0 lh-1 remove-btn text-danger"
+                                aria-label="Remove"
+                              >
+                                <ion-icon
+                                  name="close-circle-outline"
+                                ></ion-icon>
+                              </button>
+
+                              <img
+                                src="./images/drivingschool-img2.png"
+                                alt="Profile pic"
+                              />
+                              <div class="overlay-play-btn">
+                                <img src="./icons/play-icon.png" alt="" />
+                              </div>
+                            </div> -->
+                            <a
+                              href="https://www.youtube.com/watch?v=t4JZZhKDyTI"
+                              data-fancybox
+                            >
+                              <div
+                                class="profile-img-box profile-video-box me-4"
+                              >
+                                <button
+                                  class="btn p-0 lh-1 remove-btn text-danger"
+                                  aria-label="Remove"
+                                >
+                                  <ion-icon
+                                    name="close-circle-outline"
+                                  ></ion-icon>
+                                </button>
+
+                                <!-- <img
+                                src="./images/drivingschool-img2.png"
+                                alt="Profile pic"
+                              /> -->
+
+                                <img src="./images/drivingschool-img2.png" />
+
+                                <div class="overlay-play-btn">
+                                  <img src="./icons/play-icon.png" alt="" />
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section id="aboutcompany">
+                <div
+                  class="aboutcompany-header d-flex justify-content-between align-items-center"
+                >
+                  <p class="aboutcompany-heading text-warning h5 fw-bold">
+                    About Company
+                  </p>
+                  <a
+                    href="./profile-change-info.html"
+                    class="small text-primary fw-semibold"
+                    >Change</a
+                  >
+                </div>
+                <div class="row aboutcompany-topbar">
+                  <div class="col-4">
+                    <p class="h5 text-dark fw-semibold">ANWP Driving School</p>
+                  </div>
+                  <div class="col-6">
+                    <span class="review-star-para">
+                      5.0
+                      <span class="review-star"
+                        ><ion-icon
+                          class="text-warning md hydrated"
+                          name="star-outline"
+                          role="img"
+                          aria-label="star outline"
+                        ></ion-icon
+                        ><ion-icon
+                          class="text-warning md hydrated"
+                          name="star-outline"
+                          role="img"
+                          aria-label="star outline"
+                        ></ion-icon
+                        ><ion-icon
+                          class="text-warning md hydrated"
+                          name="star-outline"
+                          role="img"
+                          aria-label="star outline"
+                        ></ion-icon
+                        ><ion-icon
+                          class="text-warning md hydrated"
+                          name="star-outline"
+                          role="img"
+                          aria-label="star outline"
+                        ></ion-icon
+                        ><ion-icon
+                          class="text-warning md hydrated"
+                          name="star-outline"
+                          role="img"
+                          aria-label="star outline"
+                        ></ion-icon
+                      ></span>
+                      (80)
+                    </span>
+                  </div>
+                </div>
+                <div class="aboutcompany-details">
+                  <ul class="details-group d-grid gap-3 grid--2-cols mt-2 w-75">
+                    <li class="details-item">
+                      <a href="#" class="details-link"
+                        ><small class="text-muted fw-semibold"
+                          ><img
+                            class="icon-size"
+                            src="./icons/mail_FILL0_wght400_GRAD0_opsz48.png"
+                            alt=""
+                          />info@gmail.com</small
+                        ></a
+                      >
+                    </li>
+                    <li class="details-item">
+                      <a href="#" class="details-link"
+                        ><small class="text-muted fw-semibold"
+                          ><img
+                            class="icon-size"
+                            src="./icons/language_FILL0_wght400_GRAD0_opsz48.png"
+                            alt=""
+                          />https://anwpdrivingschool.nl</small
+                        ></a
+                      >
+                    </li>
+                    <li class="details-item">
+                      <a href="#" class="details-link"
+                        ><small class="text-muted fw-semibold"
+                          ><img
+                            class="icon-size"
+                            src="./icons/call_FILL0_wght400_GRAD0_opsz48.png"
+                            alt=""
+                          />8989898989</small
+                        ></a
+                      >
+                    </li>
+                    <li class="details-item">
+                      <a href="#" class="details-link"
+                        ><small class="text-muted fw-semibold"
+                          ><img
+                            class="icon-size"
+                            src="./icons/group_FILL0_wght400_GRAD0_opsz48.png"
+                            alt=""
+                          />12 employees</small
+                        ></a
+                      >
+                    </li>
+                    <li class="details-item">
+                      <a href="#" class="details-link"
+                        ><small class="text-muted fw-semibold"
+                          ><img
+                            class="icon-size"
+                            src="./icons/insights_FILL0_wght400_GRAD0_opsz48.png"
+                            alt=""
+                          />8 years of experience</small
+                        ></a
+                      >
+                    </li>
+                    <li class="details-item">
+                      <a href="#" class="details-link"
+                        ><small class="text-muted fw-semibold"
+                          ><img
+                            class="icon-size"
+                            src="./icons/brightness_4_FILL0_wght400_GRAD0_opsz48.png"
+                            alt=""
+                          />6 years in operation</small
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="aboutcompanycontent-detail">
+                  <p class="h5 text-dark fw-bold">About Driving School</p>
+                  <p class="small text-muted fw-semibold lh-base">
+                    A leading Dutch provider of roadside assistance for
+                    motorists. Their driving school provides expert tuition for
+                    all motoring abilities across the Netherlands. So, if you
+                    want to drive, ANWB can help you get behind the wheel.
+                  </p>
+                  <p class="small text-muted fw-semibold lh-base">
+                    A leading Dutch provider of roadside assistance for
+                    motorists. Their driving school provides expert tuition for
+                    all motoring abilities across the Netherlands. So, if you
+                    want to drive, ANWB can help you get behind the wheel.
+                  </p>
+                </div>
+                <div class="abouteperties">
+                  <p class="h6 text-dark fw-bold mt-4">Your Expertise</p>
+                  <p class="h6 text-muted fw-semibold fst-italic mt-4">
+                    No expertise added yet!
+                  </p>
+                  <a
+                    href="/profile-change-info.html"
+                    class="btn btn-outline-primary mt-2 d-inline-flex align-items-center"
+                  >
+                    <ion-icon class="fs-4" name="add-outline"></ion-icon>
+                    Add Expertise
+                  </a>
+                </div>
+                <div class="aboutereason mt-2">
+                  <p class="h6 text-dark fw-bold mt-4">
+                    Reason to choose your company
+                  </p>
+                  <p class="h6 text-muted fw-semibold fst-italic mt-4">
+                    No reason added yet!
+                  </p>
+                  <a
+                    href="/profile-change-info.html"
+                    class="btn btn-outline-primary mt-2 d-inline-flex align-items-center"
+                  >
+                    <ion-icon class="fs-4" name="add-outline"></ion-icon>
+                    Add Reason
+                  </a>
+                </div>
+                <div class="aboutedocument mt-2">
+                  <p class="h6 text-dark fw-bold mt-4">
+                    Documents (eg. brochures, etc)
+                  </p>
+                  <p class="h6 text-muted fw-semibold fst-italic mt-4">
+                    No documents added yet!
+                  </p>
+                  <a
+                    href="/profile-change-info.html"
+                    class="btn btn-outline-primary mt-2 d-inline-flex align-items-center"
+                  >
+                    <ion-icon class="fs-4" name="add-outline"></ion-icon>
+                    Add Document
+                  </a>
+                </div>
+                <div class="aboutesocial mt-2">
+                  <p class="h6 text-dark fw-bold mt-4">Social Media</p>
+                  <p class="h6 text-muted fw-semibold fst-italic mt-4">
+                    <img
+                      src="./icons/Icon simple-facebook.png"
+                      alt=""
+                      class="fb-icon"
+                    />
+                    No link added yet!
+                  </p>
+                </div>
+              </section>
+              <section id="craftmanship" class="mt-4">
+                <div
+                  class="aboutcraftmanship-header d-flex justify-content-between align-items-center"
+                >
+                  <p class="aboutcompany-heading text-warning h5 fw-bold">
+                    Experience and Craftsmanship
+                  </p>
+                  <a
+                    href="/profile-change-info.html"
+                    class="small text-primary fw-semibold"
+                    >Change</a
+                  >
+                </div>
+                <div class="aboutcraftmanship mt-2">
+                  <p class="h6 text-dark fw-bold mt-4">
+                    Education and Certificates
+                  </p>
+                  <p class="h6 text-muted fw-semibold fst-italic mt-4">
+                    No educational documents or certificate added yet!
+                  </p>
+                  <a
+                    href="/profile-change-info.html"
+                    class="btn btn-outline-primary mt-2 d-inline-flex align-items-center"
+                  >
+                    <ion-icon class="fs-4" name="add-outline"></ion-icon>
+                    Add Certificates
+                  </a>
+                </div>
+              </section>
+              <section id="pricing" class="mt-4">
+                <p class="aboutcompany-heading text-warning h5 fw-bold">
+                  Pricing
+                </p>
+                <div class="abouteprice mt-2">
+                  <p class="h6 text-dark fw-bold mt-4">Profile label</p>
+                  <div class="price-opt">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="pricing"
+                        id="price1"
+                      />
+                      <label
+                        class="form-check-label mt-1 small fw-semibold"
+                        for="price1"
+                      >
+                        Free introductory meeting
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="pricing"
+                        id="price2"
+                      />
+                      <label
+                        class="form-check-label mt-1 small fw-semibold"
+                        for="price2"
+                      >
+                        5% discount on rates
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="pricing"
+                        id="price3"
+                      />
+                      <label
+                        class="form-check-label mt-1 small fw-semibold"
+                        for="price3"
+                      >
+                        10% discount on rates
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="pricing"
+                        id="price4"
+                      />
+                      <label
+                        class="form-check-label mt-1 small fw-semibold"
+                        for="price4"
+                      >
+                        Always the best price
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="pricing"
+                        id="price5"
+                      />
+                      <label
+                        class="form-check-label mt-1 small fw-semibold"
+                        for="price5"
+                      >
+                        Readily available
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="pricing"
+                        id="price6"
+                      />
+                      <label
+                        class="form-check-label mt-1 small fw-semibold"
+                        for="price6"
+                      >
+                        No tag
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section id="faq" class="mt-4">
+                <p class="profilefaq-heading text-warning h5 fw-bold">FAQ</p>
+                <div class="profilefaq mt-2">
+                  <div class="profilefaq mt-2">
+                    <p class="h6 text-dark fw-bold mt-4">Questions(0)</p>
+                    <p class="h6 text-muted fw-semibold fst-italic mt-4">
+                      No questions added yet!
+                    </p>
+                    <button
+                      class="btn btn-outline-primary mt-2 d-inline-flex align-items-center"
+                      data-bs-toggle="modal"
+                      data-bs-target="#addFaqModal"
+                    >
+                      <ion-icon class="fs-4" name="add-outline"></ion-icon>
+                      Add Question
+                    </button>
+                    <div class="card border-0 custom-box-shadow mt-4">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between mb-3">
+                          <h5 class="card-title fs-5 text-dark mb-0">
+                            How do you get my data?
+                          </h5>
+                          <div>
+                            <a
+                              href="/company-changefaq.html"
+                              class="fw-medium me-3"
+                              >Change</a
+                            >
+                            <button class="btn p-0">
+                              <i class="bi bi-x-circle text-danger"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <p class="mb-0 lh-sm">
+                          Our system searches online for publicly available
+                          information from all companies in a particular
+                          industry. We collect this information and use it to
+                          build a profile. It is of course possible to adjust
+                          this data at any time via the dashboard itself. If you
+                          do not want to be included at all, please let us know
+                          - we can remove your company profile immediately.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="col-3">
+              <div class="card c-card custom-box-shadow bg-info border-0">
+                <div class="card-body">
+                  <div class="c-progress-bar mt-4">
+                    <p
+                      class="c-progress-bar-text fw-semibold text-primary fs-6"
+                    >
+                      Your profile is 80% complete
+                    </p>
+                    <div
+                      class="progress bg-dark-subtle"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="height: 10px"
+                    >
+                      <div class="progress-bar w-75"></div>
+                    </div>
+                    <p
+                      class="c-progress-bar-alert fs-6 mt-2 text-muted lh-base"
+                    >
+                      A complete profile has a better score and chose more
+                      often!.
+                    </p>
+                    <div class="alert-para d-flex fs-6">
+                      <p class="hinttext fw-semibold mt-1">Hint:</p>
+                      <div class="alert-para-div lh-base ms-2">
+                        <a class="text-primary fw-semibold">Add Certificates</a
+                        ><br />
+                        <a class="text-primary fw-semibold">Add Expertise</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- <div id="loading">
+      <img src="./images/top10Logo.png" alt="" />
+      <div class="loader">Loading...</div>
+    </div> -->
+    <div class="modal py-5" tabindex="-1" role="dialog" id="changeordermodal">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header border-bottom-0">
+            <h1 class="modal-title fs-5 text-dark">Change the order</h1>
+
+            <button
+              type="button"
+              class="btn p-0"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="bi bi-x-circle"></i>
+            </button>
+          </div>
+
+          <div class="modal-body py-0">
+            <h3 class="text-primary fst-italic fs-6">
+              Drag the photos to rearrange the order
+            </h3>
+            <ol id="sortable" class="fw-semibold text-primary">
+              <li class="my-3">
+                <img
+                  src="./images/drivingschool-img2.png"
+                  class="changeorder-modal-img me-5 ms-1"
+                  alt=""
+                />
+                <button class="btn bg-info text-primary fw-bold">
+                  <i class="bi bi-arrow-down-up"></i>
+                </button>
+              </li>
+              <li class="my-3">
+                <img
+                  src="./images/drivingschool-img4.png"
+                  class="changeorder-modal-img me-5 ms-1"
+                  alt=""
+                />
+                <button class="btn bg-info text-primary fw-bold">
+                  <i class="bi bi-arrow-down-up"></i>
+                </button>
+              </li>
+              <li class="my-3">
+                <img
+                  src="./images/drivingschool-img5.png"
+                  class="changeorder-modal-img me-5 ms-1"
+                  alt=""
+                />
+                <button class="btn bg-info text-primary fw-bold">
+                  <i class="bi bi-arrow-down-up"></i>
+                </button>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="addFaqModal"
+      tabindex="-1"
+      aria-labelledby="addFaqModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white" data-bs-theme="dark">
+            <h1 class="modal-title fs-5" id="addFaqModalLabel">
+              Add new question
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form>
+            <div class="modal-body">
+              <div class="row mb-3">
+                <label for="faqsection" class="col-sm-2 col-form-label"
+                  >Section</label
+                >
+                <div class="col-sm-10">
+                  <select
+                    class="form-select custom-box-shadow"
+                    id="faqsection"
+                    aria-label="section"
+                  >
+                    <option selected>Profile</option>
+                    <option value="reviews">Reviews</option>
+                    <option value="premiumprofile">Premium profile</option>
+                    <option value="request">To Request</option>
+                    <option value="account">Account</option>
+                    <option value="billing">Billing</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="faqquestion" class="col-sm-2 col-form-label"
+                  >Question</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    class="form-control custom-box-shadow"
+                    id="faqquestion"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <label for="faqanswer" class="col-sm-2 col-form-label"
+                  >Answer</label
+                >
+                <div class="col-sm-10">
+                  <textarea
+                    class="form-control custom-box-shadow"
+                    id="faqanswer"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer border-0">
+              <button
+                type="button"
+                class="btn btn-primary px-5 py-2 transition-btn fw-semibold"
+              >
+                Save
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/loader.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      $(function () {
+        $("#sortable").sortable({
+          revert: true,
+        });
+        $("ul, li").disableSelection();
+      });
+
+      Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+      });
+
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+  </body>
+</html>

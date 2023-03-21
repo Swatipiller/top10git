@@ -1,0 +1,61 @@
+.r-subheading {
+  font-size: 16px;
+  font-weight: 500;
+  color: #7b7979;
+}
+.request-group {
+  height: 350px;
+  overflow-y: auto;
+}
+
+.filter-icon img {
+  width: 25px;
+}
+
+.companyrequest .notificationmaincard {
+  height: 450px;
+}
+
+#filterDropdownAccordion .accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+
+#filterDropdownAccordion {
+  --bs-accordion-btn-padding-x: 0.75rem;
+  --bs-accordion-btn-padding-y: 0.75rem;
+  --bs-accordion-body-padding-x: 0.75rem;
+  --bs-accordion-body-padding-y: 0.75rem;
+}
+
+.filter-dropdown {
+  white-space: nowrap;
+}
+
+.filter-card-body {
+  max-height: 300px;
+  overflow-y: auto;
+}
+/* 
+.filterDropdownCloseBtn {
+  filter: invert(1);
+  opacity: 0.8;
+  margin-left: 2rem;
+  display: block;
+} */
+
+#filterDropdownAccordion .accordion-item {
+  min-width: 290px;
+}
+
+.addtag-dropdown {
+  white-space: nowrap;
+}
+
+.company-reply.request-reply-card {
+  background: #c6eefb;
+}
+
+.contact-applicant-wrapper
+  .form-control[type="file"]:not(:disabled):not([readonly]) {
+  max-width: 250px;
+}

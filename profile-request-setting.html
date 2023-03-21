@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Top 10 Diensten</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/customerdashboard.css" rel="stylesheet" />
+    <link href="./css/companydashboard.css" rel="stylesheet" />
+    <link href="./css/company-profile.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg nav-bg-shadow customerNavbar dashboardNavbar fixed-top bg-white"
+      >
+        <div
+          class="container-fluid d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 transition-main-btn"
+        >
+          <a class="navbar-brand col-md-3" href="./index.html">
+            <img src="./images/top10Logo.png" alt="" class="logoimg" />
+          </a>
+          <button
+            class="navbar-toggler transition-btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end c-usericonname"
+            id="navbarSupportedContent"
+          >
+            <div class="dropdown c-dropdown">
+              <a
+                class="navbtn transition-main-btn d-flex align-items-center btn dropdown-toggle c-navbar"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="text-dark fw-medium">info@drivingschool.nl</span>
+                <img
+                  src="./images/profilepic.png"
+                  alt="info@drivingschool.nl"
+                  class="c-useraccount-img ms-2 text-primary"
+                />
+              </a>
+              <ul class="dropdown-menu mx-0 shadow w-220px">
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-accountsetting.html"
+                  >
+                    <i class="bi bi-person-gear fs-5 text-primary"></i>Account
+                    Settings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-notificationsetting.html"
+                  >
+                    <i class="bi bi-bell fs-5 text-primary"></i>Notification
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-automaticanswer.html"
+                  >
+                    <i class="bi bi-arrow-90deg-left fs-5 text-primary"></i
+                    >Automatic Answer
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center"
+                    href="/company-whatsapp-setting.html"
+                  >
+                    <i class="bi bi-whatsapp fs-5 text-primary"></i>WhatsApp
+                    Settings
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex gap-2 align-items-center text-primary"
+                    href="/index.html"
+                    ><i class="bi bi-box-arrow-right fs-5 text-primary"></i
+                    >Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="sidebar-wrapper col-md-2 ps-0">
+          <div class="cd-leftside" id="sidebar">
+            <div class="">
+              <div class="custom-box-shadow">
+                <ul class="c-list-group">
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./companydashboard.html" class="c-sidebar-link"
+                      ><img
+                        src="./icons/dashboard_FILL0_wght400_GRAD0_opsz48 (2).png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Dashboard</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="./company-requests.html" class="c-sidebar-link"
+                      ><img
+                        src="./images/send_to_mobile_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Requests</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="#" class="c-sidebar-link active"
+                      ><img
+                        src="./icons/person_FILL0_wght400_GRAD0_opsz48 (1).png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Profile</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="/company-review.html" class="c-sidebar-link"
+                      ><img
+                        src="./images/reviews_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Reviews</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="/company-premium.html" class="c-sidebar-link"
+                      ><img
+                        src="./images/workspace_premium_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Premium</a
+                    >
+                  </li>
+                  <li class="list-group-item my-4 c-list-group-item">
+                    <a href="#" class="c-sidebar-link"
+                      ><img
+                        src="./images/contact_support_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                        class="sidebar-icon"
+                      />Help</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="c-moretextpara">
+                <p class="text-success fw-semibold mb-3 lh-base">
+                  Curious about what your profile looks like?
+                </p>
+                <!-- <p class="text-dark lh-sm text-black">
+                  Invite other company and both get 3 free requests!
+                </p> -->
+                <a
+                  href="#"
+                  class="c-sendpage btn btn-primary col-8 transition-btn fw-semibold"
+                >
+                  View Profile
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main class="col-md-10 offset-2 margin-top py-3 dashboard-main">
+          <div class="profile-setting-header d-flex align-items-center">
+            <a href="./company-profile.html" class="small h6 text-primary"
+              >Back &lt;
+            </a>
+            <p class="h5 fw-bold text-dark ms-2">Request settings</p>
+          </div>
+          <p class="fst-italic h5 text-primary my-4">
+            What type of assignment do you want to receive?
+          </p>
+          <p class="text-dark h5 mb-4">
+            Driving School:
+            <small class="text-muted">2 services selected</small>
+          </p>
+          <div class="requestingsetting-driving-details">
+            <div class="requestingsetting-driving-type">
+              <div class="requestingsetting-driving-details-header d-flex mb-3">
+                <p class="text-warning fw-semibold h5 mb-0 me-2">
+                  Driving License
+                </p>
+                <span class="text-primary small mt-2"
+                  >(Price per request is 15.
+                  <span class="text-muted"> (excl. VAT)</span>)</span
+                >
+              </div>
+              <div class="requestingsetting-driving-license-opt">
+                <div class="form-check my-2">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="drivinglicensechoise"
+                    id="drivinglicense"
+                  />
+                  <label class="form-check-label mt-1" for="drivinglicense">
+                    Driving License (B)
+                  </label>
+                </div>
+                <div class="form-check my-2">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="drivinglicensechoise"
+                    id="drivinglicense1"
+                  />
+                  <label class="form-check-label mt-1" for="drivinglicense1">
+                    Scooter, moped or Light moped (AM)
+                  </label>
+                </div>
+                <div class="form-check my-2">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="drivinglicensechoise"
+                    id="drivinglicense2"
+                  />
+                  <label class="form-check-label mt-1" for="drivinglicense2">
+                    Motorcycle License (A, A1, A2 ))
+                  </label>
+                </div>
+                <div class="form-check my-2">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="drivinglicensechoise"
+                    id="drivinglicense3"
+                  />
+                  <label class="form-check-label mt-1" for="drivinglicense3">
+                    Trailer driving license ( BE, B+)
+                  </label>
+                </div>
+                <div class="form-check my-2">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="drivinglicensechoise"
+                    id="drivinglicense4"
+                  />
+                  <label class="form-check-label mt-1" for="drivinglicense4">
+                    Truck driving license ( C, CE, C1, C1E)
+                  </label>
+                </div>
+                <div class="form-check my-2">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="drivinglicensechoise"
+                    id="drivinglicense5"
+                  />
+                  <label class="form-check-label mt-1" for="drivinglicense5">
+                    Bus driving license (D, DE, D1, D1E )
+                  </label>
+                </div>
+                <div class="form-check my-2">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="drivinglicensechoise"
+                    id="drivinglicense6"
+                  />
+                  <label class="form-check-label mt-1" for="drivinglicense6">
+                    Tractor driving license ( T )
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="requestingsetting-cartype mt-4">
+              <p class="h5 text-warning fw-semibold mb-3">Type of car</p>
+              <div class="requestingsetting-cartype-opt">
+                <div class="form-check my-2">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="caropt"
+                    id="manualtransmission"
+                  />
+                  <label class="form-check-label mt-1" for="manualtransmission">
+                    Manual Transmission
+                  </label>
+                </div>
+                <div class="form-check my-2">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="caropt"
+                    id="automatic"
+                  />
+                  <label class="form-check-label mt-1" for="automatic">
+                    Automatic
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- <div id="loading">
+      <img src="./images/top10Logo.png" alt="" />
+      <div class="loader">Loading...</div>
+    </div> -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/loader.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  </body>
+</html>

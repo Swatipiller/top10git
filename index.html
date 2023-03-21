@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Top 10 Diensten</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/general.css" />
+
+    <link href="./css/style.css" rel="stylesheet" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg nav-bg-shadow">
+        <div
+          class="container-xxl d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 transition-main-btn"
+        >
+          <a class="navbar-brand col-md-3" href="javascript:void(0)">
+            <img src="./images/top10Logo.png" alt="" class="logoimg" />
+          </a>
+          <button
+            class="navbar-toggler transition-btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-around justify-content-md-around"
+            id="navbarSupportedContent"
+          >
+            <ul
+              class="col-md-auto justify-content-center d-flex navbar-nav mb-2 mb-lg-0 justify-content-center justify-content-md-between navlink-item"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active main-nav-link"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-nav-link" href="#">Deals</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link main-nav-link registercomp"
+                  href="/register.html"
+                  >Register Company</a
+                >
+              </li>
+            </ul>
+            <div class="navbtn transition-main-btn">
+              <a href="/login.html" class="btn btn-warning dt transition-btn">
+                Log In
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="company-banner-section">
+      <div class="container-fluid">
+        <div class="btn-group mybtn-group">
+          <a
+            href="#"
+            class="btn btn-primary active tab-btn-1"
+            aria-current="page"
+            >Find a Company</a
+          >
+          <a
+            href="/company-homepage.html"
+            class="btn tab-btn-2 bg-white btn-light"
+            >Find new customers</a
+          >
+        </div>
+        <div class="grid grid--2-cols company-banner">
+          <div class="companybanner-text-section">
+            <p class="compbanner-text">
+              One stop destination <br />
+              to find the
+              <span class="text-warning">Best Service Provider</span> <br />
+              in your area
+            </p>
+            <p class="compbanner-text-sm">
+              Compare and contact the local companies directly
+            </p>
+          </div>
+          <div class="companybanner-img-section">
+            <img
+              src="./images/banner-company-img.png"
+              alt="banner img"
+              class="banner-img-section"
+            />
+          </div>
+        </div>
+        <div class="container-xxl">
+          <div class="company-searchbar">
+            <div class="row">
+              <div
+                class="custom-border-radius align-items-center custom-box-shadow bg-color col-md-10 offset-md-1 p-4"
+              >
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="select-withicon">
+                      <img
+                        src="./icons/svg icons/location.svg"
+                        alt=""
+                        class="select-icon"
+                      />
+                      <select class="form-select" aria-label="Select City">
+                        <option selected>
+                          <ion-icon name="location-outline"></ion-icon>Select
+                          City
+                        </option>
+                        <option value="Amsterdam">Amsterdam</option>
+                        <option value="Almere">Almere</option>
+                        <option value="Apeldoorn">Apeldoorn</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="select-withicon">
+                      <img
+                        src="./icons/svg icons/person_search.svg"
+                        alt=""
+                        class="select-icon"
+                      />
+                      <select
+                        class="form-select"
+                        aria-label="Which service you are looking for?"
+                      >
+                        <option selected>
+                          Which service you are looking for?
+                        </option>
+                        <option value="Accountant">Accountant</option>
+                        <option value="Air Conditionar Services">
+                          Air Conditionar Services
+                        </option>
+                        <option value="Architect">Architect</option>
+                        <option value="Bathroom Installer">
+                          Bathroom Installer
+                        </option>
+                        <option value="Broker">Broker</option>
+                        <option value="Caterar">Caterar</option>
+                        <option value="DJ">DJ</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-3 searchbar-btn transition-main-btn">
+                    <button
+                      type="button"
+                      class="btn btn-warning w-75 transition-btn"
+                    >
+                      <ion-icon
+                        class="search-icon"
+                        name="search-outline"
+                      ></ion-icon
+                      >Search
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="howUses mt-4" data-aos="fade-up">
+      <h1 class="text-primary text-center border-dotted pb-3 mb-3">
+        How easy it is to use?
+      </h1>
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="howUsesPara">
+              Looking for the most suitable company for your assignment? ​At
+              <span class="text-warning"><strong>Top 10 Diensten</strong></span>
+              you can request proposals from the best companies in your region
+              free of charge and without obligation.
+            </p>
+          </div>
+        </div>
+        <div class="row pt-5 pb-5">
+          <div class="col-md-3">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="usescards custom-box-shadow">
+                  <img src="./icons/uses-img-1.png" alt="usesimg" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="usesDiscription">
+                  <img src="./images/wavyarrow.png" alt="wavyarrow" />
+                  <p class="step text-primary">Step 1</p>
+                  <p class="services-name">Choose Best Service Provider</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="usescards custom-box-shadow">
+                  <img src="./icons/uses-img-2.png" alt="usesimg" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="usesDiscription">
+                  <img src="./images/wavyarrow.png" alt="wavyarrow" />
+                  <p class="step text-primary">Step 2</p>
+                  <p class="services-name">Describe your Assignment</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="usescards custom-box-shadow">
+                  <img src="./icons/uses-img-3.png" alt="usesimg" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="usesDiscription">
+                  <img src="./images/wavyarrow.png" alt="wavyarrow" />
+                  <p class="step text-primary">Step 3</p>
+                  <p class="services-name">Compare Prices</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="usescards custom-box-shadow">
+                  <img src="./icons/uses-img-4.png" alt="usesimg" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="usesDiscription mt-5">
+                  <!-- <img src="" alt="" /> -->
+                  <p class="step text-primary">Step 4</p>
+                  <p class="services-name">Get Quote</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-grid gap-2 col-3 mt-5 mx-auto transition-main-btn">
+            <button class="btn btn-primary transition-btn" type="button">
+              Start Comparing
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="popular-services-section" data-aos="fade-up">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 ps-0">
+            <div class="papular-service-heading bg-warning py-4">
+              <span> Most Popular Service Provider </span>
+              <img
+                src="./images/provider-img.png"
+                alt="providerimg"
+                class="provider-img"
+              />
+            </div>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+
+      <div class="container-xl">
+        <div class="row">
+          <div class="carouselClass py-5 px-2">
+            <div
+              id="serviceprovidercarousel"
+              class="carousel slide"
+              data-bs-touch="false"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <a class="carousel-card" href="/drivingschools.html">
+                        <img
+                          src="./icons/driving-school.png"
+                          class="d-block"
+                          alt="..."
+                        />
+                        <p class="carusalcard-title">Driving School</p>
+                      </a>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="carousel-card">
+                        <img
+                          src="./icons/Notaries.png"
+                          class="d-block"
+                          alt="..."
+                        />
+                        <p class="carusalcard-title">Notaries</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="carousel-card">
+                        <img
+                          src="./icons/lawyer-60.png"
+                          class="d-block"
+                          alt="..."
+                        />
+                        <p class="carusalcard-title">Lawyer</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="carousel-card">
+                        <img
+                          src="./icons/caterer-100.png"
+                          class="d-block"
+                          alt="..."
+                        />
+                        <p class="carusalcard-title">Caterers</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="carousel-card">
+                        <img
+                          src="./icons/professional-photographer-96.png"
+                          class="d-block"
+                          alt="..."
+                        />
+                        <p class="carusalcard-title">Photographers</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="carousel-card">
+                        <img
+                          src="./icons/icon-moving-company.png"
+                          class="d-block"
+                          alt="..."
+                        />
+                        <p class="carusalcard-title">Moving Company</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="carousel-card">
+                        <img
+                          src="./icons/icon-contractor.png"
+                          class="d-block"
+                          alt="..."
+                        />
+                        <p class="carusalcard-title">Contractor</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="carousel-card">
+                        <img
+                          src="./icons/icon-Roofers.png"
+                          class="d-block"
+                          alt="..."
+                        />
+                        <p class="carusalcard-title">Roofers</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="carousel-card">
+                        <img
+                          src="./icons/driving-school.png"
+                          class="d-block"
+                          alt="..."
+                        />
+                        <p class="carusalcard-title">Driving School</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="carousel-card">
+                        <img
+                          src="./icons/Notaries.png"
+                          class="d-block"
+                          alt="..."
+                        />
+                        <p class="carusalcard-title">Notaries</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="carousel-card">
+                        <img
+                          src="./icons/lawyer-60.png"
+                          class="d-block"
+                          alt="..."
+                        />
+                        <p class="carusalcard-title">Lawyer</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="carousel-card">
+                        <img
+                          src="./icons/caterer-100.png"
+                          class="d-block"
+                          alt="..."
+                        />
+                        <p class="carusalcard-title">Caterers</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="carousel-card">
+                        <img
+                          src="./icons/professional-photographer-96.png"
+                          class="d-block"
+                          alt="..."
+                        />
+                        <p class="carusalcard-title">Photographers</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="carousel-card">
+                        <img
+                          src="./icons/Moving Company.png"
+                          class="d-block"
+                          alt="..."
+                        />
+                        <p class="carusalcard-title">Moving Company</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="carousel-card">
+                        <img
+                          src="./icons/Contractor.png"
+                          class="d-block"
+                          alt="..."
+                        />
+                        <p class="carusalcard-title">Contractor</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#serviceprovidercarousel"
+                data-bs-slide="prev"
+              >
+                <!-- <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span> -->
+                <img
+                  src="./icons/arrow_circle_left-blue.png"
+                  class="carousel-arrow-icon"
+                  alt=""
+                />
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#serviceprovidercarousel"
+                data-bs-slide="next"
+              >
+                <!-- <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span> -->
+                <img
+                  src="./icons/arrow_circle_right-blue.png"
+                  class="carousel-arrow-icon"
+                  alt=""
+                />
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cost-overview-section py-5" data-aos="fade-up">
+      <div class="container-xxl">
+        <div class="cost-overviewsection-heading">Cost Overviews</div>
+        <p class="cost-overviewsection-para">
+          Check our cost overviews to get a quick idea of ​​the costs you can
+          expect.
+        </p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="wrapper-overview">
+              <img
+                src="./images/cost-overview-1.png"
+                class="cost-overview-img"
+                alt=""
+              />
+              <div class="cost-overviews-disc">
+                <p class="over-view-ques">What does a painter cost?</p>
+                <p class="price-details">
+                  <span
+                    ><img
+                      src="./icons/details_FILL0_wght400_GRAD0_opsz48.png"
+                      alt=""
+                  /></span>
+                  Average price :
+                  <span class="text-primary fw-semibold">$ 45</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="wrapper-overview">
+              <img
+                src="./images/cost-overview-2.png"
+                class="cost-overview-img"
+                alt=""
+              />
+              <div class="cost-overviews-disc">
+                <p class="over-view-ques">What does a photographer cost?</p>
+                <p class="price-details">
+                  <span
+                    ><img
+                      src="./icons/details_FILL0_wght400_GRAD0_opsz48.png"
+                      alt=""
+                  /></span>
+                  Average price :
+                  <span class="text-primary fw-semibold">$ 76</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="wrapper-overview">
+              <img
+                src="./images/cost-overview-3.png"
+                class="cost-overview-img"
+                alt=""
+              />
+              <div class="cost-overviews-disc">
+                <p class="over-view-ques">
+                  What does a solar panel installer cost?
+                </p>
+                <p class="price-details">
+                  <span
+                    ><img
+                      src="./icons/details_FILL0_wght400_GRAD0_opsz48.png"
+                      alt=""
+                  /></span>
+                  Average price :
+                  <span class="text-primary fw-semibold">$ 110</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-grid gap-2 col-2 mt-4 mx-auto transition-main-btn">
+            <button class="btn btn-primary transition-btn" type="button">
+              View All
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonial-section pt-5 pb-5" data-aos="fade-up">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-md-7">
+            <p class="testimonial-heading">
+              What Customer say <span class="text-warning">about Us</span>?
+            </p>
+            <p class="testimonial-para">
+              The truth is that you can not satisfy everyone all of the time.
+              But We are perfect to retain a client by our exceptional customer
+              experience and professional technician.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="testimonial-carousel">
+              <div id="testimonialcarousel" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="testimonial-carousel-card">
+                          <p class="doublequote">&#34;</p>
+                          <p class="testimonial-desc">
+                            “Our experience with Priceup is splendid. It saves
+                            working time, user friendly interface and great
+                            support team”.
+                          </p>
+                          <p class="testimonial-name">Mr John</p>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="testimonial-carousel-card">
+                          <p class="doublequote">&#34;</p>
+                          <p class="testimonial-desc">
+                            “Our experience with Priceup is splendid. It saves
+                            working time, user friendly interface and great
+                            support team”.
+                          </p>
+                          <p class="testimonial-name">Mr John</p>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="testimonial-carousel-card">
+                          <p class="doublequote">&#34;</p>
+                          <p class="testimonial-desc">
+                            “Our experience with Priceup is splendid. It saves
+                            working time, user friendly interface and great
+                            support team”.
+                          </p>
+                          <p class="testimonial-name">Mr John</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="testimonial-carousel-card">
+                          <p class="doublequote">&#34;</p>
+                          <p class="testimonial-desc">
+                            “Our experience with Priceup is splendid. It saves
+                            working time, user friendly interface and great
+                            support team”.
+                          </p>
+                          <p class="testimonial-name">Mr John</p>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="testimonial-carousel-card">
+                          <p class="doublequote">&#34;</p>
+                          <p class="testimonial-desc">
+                            “Our experience with Priceup is splendid. It saves
+                            working time, user friendly interface and great
+                            support team”.
+                          </p>
+                          <p class="testimonial-name">Mr John</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#testimonialcarousel"
+                  data-bs-slide="prev"
+                >
+                  <img
+                    src="./icons/arrow_circle_left-blue.png"
+                    alt=""
+                    class="carousel-arrow-icon"
+                  />
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#testimonialcarousel"
+                  data-bs-slide="next"
+                >
+                  <img
+                    src="./icons/arrow_circle_right-blue.png"
+                    alt=""
+                    class="carousel-arrow-icon"
+                  />
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="client-section mb-5" data-aos="fade-up">
+      <p class="client-section-heading">Our Clients</p>
+      <div class="client-carousel pb-5">
+        <div class="container-xxl">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="carouselClient" class="carousel slide custom-box-shadow">
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselClient"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselClient"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="client-wrapper row mx-0">
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-1.png"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-2.png"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-3.jpg"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-4.jpg"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-5.jpg"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-6.jpg"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="client-wrapper row mx-2">
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-7.jpg"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-8.jpg"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-1.png"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-2.png"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-3.jpg"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-4.jpg"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="popular-places my-4" data-aos="fade-up">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="popular-img-section">
+              <img src="./images/popular-places.png" alt="" />
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="popular-content">
+              <p class="h5 fw-bold text-dark">Popular Places</p>
+              <p class="small text-muted lh-base"
+                >Looking for the best companies in your locality? Save yourself
+                a lot of time and searching. On Trustoo you can find a suitable
+                match in your area!</p
+              >
+              <div class="popular-content-list grid grid--4-cols">
+                <ul class="popular-content-group ps-0">
+                  <li class="fw-semibold my-4 popular-content-item text-primary"
+                    >Amsterdam</li
+                  >
+                  <li class="fw-semibold my-4 popular-content-item text-primary"
+                    >Rotterdam</li
+                  >
+                </ul>
+                <ul class="popular-content-group ps-0">
+                  <li class="fw-semibold my-4 popular-content-item text-primary"
+                    >Utrecht</li
+                  >
+                  <li class="fw-semibold my-4 popular-content-item text-primary"
+                    >Almere</li
+                  >
+                  <li class="fw-semibold my-4 popular-content-item text-primary"
+                    >Eindhoven</li
+                  >
+                </ul>
+                <ul class="popular-content-group ps-0">
+                  <li class="fw-semibold my-4 popular-content-item text-primary"
+                    >Nigmegen</li
+                  >
+                  <li class="fw-semibold my-4 popular-content-item text-primary"
+                    >The Hague</li
+                  >
+                  <li class="fw-semibold my-4 popular-content-item text-primary"
+                    >Arnhem</li
+                  >
+                </ul>
+                <ul class="popular-content-group ps-0">
+                  <li class="fw-semibold my-4 popular-content-item text-primary"
+                    >Tilburg</li
+                  >
+                  <li class="fw-semibold my-4 popular-content-item text-primary"
+                    >Haarlem</li
+                  >
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row pb-5 pt-5 bottomline">
+          <div class="col-md-4">
+            <img src="./images/top10Logo.png" alt="" class="footer-logo" />
+          </div>
+          <div class="col-md-8">
+            <div class="footer-social-icon-section d-flex align-items-center">
+              <p class="social-icon">Follow us on:</p>
+              <div class="social-icon-wrapper">
+                <a href="#" class="footer-social-icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="footer-social-icon">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="footer-social-icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="footer-social-icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <p class="footer-heading text-warning">For Individuals</p>
+              <ul class="footer-ul list-unstyled">
+                <li class="footer-list-item">
+                  <a href="#">How it works?</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#">Blogs</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#">Cost overviews</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#">Complain about company</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <p class="footer-heading text-warning">For Company</p>
+              <ul class="footer-ul list-unstyled">
+                <li class="footer-list-item">
+                  <a href="/register.html">Register company</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#">Delete company profile</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#">Experiences</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <p class="footer-heading text-warning">About</p>
+              <ul class="footer-ul list-unstyled">
+                <li class="footer-list-item">
+                  <a href="#">About Top 10 Diensten</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#">Working at Top 10 Diensten</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#">Contact</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#">Privacy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <p class="footer-heading text-warning">Country</p>
+              <ul class="footer-ul list-unstyled">
+                <li class="footer-list-item">
+                  <a href="#">Belgium</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#">Germany</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="copyright-text pt-5">
+            Copyright © 2021 All Right Reserved. Privacy Policy
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- <div id="loading">
+      <img src="./images/top10Logo.png" alt="" />
+      <div class="loader">Loading...</div>
+    </div> -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="./js/loader.js"></script> -->
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
