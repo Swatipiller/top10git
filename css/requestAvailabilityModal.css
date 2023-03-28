@@ -1,0 +1,6 @@
+.chooseDrivingSchoolCardImg {
+  height: 120px;
+  width: 120px;
+  max-width: 100%;
+  object-fit: cover;
+}

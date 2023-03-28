@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Top 10 Diensten</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link href="./css/style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/deal.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg nav-bg-shadow">
+        <div
+          class="container-xxl d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 transition-main-btn"
+        >
+          <a class="navbar-brand col-md-3" href="/index.html">
+            <img src="./images/top10Logo.png" alt="" class="logoimg" />
+          </a>
+          <button
+            class="navbar-toggler transition-btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-around justify-content-md-around"
+            id="navbarSupportedContent"
+          >
+            <ul
+              class="col-md-auto justify-content-center d-flex navbar-nav mb-2 mb-lg-0 justify-content-center justify-content-md-between navlink-item"
+            >
+              <li class="nav-item">
+                <a class="nav-link main-nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-nav-link" href="/services.html"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-nav-link" href="/blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-nav-link active" href="/deal.html"
+                  >Deals</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link main-nav-link registercomp"
+                  href="/register.html"
+                  >Register Company</a
+                >
+              </li>
+            </ul>
+            <div class="navbtn transition-main-btn">
+              <a href="/login.html" class="btn btn-warning dt transition-btn">
+                Log In
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="container-xxl">
+        <div class="row my-5 align-items-center">
+          <div class="col-md-6">
+            <h2 class="h4 text-primary fw-bold"
+              >Today's <span class="text-warning">Best Deals</span>
+            </h2>
+          </div>
+          <div class="col-md-3 offset-md-3 text-end">
+            <form class="search-bar">
+              <div class="input-group search-box">
+                <input type="text" placeholder="Search" class="form-control" />
+                <button type="submit" class="input-group-text" id="search">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--start slider -->
+    <!-- Slider main container -->
+    <section class="deal-slider">
+      <div class="container-xxl">
+        <div class="swiper card my-4 py-4" id="deal-swiper">
+          <p class="text-primary fw-semibold mb-4 text-center"
+            >Featuring todays best deals just for you
+            <span class="text-dark">(Limited offer)</span></p
+          >
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="wrapper-overview">
+                    <img
+                      src="./images/cost-overview-1.png"
+                      class="deal-cost-overview-img w-75"
+                      alt=""
+                    />
+                    <div class="cost-overviews-disc">
+                      <p
+                        class="over-view-ques deal-view-ques-heightlh-base text-sm-start"
+                        >What does a painter cost?</p
+                      >
+                      <p class="deal-details small mb-0 mt-4"
+                        ><span class="text-muted">Today's Deal -</span
+                        ><span class="text-dark-fw-semibold">$35</span>
+                        <span class="text-warning">(Off 10% )</span>
+                      </p>
+                      <p class="price-details mt-2">
+                        <span
+                          ><img
+                            class="d-inline w-auto"
+                            src="./icons/details_FILL0_wght400_GRAD0_opsz48.png"
+                            alt=""
+                        /></span>
+                        <span class="cross-text text-decoration-line-through">
+                          Average price :
+                          <span class="text-primary fw-semibold"
+                            >$ 45</span
+                          ></span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="wrapper-overview">
+                    <img
+                      src="./images/cost-overview-2.png"
+                      class="deal-cost-overview-img w-75"
+                      alt=""
+                    />
+                    <div class="cost-overviews-disc">
+                      <p
+                        class="over-view-ques deal-view-ques-height lh-base text-sm-start"
+                        >What does a photographer cost?</p
+                      >
+                      <p class="deal-details small mb-0 mt-4"> </p>
+                      <p class="price-details">
+                        <span
+                          ><img
+                            class="d-inline w-auto"
+                            src="./icons/details_FILL0_wght400_GRAD0_opsz48.png"
+                            alt=""
+                        /></span>
+                        <span class="cross-text text-decoration-line-through">
+                          Average price :
+                          <span class="text-primary fw-semibold"
+                            >$ 76</span
+                          ></span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="wrapper-overview">
+                    <img
+                      src="./images/cost-overview-3.png"
+                      class="deal-cost-overview-img w-75"
+                      alt=""
+                    />
+                    <div class="cost-overviews-disc">
+                      <p
+                        class="over-view-ques deal-view-ques-height lh-base text-sm-start"
+                      >
+                        What does a solar panel installer cost?
+                      </p>
+                      <p class="deal-details small mb-0 mt-4"
+                        ><span class="text-muted">Today's Deal -</span
+                        ><span class="text-dark-fw-semibold">$35</span>
+                        <span class="text-warning">(Off 10% )</span>
+                      </p>
+                      <p class="price-details">
+                        <span
+                          ><img
+                            class="d-inline w-auto"
+                            src="./icons/details_FILL0_wght400_GRAD0_opsz48.png"
+                            alt=""
+                        /></span>
+                        <span class="cross-text text-decoration-line-through">
+                          Average price :
+                          <span class="text-primary fw-semibold"
+                            >$ 110</span
+                          ></span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="wrapper-overview">
+                    <img
+                      src="./images/cost-overview-1.png"
+                      class="deal-cost-overview-img w-75"
+                      alt=""
+                    />
+                    <div class="cost-overviews-disc">
+                      <p
+                        class="over-view-ques deal-view-ques-heightlh-base text-sm-start"
+                        >What does a painter cost?</p
+                      >
+                      <p class="deal-details small mb-0 mt-4"
+                        ><span class="text-muted">Today's Deal -</span
+                        ><span class="text-dark-fw-semibold">$35</span>
+                        <span class="text-warning">(Off 10% )</span>
+                      </p>
+                      <p class="price-details mt-2">
+                        <span
+                          ><img
+                            class="d-inline w-auto"
+                            src="./icons/details_FILL0_wght400_GRAD0_opsz48.png"
+                            alt=""
+                        /></span>
+                        <span class="cross-text text-decoration-line-through">
+                          Average price :
+                          <span class="text-primary fw-semibold"
+                            >$ 45</span
+                          ></span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="wrapper-overview">
+                    <img
+                      src="./images/cost-overview-2.png"
+                      class="deal-cost-overview-img w-75"
+                      alt=""
+                    />
+                    <div class="cost-overviews-disc">
+                      <p
+                        class="over-view-ques deal-view-ques-height lh-base text-sm-start"
+                        >What does a photographer cost?</p
+                      >
+                      <p class="deal-details small mb-0 mt-4"> </p>
+                      <p class="price-details">
+                        <span
+                          ><img
+                            class="d-inline w-auto"
+                            src="./icons/details_FILL0_wght400_GRAD0_opsz48.png"
+                            alt=""
+                        /></span>
+                        <span class="cross-text text-decoration-line-through">
+                          Average price :
+                          <span class="text-primary fw-semibold"
+                            >$ 76</span
+                          ></span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="wrapper-overview">
+                    <img
+                      src="./images/cost-overview-3.png"
+                      class="deal-cost-overview-img w-75"
+                      alt=""
+                    />
+                    <div class="cost-overviews-disc">
+                      <p
+                        class="over-view-ques deal-view-ques-height lh-base text-sm-start"
+                      >
+                        What does a solar panel installer cost?
+                      </p>
+                      <p class="deal-details small mb-0 mt-4"
+                        ><span class="text-muted">Today's Deal -</span
+                        ><span class="text-dark-fw-semibold">$35</span>
+                        <span class="text-warning">(Off 10% )</span>
+                      </p>
+                      <p class="price-details">
+                        <span
+                          ><img
+                            class="d-inline w-auto"
+                            src="./icons/details_FILL0_wght400_GRAD0_opsz48.png"
+                            alt=""
+                        /></span>
+                        <span class="cross-text text-decoration-line-through">
+                          Average price :
+                          <span class="text-primary fw-semibold"
+                            >$ 110</span
+                          ></span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev" id="deal-swiper-button-prev">
+            <img src="icons/arrow_circle_left-blue.png" class="ms-5" alt="" />
+          </div>
+          <div class="swiper-button-next" id="deal-swiper-button-next">
+            <img src="icons/arrow_circle_right-blue.png" class="me-5" alt="" />
+          </div>
+
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+      </div>
+    </section>
+    <!-- end slider -->
+    <section class="all-deals">
+      <div class="container-xxl">
+        <div class="row mb-4 mt-5 align-items-center">
+          <div class="col-md-6">
+            <h2 class="h4 text-primary fw-bold">All Deals </h2>
+          </div>
+          <div class="col-md-4 offset-md-2 text-end d-flex align-items-center">
+            <div class="align-items-center d-flex w-100">
+              <label for="servicetype" class="fs-4 fw-bold label-text me-2"
+                >Categories</label
+              >
+              <div class="select-withicon flex-grow-1">
+                <img
+                  src="./icons/svg icons/person_search.svg"
+                  alt=""
+                  class="select-icon"
+                />
+                <select
+                  class="form-select"
+                  id="servicetype"
+                  aria-label="Which service you are looking for?"
+                >
+                  <option selected>Select service provider</option>
+                  <option value="Accountant">Accountant</option>
+                  <option value="Air Conditionar Services">
+                    Air Conditionar Services
+                  </option>
+                  <option value="Architect">Architect</option>
+                  <option value="Bathroom Installer">
+                    Bathroom Installer
+                  </option>
+                  <option value="Broker">Broker</option>
+                  <option value="Caterar">Caterar</option>
+                  <option value="DJ">DJ</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="card card-deal my-4">
+              <div class="card-body card-deal-body">
+                <div class="card-heading">
+                  <p class="fw-semibold text-dark">Lorem ipsum </p>
+                </div>
+                <div class="card-img-section">
+                  <img
+                    src="./images/happy-young-builder-man-construction-uniform-safety-helmet-holding-paint-brush-looking-front-smiling-confident-standing-purple-wall.jpg"
+                    class="my-1 rounded-4"
+                    alt=""
+                  />
+                </div>
+                <div class="deal-card-title mt-3">
+                  <p class="text-dark fw-semibold mb-0">
+                    $35 <span class="text-warning">(Off 10% )</span>
+                  </p>
+                </div>
+                <div class="deal-card-price">
+                  <p class="mb-0">
+                    <span
+                      ><img
+                        class="d-inline w-auto"
+                        src="./icons/details_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                    /></span>
+                    <span class="cross-text">
+                      Average price :
+                      <span class="text-primary fw-semibold">$ 45</span></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="card card-deal my-4">
+              <div class="card-body card-deal-body">
+                <div class="card-heading">
+                  <p class="fw-semibold text-dark">Lorem ipsum </p>
+                </div>
+                <div class="card-img-section">
+                  <img
+                    src="./images/young-architect-standing-by-solar-panels-making-diagnostics-computer.jpg"
+                    class="my-1 rounded-4"
+                    alt=""
+                  />
+                </div>
+                <div class="deal-card-title mt-3">
+                  <p class="text-dark fw-semibold mb-0">
+                    $35 <span class="text-warning">(Off 10% )</span>
+                  </p>
+                </div>
+                <div class="deal-card-price">
+                  <p class="mb-0">
+                    <span
+                      ><img
+                        class="d-inline w-auto"
+                        src="./icons/details_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                    /></span>
+                    <span class="cross-text">
+                      Average price :
+                      <span class="text-primary fw-semibold">$ 45</span></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="card card-deal my-4">
+              <div class="card-body card-deal-body">
+                <div class="card-heading">
+                  <p class="fw-semibold text-dark">Lorem ipsum </p>
+                </div>
+                <div class="card-img-section">
+                  <img
+                    src="./images/happy-indian-businessman-front-modern-office-center.jpg"
+                    class="my-1 rounded-4"
+                    alt=""
+                  />
+                </div>
+                <div class="deal-card-title mt-3">
+                  <p class="text-dark fw-semibold mb-0">
+                    $35 <span class="text-warning">(Off 10% )</span>
+                  </p>
+                </div>
+                <div class="deal-card-price">
+                  <p class="mb-0">
+                    <span
+                      ><img
+                        class="d-inline w-auto"
+                        src="./icons/details_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                    /></span>
+                    <span class="cross-text">
+                      Average price :
+                      <span class="text-primary fw-semibold">$ 45</span></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="card card-deal my-4">
+              <div class="card-body card-deal-body">
+                <div class="card-heading">
+                  <p class="fw-semibold text-dark">Lorem ipsum </p>
+                </div>
+                <div class="card-img-section">
+                  <img
+                    src="./images/happy-young-builder-man-construction-uniform-safety-helmet-holding-paint-brush-looking-front-smiling-confident-standing-purple-wall.jpg"
+                    class="my-1 rounded-4"
+                    alt=""
+                  />
+                </div>
+                <div class="deal-card-title mt-3">
+                  <p class="text-dark fw-semibold mb-0">
+                    $35 <span class="text-warning">(Off 10% )</span>
+                  </p>
+                </div>
+                <div class="deal-card-price">
+                  <p class="mb-0">
+                    <span
+                      ><img
+                        class="d-inline w-auto"
+                        src="./icons/details_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                    /></span>
+                    <span class="cross-text">
+                      Average price :
+                      <span class="text-primary fw-semibold">$ 45</span></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="card card-deal my-4">
+              <div class="card-body card-deal-body">
+                <div class="card-heading">
+                  <p class="fw-semibold text-dark">Lorem ipsum </p>
+                </div>
+                <div class="card-img-section">
+                  <img
+                    src="./images/happy-young-builder-man-construction-uniform-safety-helmet-holding-paint-brush-looking-front-smiling-confident-standing-purple-wall.jpg"
+                    class="my-1 rounded-4"
+                    alt=""
+                  />
+                </div>
+                <div class="deal-card-title mt-3">
+                  <p class="text-dark fw-semibold mb-0">
+                    $35 <span class="text-warning">(Off 10% )</span>
+                  </p>
+                </div>
+                <div class="deal-card-price">
+                  <p class="mb-0">
+                    <span
+                      ><img
+                        class="d-inline w-auto"
+                        src="./icons/details_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                    /></span>
+                    <span class="cross-text">
+                      Average price :
+                      <span class="text-primary fw-semibold">$ 45</span></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="card card-deal my-4">
+              <div class="card-body card-deal-body">
+                <div class="card-heading">
+                  <p class="fw-semibold text-dark">Lorem ipsum </p>
+                </div>
+                <div class="card-img-section">
+                  <img
+                    src="./images/happy-young-builder-man-construction-uniform-safety-helmet-holding-paint-brush-looking-front-smiling-confident-standing-purple-wall.jpg"
+                    class="my-1 rounded-4"
+                    alt=""
+                  />
+                </div>
+                <div class="deal-card-title mt-3">
+                  <p class="text-dark fw-semibold mb-0">
+                    $35 <span class="text-warning">(Off 10% )</span>
+                  </p>
+                </div>
+                <div class="deal-card-price">
+                  <p class="mb-0">
+                    <span
+                      ><img
+                        class="d-inline w-auto"
+                        src="./icons/details_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                    /></span>
+                    <span class="cross-text">
+                      Average price :
+                      <span class="text-primary fw-semibold">$ 45</span></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="card card-deal my-4">
+              <div class="card-body card-deal-body">
+                <div class="card-heading">
+                  <p class="fw-semibold text-dark">Lorem ipsum </p>
+                </div>
+                <div class="card-img-section">
+                  <img
+                    src="./images/happy-young-builder-man-construction-uniform-safety-helmet-holding-paint-brush-looking-front-smiling-confident-standing-purple-wall.jpg"
+                    class="my-1 rounded-4"
+                    alt=""
+                  />
+                </div>
+                <div class="deal-card-title mt-3">
+                  <p class="text-dark fw-semibold mb-0">
+                    $35 <span class="text-warning">(Off 10% )</span>
+                  </p>
+                </div>
+                <div class="deal-card-price">
+                  <p class="mb-0">
+                    <span
+                      ><img
+                        class="d-inline w-auto"
+                        src="./icons/details_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                    /></span>
+                    <span class="cross-text">
+                      Average price :
+                      <span class="text-primary fw-semibold">$ 45</span></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="card card-deal my-4">
+              <div class="card-body card-deal-body">
+                <div class="card-heading">
+                  <p class="fw-semibold text-dark">Lorem ipsum </p>
+                </div>
+                <div class="card-img-section">
+                  <img
+                    src="./images/happy-young-builder-man-construction-uniform-safety-helmet-holding-paint-brush-looking-front-smiling-confident-standing-purple-wall.jpg"
+                    class="my-1 rounded-4"
+                    alt=""
+                  />
+                </div>
+                <div class="deal-card-title mt-3">
+                  <p class="text-dark fw-semibold mb-0">
+                    $35 <span class="text-warning">(Off 10% )</span>
+                  </p>
+                </div>
+                <div class="deal-card-price">
+                  <p class="mb-0">
+                    <span
+                      ><img
+                        class="d-inline w-auto"
+                        src="./icons/details_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                    /></span>
+                    <span class="cross-text">
+                      Average price :
+                      <span class="text-primary fw-semibold">$ 45</span></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="card card-deal my-4">
+              <div class="card-body card-deal-body">
+                <div class="card-heading">
+                  <p class="fw-semibold text-dark">Lorem ipsum </p>
+                </div>
+                <div class="card-img-section">
+                  <img
+                    src="./images/happy-young-builder-man-construction-uniform-safety-helmet-holding-paint-brush-looking-front-smiling-confident-standing-purple-wall.jpg"
+                    class="my-1 rounded-4"
+                    alt=""
+                  />
+                </div>
+                <div class="deal-card-title mt-3">
+                  <p class="text-dark fw-semibold mb-0">
+                    $35 <span class="text-warning">(Off 10% )</span>
+                  </p>
+                </div>
+                <div class="deal-card-price">
+                  <p class="mb-0">
+                    <span
+                      ><img
+                        class="d-inline w-auto"
+                        src="./icons/details_FILL0_wght400_GRAD0_opsz48.png"
+                        alt=""
+                    /></span>
+                    <span class="cross-text">
+                      Average price :
+                      <span class="text-primary fw-semibold">$ 45</span></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a
+              class="showmore-text text-primary text-decoration-none d-inline-block mx-auto"
+              href="#"
+              >Show more &gt;&gt;</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonials  -->
+
+    <!-- client section  -->
+    <section class="client-section mb-5" data-aos="fade-up">
+      <p class="client-section-heading">Our Clients</p>
+      <div class="client-carousel pb-5">
+        <div class="container-xxl">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="carouselClient" class="carousel slide custom-box-shadow">
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselClient"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselClient"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="client-wrapper row mx-0">
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-1.png"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-2.png"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-3.jpg"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-4.jpg"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-5.jpg"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-6.jpg"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="client-wrapper row mx-2">
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-7.jpg"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-8.jpg"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-1.png"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-2.png"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-3.jpg"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-2">
+                        <img
+                          src="./images/client-img-4.jpg"
+                          class="d-block carousel-client-img"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row pb-5 pt-5 bottomline">
+          <div class="col-md-4">
+            <img src="./images/top10Logo.png" alt="" class="footer-logo" />
+          </div>
+          <div class="col-md-8">
+            <div class="footer-social-icon-section d-flex align-items-center">
+              <p class="social-icon">Follow us on:</p>
+              <div class="social-icon-wrapper">
+                <a href="#" class="footer-social-icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="footer-social-icon">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="footer-social-icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="footer-social-icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <p class="footer-heading text-warning">For Individuals</p>
+              <ul class="footer-ul list-unstyled">
+                <li class="footer-list-item">
+                  <a href="#">How it works?</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#">Blogs</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#">Cost overviews</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#">Complain about company</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <p class="footer-heading text-warning">For Company</p>
+              <ul class="footer-ul list-unstyled">
+                <li class="footer-list-item">
+                  <a href="/register.html">Register company</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#">Delete company profile</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#">Experiences</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <p class="footer-heading text-warning">About</p>
+              <ul class="footer-ul list-unstyled">
+                <li class="footer-list-item">
+                  <a href="#">About Top 10 Diensten</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#">Working at Top 10 Diensten</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#">Contact</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#">Privacy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <p class="footer-heading text-warning">Country</p>
+              <ul class="footer-ul list-unstyled">
+                <li class="footer-list-item">
+                  <a href="#">Belgium</a>
+                </li>
+                <li class="footer-list-item">
+                  <a href="#">Germany</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="copyright-text pt-5">
+            Copyright © 2021 All Right Reserved. Privacy Policy
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- loading -->
+    <div id="loading">
+      <img src="./images/top10Logo.png" alt="" />
+      <div class="loader">Loading...</div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./js/pageanimation.js"></script> -->
+    <script src="./js/main.js"></script>
+    <!-- <script src="./js/otp.js"></script> -->
+    <!-- <script src="./js/getquote.js"></script> -->
+    <script src="./js/loader.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1200,
+      });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+      const swiper = new Swiper("#deal-swiper", {
+        // Optional parameters
+
+        // direction: "vertical",
+        loop: false,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: "#deal-swiper-button-next",
+          prevEl: "#deal-swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //   el: ".swiper-scrollbar",
+        // },
+      });
+    </script>
+  </body>
+</html>

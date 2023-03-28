@@ -1,0 +1,19 @@
+.top-article-img img {
+  width: 650px;
+  height: 250px;
+  object-fit: cover;
+}
+.trending-img img {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+}
+.latest-article-img img {
+  width: 425px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.latest-article-section {
+  margin-bottom: 1.5rem;
+}

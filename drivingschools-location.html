@@ -6,8 +6,10 @@
     <title>Top 10 Diensten</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="./intl-tel-input/css/intlTelInput.min.css" />
-
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/drivingschools-location.css" />
+    <link href="./css/requestAvailabilityModal.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -16,21 +18,8 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/general.css" />
-    <link href="./css/style.css" rel="stylesheet" />
-    <link href="./css/requestAvailabilityModal.css" rel="stylesheet" />
-    <link href="./css/drivingschool-details.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="d-none">
     <header>
       <nav class="navbar navbar-expand-lg nav-bg-shadow">
         <div
@@ -86,869 +75,1030 @@
         </div>
       </nav>
     </header>
-    <section>
-      <div class="container-xxl">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="breadcrumb-wrapper mt-4">
-              <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item">
-                    <a href="./drivingschools.html">Driving School</a>
-                  </li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    ANWP driving school
-                  </li>
-                </ol>
-              </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="breadcrumb-wrapper mt-4">
+            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item" aria-current="page">
+                  <a href="index.html">Amsterdam</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  <a href="index.html">Driving School</a>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="location-wrapper d-flex mt-4 justify-content-end">
+            <ion-icon
+              class="d-block text-primary font-icon-size"
+              name="location-outline"
+            ></ion-icon>
+            <span class="text-primary">Change location</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <p class="normal-heading-text text-primary">
+        Top 10 Driving school in Amsterdam
+      </p>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="container-fluid">
+            <div class="row custom-border-radius custom-box-shadow pt-4 mb-4">
+              <div class="col-md-3">
+                <img
+                  src="./images/why-chooseImg1.png"
+                  alt=""
+                  class="driving-img-new custom-box-shadow custom-border-radius"
+                />
+              </div>
+              <div class="col-md-9 ps-4">
+                <p class="drivingschool-heading">ANWP Driving School</p>
+                <p class="rating-para">
+                  5.0<ion-icon
+                    class="text-warning"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  (80)
+                </p>
+                <p class="drivingschool-desc">
+                  A leading Dutch provider of roadside assistance for motorists.
+                  Their driving school provides expert tuition for all motoring
+                  abilities across the Netherlands. So, if you want to drive,
+                  ANWB can help you get behind the wheel.
+                </p>
+                <p class="d-flex">
+                  <span class="address">Address:</span>
+                  <span class="address-name">Woolton, Netherland</span>
+                </p>
+
+                <p class="d-flex btn-grp-section mt-2">
+                  <button
+                    type="button"
+                    class="btn col-md-5 btn-outline-primary fw-bold"
+                    data-bs-toggle="modal"
+                    data-bs-target="#requestAvailabilityModal"
+                  >
+                    Request Availability
+                  </button>
+                  <button
+                    type="button"
+                    class="btn col-md-5 btn-primary ms-4 fw-bold"
+                    data-bs-toggle="modal"
+                    data-bs-target="#getQuoteModal"
+                    data-bs-toggle="modal"
+                    data-bs-target="#getQuoteModal"
+                  >
+                    Get Quote
+                  </button>
+                </p>
+              </div>
+            </div>
+
+            <div class="row custom-border-radius custom-box-shadow pt-4 mb-4">
+              <div class="col-md-3">
+                <img
+                  src="./images/why-chooseImg1.png"
+                  alt=""
+                  class="driving-img-new custom-box-shadow custom-border-radius"
+                />
+              </div>
+              <div class="col-md-9 ps-4">
+                <p class="drivingschool-heading">ANWP Driving School</p>
+                <p class="rating-para">
+                  5.0<ion-icon
+                    class="text-warning"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  (80)
+                </p>
+                <p class="drivingschool-desc">
+                  A leading Dutch provider of roadside assistance for motorists.
+                  Their driving school provides expert tuition for all motoring
+                  abilities across the Netherlands. So, if you want to drive,
+                  ANWB can help you get behind the wheel.
+                </p>
+                <p class="d-flex">
+                  <span class="address">Address:</span>
+                  <span class="address-name">Woolton, Netherland</span>
+                </p>
+
+                <p class="d-flex btn-grp-section mt-2">
+                  <button
+                    type="button"
+                    class="btn col-md-5 btn-outline-primary fw-bold"
+                  >
+                    Request Availability
+                  </button>
+                  <button
+                    type="button"
+                    class="btn col-md-5 btn-primary ms-4 fw-bold"
+                  >
+                    Get Quote
+                  </button>
+                </p>
+              </div>
+            </div>
+            <div class="row custom-border-radius custom-box-shadow pt-4 mb-4">
+              <div class="col-md-3">
+                <img
+                  src="./images/why-chooseImg1.png"
+                  alt=""
+                  class="driving-img-new custom-box-shadow custom-border-radius"
+                />
+              </div>
+              <div class="col-md-9 ps-4">
+                <p class="drivingschool-heading">ANWP Driving School</p>
+                <p class="rating-para">
+                  5.0<ion-icon
+                    class="text-warning"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  (80)
+                </p>
+                <p class="drivingschool-desc">
+                  A leading Dutch provider of roadside assistance for motorists.
+                  Their driving school provides expert tuition for all motoring
+                  abilities across the Netherlands. So, if you want to drive,
+                  ANWB can help you get behind the wheel.
+                </p>
+                <p class="d-flex">
+                  <span class="address">Address:</span>
+                  <span class="address-name">Woolton, Netherland</span>
+                </p>
+
+                <p class="d-flex btn-grp-section mt-2">
+                  <button
+                    type="button"
+                    class="btn col-md-5 btn-outline-primary fw-bold"
+                  >
+                    Request Availability
+                  </button>
+                  <button
+                    type="button"
+                    class="btn col-md-5 btn-primary ms-4 fw-bold"
+                  >
+                    Get Quote
+                  </button>
+                </p>
+              </div>
+            </div>
+            <div class="row custom-border-radius custom-box-shadow pt-4 mb-4">
+              <div class="col-md-3">
+                <img
+                  src="./images/why-chooseImg1.png"
+                  alt=""
+                  class="driving-img-new custom-box-shadow custom-border-radius"
+                />
+              </div>
+              <div class="col-md-9 ps-4">
+                <p class="drivingschool-heading">ANWP Driving School</p>
+                <p class="rating-para">
+                  5.0<ion-icon
+                    class="text-warning"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  (80)
+                </p>
+                <p class="drivingschool-desc">
+                  A leading Dutch provider of roadside assistance for motorists.
+                  Their driving school provides expert tuition for all motoring
+                  abilities across the Netherlands. So, if you want to drive,
+                  ANWB can help you get behind the wheel.
+                </p>
+                <p class="d-flex">
+                  <span class="address">Address:</span>
+                  <span class="address-name">Woolton, Netherland</span>
+                </p>
+
+                <p class="d-flex btn-grp-section mt-2">
+                  <button
+                    type="button"
+                    class="btn col-md-5 btn-outline-primary fw-bold"
+                  >
+                    Request Availability
+                  </button>
+                  <button
+                    type="button"
+                    class="btn col-md-5 btn-primary ms-4 fw-bold"
+                  >
+                    Get Quote
+                  </button>
+                </p>
+              </div>
+            </div>
+            <div class="row custom-border-radius custom-box-shadow pt-4 mb-4">
+              <div class="col-md-3">
+                <img
+                  src="./images/why-chooseImg1.png"
+                  alt=""
+                  class="driving-img-new custom-box-shadow custom-border-radius"
+                />
+              </div>
+              <div class="col-md-9 ps-4">
+                <p class="drivingschool-heading">ANWP Driving School</p>
+                <p class="rating-para">
+                  5.0<ion-icon
+                    class="text-warning"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  (80)
+                </p>
+                <p class="drivingschool-desc">
+                  A leading Dutch provider of roadside assistance for motorists.
+                  Their driving school provides expert tuition for all motoring
+                  abilities across the Netherlands. So, if you want to drive,
+                  ANWB can help you get behind the wheel.
+                </p>
+                <p class="d-flex">
+                  <span class="address">Address:</span>
+                  <span class="address-name">Woolton, Netherland</span>
+                </p>
+
+                <p class="d-flex btn-grp-section mt-2">
+                  <button
+                    type="button"
+                    class="btn col-md-5 btn-outline-primary fw-bold"
+                  >
+                    Request Availability
+                  </button>
+                  <button
+                    type="button"
+                    class="btn col-md-5 btn-primary ms-4 fw-bold"
+                  >
+                    Get Quote
+                  </button>
+                </p>
+              </div>
+            </div>
+
+            <div class="row custom-border-radius custom-box-shadow pt-4 mb-4">
+              <div class="col-md-3">
+                <img
+                  src="./images/why-chooseImg1.png"
+                  alt=""
+                  class="driving-img-new custom-box-shadow custom-border-radius"
+                />
+              </div>
+              <div class="col-md-9 ps-4">
+                <p class="drivingschool-heading">ANWP Driving School</p>
+                <p class="rating-para">
+                  5.0<ion-icon
+                    class="text-warning"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  (80)
+                </p>
+                <p class="drivingschool-desc">
+                  A leading Dutch provider of roadside assistance for motorists.
+                  Their driving school provides expert tuition for all motoring
+                  abilities across the Netherlands. So, if you want to drive,
+                  ANWB can help you get behind the wheel.
+                </p>
+                <p class="d-flex">
+                  <span class="address">Address:</span>
+                  <span class="address-name">Woolton, Netherland</span>
+                </p>
+
+                <p class="d-flex btn-grp-section mt-2">
+                  <button
+                    type="button"
+                    class="btn col-md-5 btn-outline-primary fw-bold"
+                  >
+                    Request Availability
+                  </button>
+                  <button
+                    type="button"
+                    class="btn col-md-5 btn-primary ms-4 fw-bold"
+                  >
+                    Get Quote
+                  </button>
+                </p>
+              </div>
+            </div>
+            <div class="row custom-border-radius custom-box-shadow pt-4 mb-4">
+              <div class="col-md-3">
+                <img
+                  src="./images/why-chooseImg1.png"
+                  alt=""
+                  class="driving-img-new custom-box-shadow custom-border-radius"
+                />
+              </div>
+              <div class="col-md-9 ps-4">
+                <p class="drivingschool-heading">ANWP Driving School</p>
+                <p class="rating-para">
+                  5.0<ion-icon
+                    class="text-warning"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  (80)
+                </p>
+                <p class="drivingschool-desc">
+                  A leading Dutch provider of roadside assistance for motorists.
+                  Their driving school provides expert tuition for all motoring
+                  abilities across the Netherlands. So, if you want to drive,
+                  ANWB can help you get behind the wheel.
+                </p>
+                <p class="d-flex">
+                  <span class="address">Address:</span>
+                  <span class="address-name">Woolton, Netherland</span>
+                </p>
+
+                <p class="d-flex btn-grp-section mt-2">
+                  <button
+                    type="button"
+                    class="btn col-md-5 btn-outline-primary fw-bold"
+                  >
+                    Request Availability
+                  </button>
+                  <button
+                    type="button"
+                    class="btn col-md-5 btn-primary ms-4 fw-bold"
+                  >
+                    Get Quote
+                  </button>
+                </p>
+              </div>
+            </div>
+            <div class="row custom-border-radius custom-box-shadow pt-4 mb-4">
+              <div class="col-md-3">
+                <img
+                  src="./images/why-chooseImg1.png"
+                  alt=""
+                  class="driving-img-new custom-box-shadow custom-border-radius"
+                />
+              </div>
+              <div class="col-md-9 ps-4">
+                <p class="drivingschool-heading">ANWP Driving School</p>
+                <p class="rating-para">
+                  5.0<ion-icon
+                    class="text-warning"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  (80)
+                </p>
+                <p class="drivingschool-desc">
+                  A leading Dutch provider of roadside assistance for motorists.
+                  Their driving school provides expert tuition for all motoring
+                  abilities across the Netherlands. So, if you want to drive,
+                  ANWB can help you get behind the wheel.
+                </p>
+                <p class="d-flex">
+                  <span class="address">Address:</span>
+                  <span class="address-name">Woolton, Netherland</span>
+                </p>
+
+                <p class="d-flex btn-grp-section mt-2">
+                  <button
+                    type="button"
+                    class="btn col-md-5 btn-outline-primary fw-bold"
+                  >
+                    Request Availability
+                  </button>
+                  <button
+                    type="button"
+                    class="btn col-md-5 btn-primary ms-4 fw-bold"
+                  >
+                    Get Quote
+                  </button>
+                </p>
+              </div>
+            </div>
+            <div class="row custom-border-radius custom-box-shadow pt-4 mb-4">
+              <div class="col-md-3">
+                <img
+                  src="./images/why-chooseImg1.png"
+                  alt=""
+                  class="driving-img-new custom-box-shadow custom-border-radius"
+                />
+              </div>
+              <div class="col-md-9 ps-4">
+                <p class="drivingschool-heading">ANWP Driving School</p>
+                <p class="rating-para">
+                  5.0<ion-icon
+                    class="text-warning"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  (80)
+                </p>
+                <p class="drivingschool-desc">
+                  A leading Dutch provider of roadside assistance for motorists.
+                  Their driving school provides expert tuition for all motoring
+                  abilities across the Netherlands. So, if you want to drive,
+                  ANWB can help you get behind the wheel.
+                </p>
+                <p class="d-flex">
+                  <span class="address">Address:</span>
+                  <span class="address-name">Woolton, Netherland</span>
+                </p>
+
+                <p class="d-flex btn-grp-section mt-2">
+                  <button
+                    type="button"
+                    class="btn col-md-5 btn-outline-primary fw-bold"
+                  >
+                    Request Availability
+                  </button>
+                  <button
+                    type="button"
+                    class="btn col-md-5 btn-primary ms-4 fw-bold"
+                  >
+                    Get Quote
+                  </button>
+                </p>
+              </div>
+            </div>
+            <div class="row custom-border-radius custom-box-shadow pt-4 mb-4">
+              <div class="col-md-3">
+                <img
+                  src="./images/why-chooseImg1.png"
+                  alt=""
+                  class="driving-img-new custom-box-shadow custom-border-radius"
+                />
+              </div>
+              <div class="col-md-9 ps-4">
+                <p class="drivingschool-heading">ANWP Driving School</p>
+                <p class="rating-para">
+                  5.0<ion-icon
+                    class="text-warning"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  <ion-icon class="text-warning" name="star-outline"></ion-icon>
+                  (80)
+                </p>
+                <p class="drivingschool-desc">
+                  A leading Dutch provider of roadside assistance for motorists.
+                  Their driving school provides expert tuition for all motoring
+                  abilities across the Netherlands. So, if you want to drive,
+                  ANWB can help you get behind the wheel.
+                </p>
+                <p class="d-flex">
+                  <span class="address">Address:</span>
+                  <span class="address-name">Woolton, Netherland</span>
+                </p>
+
+                <p class="d-flex btn-grp-section mt-2">
+                  <button
+                    type="button"
+                    class="btn col-md-5 btn-outline-primary fw-bold"
+                  >
+                    Request Availability
+                  </button>
+                  <button
+                    type="button"
+                    class="btn col-md-5 btn-primary ms-4 fw-bold"
+                  >
+                    Get Quote
+                  </button>
+                </p>
+              </div>
+            </div>
+            <div class="text-center">
+              <a
+                class="showmore-text text-primary text-decoration-none d-inline-block mx-auto"
+                href="#"
+                >Show more >></a
+              >
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-8">
-            <h1 class="h2 text-dark">ANWP Driving School</h1>
-            <p class="rating-para">
-              <span class="me-2">5.0</span>
-              <ion-icon class="text-warning" name="star-outline"></ion-icon>
-              <ion-icon class="text-warning" name="star-outline"></ion-icon>
-              <ion-icon class="text-warning" name="star-outline"></ion-icon>
-              <ion-icon class="text-warning" name="star-outline"></ion-icon>
-              <ion-icon class="text-warning" name="star-outline"></ion-icon>
-              (80)
-            </p>
-            <p>Woolton, Netherland</p>
-            <div class="row drivingschool-gallery">
-              <div class="col-md-4">
-                <!-- <img
-                  src="./images/why-chooseImg1.png"
-                  class="drivingschool-img-1 custom-box-shadow custom-border-radius"
-                  alt="ANWP Driving School"
-                /> -->
-                <a
-                  href="./images/drivingschool-img1.png"
-                  data-fancybox="gallery"
-                  class="drivingschool-img-1 custom-box-shadow custom-border-radius"
-                >
-                  <img src="./images/drivingschool-img1.png" />
-                </a>
-              </div>
-              <div class="col-md-3">
-                <!-- <img
-                  src="./images/drivingschool-img2.png"
-                  class="drivingschool-img-2 custom-box-shadow custom-border-radius"
-                  alt=""
-                /> -->
-                <a
-                  href="./images/drivingschool-img2.png"
-                  data-fancybox="gallery"
-                  class="drivingschool-img-2 custom-box-shadow custom-border-radius"
-                >
-                  <img src="./images/drivingschool-img2.png" />
-                </a>
-                <a
-                  href="./images/drivingschool-img3.png"
-                  data-fancybox="gallery"
-                  class="drivingschool-img-3 custom-box-shadow custom-border-radius"
-                >
-                  <img src="./images/drivingschool-img3.png" />
-                </a>
-                <!-- <img
-                  src="./images/drivingschool-img3.png"
-                  class="drivingschool-img-3 custom-box-shadow custom-border-radius"
-                  alt=""
-                /> -->
-              </div>
-              <div class="col-md-5">
-                <div class="row">
-                  <div class="col-12">
-                    <a
-                      href="./images/drivingschool-img4.png"
-                      data-fancybox="gallery"
-                      class="drivingschool-img-4 custom-box-shadow custom-border-radius"
-                    >
-                      <img src="./images/drivingschool-img4.png" />
-                    </a>
-                    <!-- <img
-                      src="./images/drivingschool-img4.png"
-                      class="drivingschool-img-4 custom-box-shadow custom-border-radius"
-                      alt=""
-                    /> -->
-                  </div>
-                  <div class="col-6">
-                    <a
-                      href="./images/drivingschool-img5.png"
-                      data-fancybox="gallery"
-                      class="drivingschool-img-5 custom-box-shadow custom-border-radius"
-                    >
-                      <img src="./images/drivingschool-img5.png" />
-                    </a>
-                    <!-- <img
-                      src="./images/drivingschool-img5.png"
-                      class="drivingschool-img-5 custom-box-shadow custom-border-radius"
-                      alt=""
-                    /> -->
-                  </div>
-                  <div class="col-6">
-                    <a
-                      href="./images/drivingschool-img6.png"
-                      data-fancybox="gallery"
-                      class="drivingschool-img-6 custom-box-shadow custom-border-radius"
-                    >
-                      <img src="./images/drivingschool-img6.png" />
-                    </a>
-                    <!-- <img
-                      src="./images/drivingschool-img6.png"
-                      class="drivingschool-img-6 custom-box-shadow custom-border-radius"
-                      alt=""
-                    /> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <nav class="nav drivingschool-nav my-4">
-              <ul class="list-inline mb-0">
-                <li class="list-inline-item">
-                  <a
-                    href="#about"
-                    class="driving-subsection-heading nav-link text-primary fw-semibold"
-                    >About</a
-                  >
-                </li>
-                <li class="list-inline-item">
-                  <a href="#experience" class="nav-link fw-semibold"
-                    >Experience</a
-                  >
-                </li>
-                <li class="list-inline-item">
-                  <a href="#expertise" class="nav-link fw-semibold"
-                    >Expertise</a
-                  >
-                </li>
 
-                <li class="list-inline-item">
-                  <a href="#reviews" class="nav-link fw-semibold">Reviews</a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#faq" class="nav-link fw-semibold">FAQ</a>
-                </li>
-              </ul>
-            </nav>
-            <section id="about" data-aos="fade-up">
-              <p class="drivingschool-desc">
-                A leading Dutch provider of roadside assistance for motorists.
-                Their driving school provides expert tuition for all motoring
-                abilities across the Netherlands. So, if you want to drive, ANWB
-                can help you get behind the wheel.
-              </p>
-              <p class="drivingschool-desc">
-                A leading Dutch provider of roadside assistance for motorists.
-                Their driving school provides expert tuition for all motoring
-                abilities across the Netherlands. So, if you want to drive, ANWB
-                can help you get behind the wheel.
-              </p>
-              <h2 class="h5 my-3 text-dark">Services Offered</h2>
-              <div class="row">
-                <div class="col-md-8">
-                  <ul class="service-list text-primary">
-                    <li>Intermediate test</li>
-                    <li>Help with anxiety</li>
-                    <li>Driving lesson packages</li>
-                    <li>Driving license (B)</li>
-                    <li>2todrive (assisted driving)</li>
-                    <li>Trial lessons</li>
-                    <li>Practical exam</li>
-                    <li>Theory</li>
-                    <li>Theory lessons</li>
-                    <li>Switch and automatic</li>
-                    <li>Manual transmission</li>
-                    <li>Vending machine</li>
-                  </ul>
-                </div>
-              </div>
-              <h2 class="h5 my-3 text-dark">Why choose us?</h2>
-              <p class="drivingschool-desc">
-                Switch and automatic driving lessons!
-              </p>
-            </section>
-            <section id="experience" data-aos="fade-up">
-              <h3
-                class="driving-subsection-heading text-primary fw-semibold mb-3"
-              >
-                Experience
-              </h3>
-              <ol class="list-unstyled">
-                <li class="mb-3">
-                  <img
-                    src="./icons/svg icons/brightness.svg"
-                    alt=""
-                    class="experience-icon"
-                  /><span>6 years in operation</span>
-                </li>
-                <li class="mb-3">
-                  <img
-                    src="./icons/svg icons/review-icon.svg"
-                    alt=""
-                    class="experience-icon"
-                  /><span>80 reviews</span>
-                </li>
-                <li class="mb-3">
-                  <img
-                    src="./icons/svg icons/employee.svg"
-                    alt=""
-                    class="experience-icon"
-                  /><span>12 employees</span>
-                </li>
-                <li class="mb-3">
-                  <img
-                    src="./icons/svg icons/expercience.svg"
-                    alt=""
-                    class="experience-icon"
-                  /><span>8 years of experience</span>
-                </li>
-              </ol>
-              <h2 class="h5 my-4 text-dark">Training and Certificates</h2>
-              <p class="Training-desc text-primary fw-normal">
-                Driving instructor B
-              </p>
-            </section>
-            <section id="expertise" data-aos="fade-up" class="my-4">
-              <h3
-                class="driving-subsection-heading text-primary fw-semibold mb-3"
-              >
-                Expertise
-              </h3>
-              <div class="expertise-details">
-                <div class="added-expertise-row">
-                  <span class="badge bg-secondary">Engine</span>
-                  <span class="badge bg-secondary">Car</span>
-                </div>
-              </div>
-            </section>
-            <section id="reviews" data-aos="fade-up">
-              <h3
-                class="reviews-subsection-heading mt-4 text-primary fw-semibold"
-              >
-                Reviews about ANWP Driving School
-              </h3>
-              <p class="review-star-para">
-                5.0
-                <span class="review-star"
-                  ><ion-icon class="text-warning" name="star-outline"></ion-icon
-                  ><ion-icon class="text-warning" name="star-outline"></ion-icon
-                  ><ion-icon class="text-warning" name="star-outline"></ion-icon
-                  ><ion-icon class="text-warning" name="star-outline"></ion-icon
-                  ><ion-icon class="text-warning" name="star-outline"></ion-icon
-                ></span>
-                (80 reviews from 3 sources)
-              </p>
-              <div class="review-cards-wrapper">
-                <div
-                  class="reviewcard-box-shadow custom-border-radius my-5 p-3"
-                >
-                  <p class="d-flex justify-content-between review-datename">
-                    <span class="review-name">SAM</span>
-                    <span class="review-date">6 Feb</span>
-                  </p>
-                  <p class="review-content py-3">
-                    I prefer everyone who wants to learn driving should join
-                    ANWP Driving school. Trainer guide in very effective way and
-                    solve the doubts of their learner in theoretical as well as
-                    in practical way. I just completed my training and wants to
-                    thank ANWP for their guidance.
-                  </p>
-                </div>
-                <div
-                  class="reviewcard-box-shadow custom-border-radius my-5 p-3"
-                >
-                  <p class="d-flex justify-content-between review-datename">
-                    <span class="review-name">SAM</span>
-                    <span class="review-date">6 Feb</span>
-                  </p>
-                  <p class="review-content py-3">
-                    I prefer everyone who wants to learn driving should join
-                    ANWP Driving school. Trainer guide in very effective way and
-                    solve the doubts of their learner in theoretical as well as
-                    in practical way. I just completed my training and wants to
-                    thank ANWP for their guidance.
-                  </p>
-                </div>
-                <div
-                  class="reviewcard-box-shadow custom-border-radius my-5 p-3"
-                >
-                  <p class="d-flex justify-content-between review-datename">
-                    <span class="review-name">SAM</span>
-                    <span class="review-date">6 Feb</span>
-                  </p>
-                  <p class="review-content py-3">
-                    I prefer everyone who wants to learn driving should join
-                    ANWP Driving school. Trainer guide in very effective way and
-                    solve the doubts of their learner in theoretical as well as
-                    in practical way. I just completed my training and wants to
-                    thank ANWP for their guidance.
-                  </p>
-                </div>
-
-                <div class="review-card-row my-5 ms-3">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <div class="reviewcarddetail custom-border-radius">
-                        <p class="fw-semibold text-primary org-name">
-                          Top 10 Diensten
-                        </p>
-                        <p class="text-warning fw-semibold rating-num">5.0</p>
-                        <p class="reviewername fw-semibold">2 Reviews</p>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="reviewcarddetail custom-border-radius">
-                        <p class="fw-semibold text-primary org-name">Google</p>
-                        <p class="text-warning fw-semibold rating-num">5.0</p>
-                        <p class="reviewername fw-semibold">2 Reviews</p>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="reviewcarddetail custom-border-radius">
-                        <p class="fw-semibold text-primary org-name">
-                          Facebook
-                        </p>
-                        <p class="text-warning fw-semibold rating-num">5.0</p>
-                        <p class="reviewername fw-semibold">2 Reviews</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section id="faq" data-aos="fade-up">
-              <h3
-                class="driving-subsection-heading text-primary fw-semibold mb-3"
-              >
-                FAQ
-              </h3>
-              <p class="text-muted fw-semibold"
-                >1. Which is the nearest landmark?</p
-              >
-              <p class="text-muted fw-semibold"
-                ><span class="text-dark fw-semibold">Ans.</span>Woolton
-                ,Netherland</p
-              >
-            </section>
-          </div>
-
-          <div class="col-md-4">
-            <div
-              class="check-availability-box p-4 custom-border-radius sticky-md-top"
-            >
-              <h2 class="h5 my-3 text-dark text-center">
-                Check availability and get prices from ANWP Driving School
-              </h2>
-              <div class="check-availability-btn-grp transition-main-btn">
-                <button
-                  type="button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#requestAvailabilityModal"
-                  class="btn btn-outline-primary fw-semibold col-md-8 d-block my-4 transition-btn"
-                >
-                  Request Availability
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-primary fw-semibold col-md-8 d-block my-4 transition-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#getQuoteModal"
-                >
-                  Get Quote
-                </button>
-              </div>
-              <p class="check-availability text-primary text-center">
-                Or contact us at:
-              </p>
-              <div
-                class="check-availability-contactus position-class cs-line d-flex justify-content-around"
-              >
-                <p class="text-primary">
-                  <ion-icon
-                    class="check-availability-icon"
-                    name="mail-outline"
-                  ></ion-icon>
-                  <span class="text-dark">Send message</span>
-                </p>
-                <p class="arrow-icon">
-                  <ion-icon
-                    class="check-availability-icon"
-                    name="chevron-forward-outline"
-                  ></ion-icon>
-                </p>
-              </div>
-              <div
-                class="check-availability-contactus position-class cs-line d-flex justify-content-around"
-              >
-                <p class="text-primary">
-                  <ion-icon
-                    class="check-availability-icon"
-                    name="call-outline"
-                  ></ion-icon>
-                  <span class="text-dark">Callback request</span>
-                </p>
-                <p class="arrow-icon">
-                  <ion-icon
-                    class="check-availability-icon"
-                    name="chevron-forward-outline"
-                  ></ion-icon>
-                </p>
-              </div>
-              <div
-                class="check-availability-contactus position-class cs-line d-flex justify-content-around"
-              >
-                <p class="text-primary">
-                  <ion-icon
-                    class="check-availability-icon"
-                    name="globe-outline"
-                  ></ion-icon>
-                  <span class="text-dark">View website</span>
-                </p>
-                <p class="arrow-icon">
-                  <ion-icon
-                    class="check-availability-icon"
-                    name="chevron-forward-outline"
-                  ></ion-icon>
-                </p>
-              </div>
-            </div>
-          </div>
-          <section id="nearbyschool" class="mt-4" data-aos="fade-up">
+        <div class="col-md-4">
+          <!-- filters -->
+          <div
+            class="school-list-filter-wrapper p-3 custom-box-shadow custom-border-radius"
+          >
             <h3
-              class="driving-subsection-heading text-primary fw-semibold mb-3"
+              class="h6 filter-heading text-primary d-flex align-items-center"
             >
-              Nearby Driving Schools
+              <ion-icon name="filter-outline" class="display-6 me-3"></ion-icon>
+              Filter
             </h3>
-            <div class="nearbyschoolcard">
-              <div class="card border-0 card custom-box-shadow">
-                <div class="card-body">
-                  <div id="nearbyschool-carousel" class="carousel slide">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <div class="row">
-                          <div class="col-md-4">
-                            <a
-                              class="card custom-border-radius custom-box-shadow m-2 p-3"
-                              href="./drivingschool-detail2.html"
-                              href="./drivingschool-detail2.html"
-                            >
-                              <div class="drivingschool-card d-flex">
-                                <div class="drivingschool-card-img">
-                                  <img
-                                    src="./images/img-1.png"
-                                    alt=""
-                                    class="custom-border-radius custom-box-shadow"
-                                  />
-                                </div>
-                                <div class="drivingschool-card-desc">
-                                  <div class="c-content-div">
-                                    <div
-                                      class="cd-content-section-decs mx-4 my-2"
-                                    >
-                                      <p class="drivingschool-heading mb-1">
-                                        BNWP Driving School
-                                      </p>
-                                      <p class="rating-para my-3">
-                                        5.0<ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        <ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        <ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        <ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        <ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        (80)
-                                      </p>
-                                      <p class="small text-dark"
-                                        >Woolton, Netherland</p
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="drivingschool-list mt-2">
-                                <ul class="d-flex">
-                                  <li class="text-primary fw-semibold me-4"
-                                    >Respond quickly</li
-                                  >
-                                  <li class="text-primary fw-semibold"
-                                    >Readily availabley</li
-                                  >
-                                </ul>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="col-md-4">
-                            <a
-                              class="card custom-border-radius custom-box-shadow m-2 p-3"
-                              href="./drivingschool-detail2.html"
-                            >
-                              <div class="drivingschool-card d-flex">
-                                <div class="drivingschool-card-img">
-                                  <img
-                                    src="./images/why-chooseImg1.png"
-                                    alt=""
-                                    class="custom-border-radius custom-box-shadow"
-                                  />
-                                </div>
-                                <div class="drivingschool-card-desc">
-                                  <div class="c-content-div">
-                                    <div
-                                      class="cd-content-section-decs mx-4 my-2"
-                                    >
-                                      <p class="drivingschool-heading mb-1">
-                                        CNWP Driving School
-                                      </p>
-                                      <p class="rating-para my-3">
-                                        5.0<ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        <ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        <ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        <ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        <ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        (80)
-                                      </p>
-                                      <p class="small text-dark"
-                                        >Woolton, Netherland</p
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="drivingschool-list mt-2">
-                                <ul class="d-flex">
-                                  <li class="text-primary fw-semibold me-4"
-                                    >Respond quickly</li
-                                  >
-                                  <li class="text-primary fw-semibold"
-                                    >Readily available</li
-                                  >
-                                </ul>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="col-md-4">
-                            <a
-                              class="card custom-border-radius custom-box-shadow m-2 p-3"
-                              href="./drivingschool-detail2.html"
-                            >
-                              <div class="drivingschool-card d-flex">
-                                <div class="drivingschool-card-img">
-                                  <img
-                                    src="./images/why-chooseImg1.png"
-                                    alt=""
-                                    class="custom-border-radius custom-box-shadow"
-                                  />
-                                </div>
-                                <div class="drivingschool-card-desc">
-                                  <div class="c-content-div">
-                                    <div
-                                      class="cd-content-section-decs mx-4 my-2"
-                                    >
-                                      <p class="drivingschool-heading mb-1">
-                                        ANWP Driving School
-                                      </p>
-                                      <p class="rating-para my-3">
-                                        5.0<ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        <ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        <ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        <ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        <ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        (80)
-                                      </p>
-                                      <p class="small text-dark"
-                                        >Woolton, Netherland</p
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="drivingschool-list mt-2">
-                                <ul class="d-flex">
-                                  <li class="text-primary fw-semibold me-4"
-                                    >Respond quickly</li
-                                  >
-                                  <li class="text-primary fw-semibold"
-                                    >Readily available</li
-                                  >
-                                </ul>
-                              </div>
-                            </a>
-                          </div>
+            <div class="sortby">
+              <h3 class="h5 mb-3 text-dark">Sort By</h3>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="sortby"
+                  id="standard"
+                  checked
+                />
+                <label class="form-check-label" for="standard">
+                  Standard
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="sortby"
+                  id="often"
+                />
+                <label class="form-check-label" for="often">
+                  Often Chosen
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="sortby"
+                  id="score"
+                />
+                <label class="form-check-label" for="score"> Score </label>
+              </div>
+            </div>
+            <div class="lookingfor mt-3">
+              <h3 class="h5 mb-3 text-dark">I am looking for driving School</h3>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="lookingfor"
+                  id="drivinglicense"
+                />
+                <label class="form-check-label" for="drivinglicense">
+                  Driving License (B)
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="lookingfor"
+                  id="scooter"
+                />
+                <label class="form-check-label" for="scooter">
+                  Scooter, moped or Light moped (AM)
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="lookingfor"
+                  id="motorcycle"
+                  checked
+                />
+                <label class="form-check-label" for="motorcycle">
+                  Motorcycle License (A, A1, A2 )
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="lookingfor"
+                  id="trailer"
+                />
+                <label class="form-check-label" for="trailer">
+                  Trailer driving license ( BE, B+)
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="lookingfor"
+                  id="truck"
+                />
+                <label class="form-check-label" for="truck">
+                  Truck driving license ( C, CE, C1, C1E)
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="lookingfor"
+                  id="bus"
+                />
+                <label class="form-check-label" for="bus">
+                  Bus driving license (D, DE, D1, D1E )
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="lookingfor"
+                  id="tractor"
+                />
+                <label class="form-check-label" for="tractor">
+                  Tractor driving license ( T )
+                </label>
+              </div>
+            </div>
+            <div class="lookingfor mt-3">
+              <h3 class="h5 mb-3 text-dark">Type of car</h3>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="typeofcar"
+                  id="manualtrans"
+                />
+                <label class="form-check-label" for="manualtrans">
+                  Manual transmission
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="typeofcar"
+                  id="auto"
+                />
+                <label class="form-check-label" for="auto"> Automatic </label>
+              </div>
+            </div>
+            <div class="lookingfor mt-3">
+              <h3 class="h5 mb-3 text-dark">Distance</h3>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="distance1"
+                  id="upto10"
+                />
+                <label class="form-check-label" for="upto10">
+                  Up to 10 km
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="distance1"
+                  id="upto20"
+                />
+                <label class="form-check-label" for="upto20">
+                  Up to 20 km
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="distance1"
+                  id="upto30"
+                />
+                <label class="form-check-label" for="upto30">
+                  Up to 30 km
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input mt-0"
+                  type="radio"
+                  name="distance1"
+                  id="upto40"
+                />
+                <label class="form-check-label" for="upto40">
+                  Up to 40 km
+                </label>
+              </div>
+            </div>
+            <div class="lookingfor mt-3">
+              <h3 class="h5 mb-3 text-dark">Rating</h3>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="rating"
+                  id="5star"
+                  checked
+                />
+                <label class="form-check-label" for="5star">
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-outline"
+                  ></ion-icon>
+                  5 star
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="rating"
+                  id="4andhalfstar"
+                />
+                <label class="form-check-label" for="4andhalfstar">
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-half-outline"
+                  ></ion-icon>
+                  4.5 star
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="rating"
+                  id="4star"
+                />
+                <label class="form-check-label" for="4star">
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-outline"
+                  ></ion-icon>
+                  4 star
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="rating"
+                  id="3andhalfstar"
+                />
+                <label class="form-check-label" for="3andhalfstar">
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-half-outline"
+                  ></ion-icon>
+                  3.5 star
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="rating"
+                  id="3star"
+                />
+                <label class="form-check-label" for="3star">
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-outline"
+                  ></ion-icon>
+                  <ion-icon
+                    class="text-warning font-icon-size"
+                    name="star-outline"
+                  ></ion-icon>
+                  3 star
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- contact card  -->
+          <div class="card bg-primary text-light custom-border-radius mt-4">
+            <div class="card-body fw-semibold text-center p-5">
+              <h3 class="h5">Need help choosing?</h3>
+              <p class="my-4 lh-sm">
+                Discuss the possibilities and get advice from experts.
+              </p>
+              <h3 class="h5 text-warning lh-sm">Contact Us:<br />8989898989</h3>
+            </div>
+          </div>
+
+          <!-- tip card -->
+          <div class="card text-light custom-border-radius mt-4 tipcard">
+            <div class="card-body fw-semibold text-center p-5">
+              <h3 class="h5 tip-h5">Tip!</h3>
+              <p class="my-4 lh-sm tip-text">
+                Request quotes from 4 different driving school to compare and
+                save ..
+              </p>
+              <button
+                type="button"
+                class="btn col-md-5 btn-outline-primary fw-bold tipbutton"
+              >
+                Get Quote
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="testimonial-section pt-5 pb-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-7">
+            <p class="testimonial-heading">
+              What Customer say <span class="text-warning">about Us</span>?
+            </p>
+            <p class="testimonial-para">
+              The truth is that you can not satisfy everyone all of the time.
+              But We are perfect to retain a client by our exceptional customer
+              experience and professional technician.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="testimonial-carousel">
+              <div id="testimonialcarousel" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="testimonial-carousel-card">
+                          <p class="doublequote">&#34;</p>
+                          <p class="testimonial-desc">
+                            “Our experience with Priceup is splendid. It saves
+                            working time, user friendly interface and great
+                            support team”.
+                          </p>
+                          <p class="testimonial-name">Mr John</p>
                         </div>
                       </div>
-                      <div class="carousel-item">
-                        <div class="row">
-                          <div class="col-md-4">
-                            <a
-                              class="card custom-border-radius custom-box-shadow m-2 p-3"
-                              href="./drivingschool-detail2.html"
-                            >
-                              <div class="drivingschool-card d-flex">
-                                <div class="drivingschool-card-img">
-                                  <img
-                                    src="./images/why-chooseImg1.png"
-                                    alt=""
-                                    class="custom-border-radius custom-box-shadow"
-                                  />
-                                </div>
-                                <div class="drivingschool-card-desc">
-                                  <div class="c-content-div">
-                                    <div
-                                      class="cd-content-section-decs mx-4 my-2"
-                                    >
-                                      <p class="drivingschool-heading mb-1">
-                                        DNWP Driving School
-                                      </p>
-                                      <p class="rating-para my-3">
-                                        5.0<ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        <ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        <ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        <ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        <ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        (80)
-                                      </p>
-                                      <p class="small text-dark"
-                                        >Woolton, Netherland</p
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="drivingschool-list mt-2">
-                                <ul class="d-flex">
-                                  <li class="text-primary fw-semibold me-4"
-                                    >Respond quickly</li
-                                  >
-                                  <li class="text-primary fw-semibold"
-                                    >Readily available</li
-                                  >
-                                </ul>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="col-md-4">
-                            <a
-                              class="card custom-border-radius custom-box-shadow m-2 p-3"
-                              href="./drivingschool-detail2.html"
-                            >
-                              <div class="drivingschool-card d-flex">
-                                <div class="drivingschool-card-img">
-                                  <img
-                                    src="./images/why-chooseImg1.png"
-                                    alt=""
-                                    class="custom-border-radius custom-box-shadow"
-                                  />
-                                </div>
-                                <div class="drivingschool-card-desc">
-                                  <div class="c-content-div">
-                                    <div
-                                      class="cd-content-section-decs mx-4 my-2"
-                                    >
-                                      <p class="drivingschool-heading mb-1">
-                                        CNWP Driving School
-                                      </p>
-                                      <p class="rating-para my-3">
-                                        5.0<ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        <ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        <ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        <ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        <ion-icon
-                                          class="text-warning md hydrated"
-                                          name="star-outline"
-                                          role="img"
-                                          aria-label="star outline"
-                                        ></ion-icon>
-                                        (80)
-                                      </p>
-                                      <p class="small text-dark"
-                                        >Woolton, Netherland</p
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="drivingschool-list mt-2">
-                                <ul class="d-flex">
-                                  <li class="text-primary fw-semibold me-4"
-                                    >Respond quickly</li
-                                  >
-                                  <li class="text-primary fw-semibold"
-                                    >Readily available</li
-                                  >
-                                </ul>
-                              </div>
-                            </a>
-                          </div>
+                      <div class="col-md-4">
+                        <div class="testimonial-carousel-card">
+                          <p class="doublequote">&#34;</p>
+                          <p class="testimonial-desc">
+                            “Our experience with Priceup is splendid. It saves
+                            working time, user friendly interface and great
+                            support team”.
+                          </p>
+                          <p class="testimonial-name">Mr John</p>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="testimonial-carousel-card">
+                          <p class="doublequote">&#34;</p>
+                          <p class="testimonial-desc">
+                            “Our experience with Priceup is splendid. It saves
+                            working time, user friendly interface and great
+                            support team”.
+                          </p>
+                          <p class="testimonial-name">Mr John</p>
                         </div>
                       </div>
                     </div>
-                    <button
-                      class="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#nearbyschool-carousel"
-                      data-bs-slide="prev"
-                    >
-                      <!-- <span
-                        class="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span> -->
-                      <img
-                        src="./icons/arrow_circle_left-blue.png"
-                        class="carousel-arrow-icon"
-                        alt=""
-                      />
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                      class="carousel-control-next"
-                      type="button"
-                      data-bs-target="#nearbyschool-carousel"
-                      data-bs-slide="next"
-                    >
-                      <!-- <span
-                        class="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span> -->
-                      <img
-                        src="./icons/arrow_circle_right-blue.png"
-                        class="carousel-arrow-icon"
-                        alt=""
-                      />
-                      <span class="visually-hidden">Next</span>
-                    </button>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="testimonial-carousel-card">
+                          <p class="doublequote">&#34;</p>
+                          <p class="testimonial-desc">
+                            “Our experience with Priceup is splendid. It saves
+                            working time, user friendly interface and great
+                            support team”.
+                          </p>
+                          <p class="testimonial-name">Mr John</p>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="testimonial-carousel-card">
+                          <p class="doublequote">&#34;</p>
+                          <p class="testimonial-desc">
+                            “Our experience with Priceup is splendid. It saves
+                            working time, user friendly interface and great
+                            support team”.
+                          </p>
+                          <p class="testimonial-name">Mr John</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#testimonialcarousel"
+                  data-bs-slide="prev"
+                >
+                  <img
+                    src="./icons/arrow_circle_left-blue.png"
+                    alt=""
+                    class="carousel-arrow-icon"
+                  />
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#testimonialcarousel"
+                  data-bs-slide="next"
+                >
+                  <img
+                    src="./icons/arrow_circle_right-blue.png"
+                    alt=""
+                    class="carousel-arrow-icon"
+                  />
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
-          </section>
+          </div>
         </div>
       </div>
     </section>
-    <section class="client-section mb-5" data-aos="fade-up">
+    <section class="client-section p-5 mb-5">
       <p class="client-section-heading">Our Clients</p>
-      <div class="client-carousel pb-5">
-        <div class="container-xxl">
+      <div class="client-carousel">
+        <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div id="carouselClient" class="carousel slide custom-box-shadow">
@@ -1176,16 +1326,16 @@
       <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
           <!-- <div class="modal-header licensetype-modal-header">
-       
-       <button
-         type="button"
-         class="btn-close btn-close-new"
-         data-bs-dismiss="modal"
-         aria-label="Close"
-       >
-         Close
-       </button>
-     </div> -->
+  
+  <button
+    type="button"
+    class="btn-close btn-close-new"
+    data-bs-dismiss="modal"
+    aria-label="Close"
+  >
+    Close
+  </button>
+</div> -->
           <div class="licensetype-modal-header">
             <button
               type="button"
@@ -1602,14 +1752,14 @@
                           </button>
 
                           <!-- <button type="button" class="btn btn-primary">
-                         Next
-                       </button>
-                       <button
-                         type="button"
-                         class="btn btn-outline-primary my-4"
-                       >
-                         Previous
-                       </button> -->
+                    Next
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary my-4"
+                  >
+                    Previous
+                  </button> -->
                         </div>
                       </form>
                     </div>
@@ -1741,12 +1891,12 @@
                         <div class="row">
                           <div class="mb-3">
                             <!-- <input
-                           type="tel"
-                           class="form-control custom-box-shadow"
-                           id="phone"
-                           aria-describedby="telHelp"
-                           placeholder="Enter Phone number"
-                         /> -->
+                      type="tel"
+                      class="form-control custom-box-shadow"
+                      id="phone"
+                      aria-describedby="telHelp"
+                      placeholder="Enter Phone number"
+                    /> -->
                             <label for="phone" class="form-label"
                               >Mobile Number</label
                             >
@@ -1811,12 +1961,12 @@
                         <div class="row">
                           <div class="mb-3">
                             <!-- <input
-                           type="tel"
-                           class="form-control custom-box-shadow"
-                           id="exampleInputTel1"
-                           aria-describedby="telHelp"
-                           placeholder="Enter Phone number"
-                         /> -->
+                      type="tel"
+                      class="form-control custom-box-shadow"
+                      id="exampleInputTel1"
+                      aria-describedby="telHelp"
+                      placeholder="Enter Phone number"
+                    /> -->
                             <label for="phone" class="form-label"
                               >Mobile Number</label
                             >
@@ -2621,14 +2771,14 @@
                           </button>
 
                           <!-- <button type="button" class="btn btn-primary">
-                         Next
-                       </button>
-                       <button
-                         type="button"
-                         class="btn btn-outline-primary my-4"
-                       >
-                         Previous
-                       </button> -->
+                    Next
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary my-4"
+                  >
+                    Previous
+                  </button> -->
                         </div>
                       </form>
                     </div>
@@ -2895,12 +3045,12 @@
                         <div class="row">
                           <div class="mb-3">
                             <!-- <input
-                           type="tel"
-                           class="form-control custom-box-shadow"
-                           id="exampleInputTel1"
-                           aria-describedby="telHelp"
-                           placeholder="Enter Phone number"
-                         /> -->
+                      type="tel"
+                      class="form-control custom-box-shadow"
+                      id="exampleInputTel1"
+                      aria-describedby="telHelp"
+                      placeholder="Enter Phone number"
+                    /> -->
                             <label for="phone" class="form-label"
                               >Mobile Number</label
                             >
@@ -3085,32 +3235,15 @@
       <img src="./images/top10Logo.png" alt="" />
       <div class="loader">Loading...</div>
     </div>
-    <script src="./js/bootstrap.bundle.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.6.3.min.js"
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="./js/loader.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/pageanimation.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/loader.js"></script>
     <script src="./js/getquote.js"></script>
-
-    <script>
-      Fancybox.bind("[data-fancybox]", {
-        // Your custom options
-      });
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-      AOS.init({
-        duration: 1200,
-      });
-    </script>
-
-    <script src="./intl-tel-input/js/intlTelInput.min.js"></script>
-    <script src="./intl-tel-input/js/utils.js"></script>
-    <script src="./js/countrycode.js"></script>
   </body>
 </html>

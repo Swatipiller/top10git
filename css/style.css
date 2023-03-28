@@ -663,7 +663,7 @@ p.reviewername {
 }
 .drivinglicense-btn {
   text-align: center;
-  margin-top: 8rem;
+  margin-top: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -744,6 +744,10 @@ p.reviewername {
 }
 
 .getQuoteModalStep.hidden {
+  display: none;
+}
+
+.requestAvailabilityStep.hidden {
   display: none;
 }
 
